@@ -1,16 +1,22 @@
 import React from 'react';
 import './App.css';
-import mapboxgl from 'mapbox-gl';
+import mapboxgl, {GeoJSONSource} from 'mapbox-gl';
+
+import * as FirebaseService from './services/firebase';
 
 import bakeries from './data/bakeries';
 
-class App extends React.Component {
+class App extends React.Component<any, { markers: any[]; }> {
   mapgl: mapboxgl.Map | null;
 
   constructor(props: any) {
     super(props);
 
     this.mapgl = null;
+
+    this.state = {
+      markers: [],
+    }
   }
 
   componentDidMount(): void {
@@ -27,20 +33,77 @@ class App extends React.Component {
        * This is where your '.addLayer()' used to be, instead
        * add only the source without styling a layer
        */
-      map.addSource('places', {
+      /*map.addSource('places', {
         type: 'geojson',
         data: bakeries,
       });
 
-      this.addMarkers();
+      this.addMarkers();*/
+
+
+      FirebaseService.getStores().onSnapshot((convo) => {
+        const res: any = [];
+        convo.docs.forEach((doc) => {
+          res.push({ id: doc.id, ...doc.data() });
+        });
+
+        console.log('res', res)
+
+        const features = res.map((r:any) => {
+            console.log('r')
+            return ({
+              type: 'Feature' as const,
+              geometry: {
+                type: 'Point' as const,
+                coordinates: [r.coordinates?.lat, r?.coordinates?.lng] as [number, number],
+              },
+              properties: {
+                id: 1,
+                title: r.title,
+                description: r.description,
+                rate: r.mark,
+              },
+            })
+          }
+        )
+
+        const data = {
+          type: 'FeatureCollection' as const,
+          features,
+        };
+
+        if (map.isSourceLoaded('places')) {
+          const source = map.getSource('places') as GeoJSONSource;
+          source.setData(data);
+        } else {
+          //map.removeSource('places');
+          map.addSource('places', {
+            type: 'geojson',
+            data,
+          });
+        }
+        this.removeMarkers(() => {
+          this.addMarkers(features);
+        });
+      });
     });
 
     this.mapgl = map;
   }
 
-  addMarkers = () => {
+  removeMarkers = (cb: Function) => {
+    const { markers } = this.state;
+
+    markers.forEach((marker: any) => {
+      marker.remove();
+    })
+
+    this.setState({ markers: [] }, () => { cb(); })
+  }
+
+  addMarkers = (features: any) => {
     /* For each feature in the GeoJSON object above: */
-    bakeries.features.forEach((marker) => {
+    const markers = features.map((marker: any) => {
       if (!this.mapgl) return;
       /* Create a div element for the marker. */
       var el = document.createElement('div');
@@ -80,7 +143,11 @@ class App extends React.Component {
           listing.classList.add('active');
         }
       });
+
+      return m;
     });
+
+    this.setState({ markers });
   };
 
   /**
