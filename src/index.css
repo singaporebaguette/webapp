@@ -14,9 +14,9 @@ body {
 
 .sidebar {
   position: absolute;
+  top: 0px;
   width: 30%;
   height: 100%;
-  top: 0;
   left: 0;
   overflow: hidden;
   border-right: 1px solid rgba(0, 0, 0, 0.25);
@@ -27,9 +27,9 @@ body {
 
 .map {
   position: absolute;
+  top: 0px;
   left: 30%;
   width: 70%;
-  top: 0;
   bottom: 0;
 }
 
@@ -174,4 +174,31 @@ a:hover {
 
 .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
   border-bottom-color: #91c949;
+}
+
+.logo {
+  height: 128px;
+  width: 256px;
+
+
+  background-image: url(/logo.svg);
+  background-color: rgba(0, 0, 0, 0);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  top: 32px;
+  right: 32px;
+
+  z-index: 9999;
+}
+
+@media (max-width:750px) {
+  .logo {
+    height: 64px;
+    width: 128px;
+
+    top: 16px;
+    right: 16px;
+  }
 }

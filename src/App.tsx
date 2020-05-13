@@ -2,11 +2,10 @@ import React from 'react';
 import './App.css';
 import mapboxgl, {GeoJSONSource} from 'mapbox-gl';
 
+import Rating from './components/Rating'
 import * as FirebaseService from './services/firebase';
 
-import bakeries from './data/bakeries';
-
-class App extends React.Component<any, { markers: any[]; }> {
+class App extends React.Component<any, { markers: any[]; data: any; }> {
   mapgl: mapboxgl.Map | null;
 
   constructor(props: any) {
@@ -16,6 +15,9 @@ class App extends React.Component<any, { markers: any[]; }> {
 
     this.state = {
       markers: [],
+      data: {
+        features: []
+      }
     }
   }
 
@@ -50,7 +52,6 @@ class App extends React.Component<any, { markers: any[]; }> {
         console.log('res', res)
 
         const features = res.map((r:any) => {
-            console.log('r')
             return ({
               type: 'Feature' as const,
               geometry: {
@@ -58,10 +59,12 @@ class App extends React.Component<any, { markers: any[]; }> {
                 coordinates: [r.coordinates?.lat, r?.coordinates?.lng] as [number, number],
               },
               properties: {
-                id: 1,
+                id: r.id,
                 title: r.title,
                 description: r.description,
                 rate: r.mark,
+                approved: r.approved,
+                baguettePrice: r.price,
               },
             })
           }
@@ -71,6 +74,8 @@ class App extends React.Component<any, { markers: any[]; }> {
           type: 'FeatureCollection' as const,
           features,
         };
+
+        this.setState({ data })
 
         if (map.isSourceLoaded('places')) {
           const source = map.getSource('places') as GeoJSONSource;
@@ -112,15 +117,13 @@ class App extends React.Component<any, { markers: any[]; }> {
       /* Assign the `marker` class to each marker for styling. */
       el.className = 'marker';
 
-      console.log('el', el);
 
       /**
        * Create a marker using the div element
        * defined above and add it to the map.
        **/
-      console.log('COORDINATES', marker.geometry.coordinates);
       const m = new mapboxgl.Marker(el, { offset: [0, -32] }).setLngLat(marker.geometry.coordinates).addTo(this.mapgl);
-      console.log('m', m);
+
       /**
        * Listen to the element and when it is clicked, do three things:
        * 1. Fly to the point
@@ -195,14 +198,19 @@ class App extends React.Component<any, { markers: any[]; }> {
   };
 
   render() {
+    const { data } = this.state;
+    console.log('data', data)
     return (
       <>
+        <header>
+          <div className="logo" />
+        </header>
         <div className="sidebar">
           <div className="heading">
             <h1>Approved baguettes</h1>
           </div>
           <div id="listings" className="listings">
-            {bakeries.features.map((store) => (
+            {data.features.map((store: any) => (
               <div
                 key={`listing-${store.properties.id}`}
                 id={`listing-${store.properties.id}`}
@@ -212,7 +220,7 @@ class App extends React.Component<any, { markers: any[]; }> {
                 <a href="#" className="title" id="link-1">
                   {store.properties.title}
                 </a>
-                <div>{store.properties.rate}/5</div>
+                <Rating mark={store.properties.rate} />
               </div>
             ))}
           </div>
