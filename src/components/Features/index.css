@@ -1,0 +1,24 @@
+.feature {
+  height: 32px;
+  width: 32px;
+
+  background-color: rgba(0, 0, 0, 0);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 2px;
+  margin-right: 8px;
+}
+
+.feature.eat-in {
+  background-image: url(/eatin.svg);
+}
+.feature.croissant {
+  background-image: url(/croissant.svg);
+}
+.feature.delivery {
+  background-image: url(/delivery.svg);
+}
+
+.features {
+  display: flex;
+}
