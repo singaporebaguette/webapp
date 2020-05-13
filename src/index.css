@@ -111,7 +111,7 @@ a:hover {
   cursor: pointer;
   height: 64px;
   width: 64px;
-  background-image: url(/marker.png);
+  background-image: url(/marker.svg);
   background-color: rgba(0, 0, 0, 0);
 }
 
