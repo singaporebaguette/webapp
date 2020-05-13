@@ -4,7 +4,9 @@ import mapboxgl, {GeoJSONSource} from 'mapbox-gl';
 
 import Rating from './components/Rating'
 import Price from './components/Price'
-import Features from "./components/Features";
+import Features from './components/Features';
+import Approvness from './components/Approvness';
+
 import * as FirebaseService from './services/firebase';
 
 class App extends React.Component<any, { markers: any[]; data: any; }> {
@@ -51,7 +53,6 @@ class App extends React.Component<any, { markers: any[]; data: any; }> {
           res.push({ id: doc.id, ...doc.data() });
         });
 
-        console.log('res', res)
 
         const features = res.map((r:any) => {
             return ({
@@ -203,7 +204,7 @@ class App extends React.Component<any, { markers: any[]; data: any; }> {
 
   render() {
     const { data } = this.state;
-    console.log('data', data)
+
     return (
       <>
         <header>
@@ -225,6 +226,7 @@ class App extends React.Component<any, { markers: any[]; data: any; }> {
                   <a href="#" className="title" id="link-1">
                     {store.properties.title}
                   </a>
+                  <Approvness approved={store.properties.approved} />
                 </div>
                 <Rating mark={store.properties.rate} />
                 <Price price={store.properties.price} />

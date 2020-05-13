@@ -1,0 +1,17 @@
+.approvness {
+  height: 32px;
+  width: 32px;
+
+  background-color: rgba(0, 0, 0, 0);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 2px;
+  margin-right: 8px;
+}
+
+.approvness.approved {
+  background-image: url(/approved.svg);
+}
+.approvness.offense {
+  background-image: url(/not-approved.svg);
+}
