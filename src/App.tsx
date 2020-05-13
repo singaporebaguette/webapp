@@ -23,7 +23,7 @@ class App extends React.Component<any, { markers: any[]; }> {
     mapboxgl.accessToken = 'pk.eyJ1IjoiYWtzZWxzIiwiYSI6ImNqZHZ5bnBkaTJ6aXAyeHFva3Y3OHFsa2kifQ.xixo5Hr8b1Xr8MxYmWkp2g';
     const map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/aksels/cka2fhxti06ok1iptat6ajj5y',
+      style: 'mapbox://styles/aksels/cka3ngnee0kr21io7g77hocrr',
       center: [103.809709, 1.364913],
       zoom: 10,
     });
