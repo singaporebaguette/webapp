@@ -3,6 +3,7 @@ import './App.css';
 import mapboxgl, {GeoJSONSource} from 'mapbox-gl';
 
 import Rating from './components/Rating'
+import Price from './components/Price'
 import * as FirebaseService from './services/firebase';
 
 class App extends React.Component<any, { markers: any[]; data: any; }> {
@@ -64,7 +65,8 @@ class App extends React.Component<any, { markers: any[]; data: any; }> {
                 description: r.description,
                 rate: r.mark,
                 approved: r.approved,
-                baguettePrice: r.price,
+                baguettePrice: r.baguettePrice,
+                price: r.price,
               },
             })
           }
@@ -217,9 +219,12 @@ class App extends React.Component<any, { markers: any[]; data: any; }> {
                 className="item"
                 onClick={() => this.clickStore(store)}
               >
-                <a href="#" className="title" id="link-1">
-                  {store.properties.title}
-                </a>
+                <div className="title-container">
+                  <a href="#" className="title" id="link-1">
+                    {store.properties.title}
+                  </a>
+                  <Price price={store.properties.price} />
+                </div>
                 <Rating mark={store.properties.rate} />
               </div>
             ))}

@@ -1,0 +1,21 @@
+.dollar {
+  height: 16px;
+  width: 16px;
+
+  background-color: rgba(0, 0, 0, 0);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 1px;
+}
+
+.dollar.on {
+  background-image: url(/dollar-on.svg);
+}
+.dollar.off {
+  background-image: url(/dollar-off.svg);
+}
+
+.price {
+  display: flex;
+}
+

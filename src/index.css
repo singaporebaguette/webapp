@@ -15,7 +15,7 @@ body {
 .sidebar {
   position: absolute;
   top: 0px;
-  width: 30%;
+  width: 33%;
   height: 100%;
   left: 0;
   overflow: hidden;
@@ -28,8 +28,8 @@ body {
 .map {
   position: absolute;
   top: 0px;
-  left: 30%;
-  width: 70%;
+  left: 33%;
+  width: 67%;
   bottom: 0;
 }
 
@@ -80,6 +80,17 @@ a:hover {
   display: block;
   color: #37474f;
   font-weight: 700;
+}
+
+.title-container {
+  display: flex;
+}
+
+.title-container .title {
+  flex-grow: 1;
+}
+.title-container > .rating {
+
 }
 
 .listings .item .title small {
