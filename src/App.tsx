@@ -6,6 +6,7 @@ import ListItem from 'src/components/ListItem';
 
 // filters
 import ByRating from './components/Filters/ByRating';
+import ByPrice from './components/Filters/ByPrice';
 
 import * as FirebaseService from './services/firebase';
 import { Filters } from './sb';
@@ -48,6 +49,7 @@ class App extends React.Component<any, State> {
       },
       filters: {
         byRating: [],
+        byPrice: [],
       },
       mode: mode === Mode.Light || mode === Mode.Dark ? mode : Mode.Light,
     };
@@ -104,23 +106,27 @@ class App extends React.Component<any, State> {
     console.log('call setFilteredData');
     const { data, filters } = this.state;
 
+    const filtersFunctions: Function[] = [];
+
+    if (filters.byRating.length > 0) {
+      filtersFunctions.push((feature: any) => filters.byRating.includes(Math.round(feature.properties.rate)));
+    }
+    if (filters.byPrice.length > 0) {
+      filtersFunctions.push((feature: any) => filters.byPrice.includes(Math.round(feature.properties.price)));
+    }
+
     const features: any = [];
     data.features.forEach((feature: any) => {
-      if (filters.byRating.length > 0) {
-        if (filters.byRating.includes(Math.round(feature.properties.rate))) {
-          features.push(feature);
-          return;
-        }
-        return;
+      for (const f of filtersFunctions) {
+        if (!f(feature)) return;
       }
+
       features.push(feature);
     });
 
     const filteredData = {
       features,
     };
-
-    console.log('filter', filteredData);
 
     // update internal state
     this.setState({ filteredData });
@@ -290,6 +296,7 @@ class App extends React.Component<any, State> {
         <nav className="navbar">
           <ul>
             <ByRating filters={filters} updateFilter={this.updateFilter} />
+            <ByPrice filters={filters} updateFilter={this.updateFilter} />
             <li>Approved only</li>
             <li>Delivery</li>
           </ul>
