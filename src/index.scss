@@ -6,16 +6,22 @@ html {
   --item-title-color: #3a64ad;
 
   --star-icon: url(/star-light.svg);
+
+  --filter-dropdown-background-color: #f1f1f1;
+  --filter-dropdown-boxshadow-color: rgba(0, 0, 0, 0.2);
 }
 
 html[data-theme='dark'] {
   --text-h1-color: #fff;
   --item-background-color: rgba(0, 0, 0, 0.4);
-  --navbar-background-color: rgba(0, 0, 0, 0.4);
+  --navbar-background-color: rgba(0, 0, 0, 0.5);
   --navbar-text-color: rgba(255, 255, 255, 0.6);
   --item-title-color: #ff9f7c;
 
   --star-icon: url(/star-dark.svg);
+
+  --filter-dropdown-background-color: #212121;
+  --filter-dropdown-boxshadow-color: #212121;
 }
 
 body {
@@ -281,9 +287,9 @@ a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: var(--filter-dropdown-background-color);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px var(--filter-dropdown-boxshadow-color);
   z-index: 1;
   border-radius: 4px;
   padding-top: 16px;
