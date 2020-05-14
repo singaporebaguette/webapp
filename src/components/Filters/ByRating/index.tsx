@@ -2,6 +2,7 @@ import React from 'react';
 import { Filters } from 'src/sb';
 
 import Checkbox from 'src/components/Checkbox';
+import Star from 'src/components/Icons/Star';
 
 type Props = { filters: Filters; updateFilter: (key: string, value: any) => void };
 
@@ -33,7 +34,10 @@ const ByRating = ({ filters, updateFilter }: Props) => {
             {/*<input className="toggle" type="checkbox" checked={filters.byRating.includes(v)} />*/}
             <div className="rating">
               {[...Array(v)].map((_, i) => (
-                <div key={i} className="rating-star full" />
+                <Star key={i} full />
+              ))}
+              {[...Array(5 - v)].map((_, i) => (
+                <Star key={i} empty />
               ))}
             </div>
           </div>

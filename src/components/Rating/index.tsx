@@ -1,64 +1,18 @@
 import React from 'react';
 
-import './index.css';
+import Star from 'src/components/Icons/Star';
 
-const Rating = ({ mark }: { mark: number }) => (
-  <div className="rating">
-    {Math.round(mark) === 0 && (
-      <>
-        <div className="rating-star empty" />
-        <div className="rating-star empty" />
-        <div className="rating-star empty" />
-        <div className="rating-star empty" />
-        <div className="rating-star empty" />
-      </>
-    )}
-    {Math.round(mark) === 1 && (
-      <>
-        <div className="rating-star full" />
-        <div className="rating-star empty" />
-        <div className="rating-star empty" />
-        <div className="rating-star empty" />
-        <div className="rating-star empty" />
-      </>
-    )}
-    {Math.round(mark) === 2 && (
-      <>
-        <div className="rating-star full" />
-        <div className="rating-star full" />
-        <div className="rating-star empty" />
-        <div className="rating-star empty" />
-        <div className="rating-star empty" />
-      </>
-    )}
-    {Math.round(mark) === 3 && (
-      <>
-        <div className="rating-star full" />
-        <div className="rating-star full" />
-        <div className="rating-star full" />
-        <div className="rating-star empty" />
-        <div className="rating-star empty" />
-      </>
-    )}
-    {Math.round(mark) === 4 && (
-      <>
-        <div className="rating-star full" />
-        <div className="rating-star full" />
-        <div className="rating-star full" />
-        <div className="rating-star full" />
-        <div className="rating-star empty" />
-      </>
-    )}
-    {Math.round(mark) === 5 && (
-      <>
-        <div className="rating-star full" />
-        <div className="rating-star full" />
-        <div className="rating-star full" />
-        <div className="rating-star full" />
-        <div className="rating-star full" />
-      </>
-    )}
-  </div>
-);
+const Rating = ({ mark }: { mark: number }) => {
+  return (
+    <div className="rating">
+      {[...Array(Math.round(mark))].map((_, i) => (
+        <Star key={i} full />
+      ))}
+      {[...Array(5 - Math.round(mark))].map((_, i) => (
+        <Star key={i} empty />
+      ))}
+    </div>
+  );
+};
 
 export default Rating;
