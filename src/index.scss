@@ -237,3 +237,58 @@ a:hover {
     right: 16px;
   }
 }
+
+.navbar {
+  background: #fff;
+  box-shadow: 1px 0 0 1px #dfe2e6;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9900;
+  height: 48px;
+
+  ul {
+    list-style: none;
+
+    li {
+      float: left;
+      height: 48px;
+      padding: 0 16px;
+
+      cursor: pointer;
+    }
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 4px;
+  padding-top: 16px;
+
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content-item {
+  padding: 10px 16px;
+  border-radius: 4px;
+
+  &:hover {
+    background: #cccccc;
+    color: white;
+  }
+
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}

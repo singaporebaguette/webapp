@@ -1,0 +1,20 @@
+.rating-star {
+  height: 22px;
+  width: 22px;
+
+  background-color: rgba(0, 0, 0, 0);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 2px;
+}
+
+.rating-star.empty {
+  background-image: url(/star-empty.svg);
+}
+.rating-star.full {
+  background-image: url(/star-full.svg);
+}
+
+.rating {
+  display: flex;
+}

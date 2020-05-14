@@ -7,9 +7,20 @@ import Price from './components/Price';
 import Features from './components/Features';
 import Approvness from './components/Approvness';
 
-import * as FirebaseService from './services/firebase';
+// filters
+import ByRating from './components/Filters/ByRating';
 
-class App extends React.Component<any, { markers: any[]; data: any }> {
+import * as FirebaseService from './services/firebase';
+import { Filters } from './sb';
+
+type State = {
+  markers: any[];
+  data: any;
+  filteredData: any;
+  filters: Filters;
+};
+
+class App extends React.Component<any, State> {
   mapgl: mapboxgl.Map | null;
 
   constructor(props: any) {
@@ -21,6 +32,12 @@ class App extends React.Component<any, { markers: any[]; data: any }> {
       markers: [],
       data: {
         features: [],
+      },
+      filteredData: {
+        features: [],
+      },
+      filters: {
+        byRating: [],
       },
     };
   }
@@ -35,68 +52,84 @@ class App extends React.Component<any, { markers: any[]; data: any }> {
     });
 
     map.on('load', (e) => {
-      /**
-       * This is where your '.addLayer()' used to be, instead
-       * add only the source without styling a layer
-       */
-      /*map.addSource('places', {
-        type: 'geojson',
-        data: bakeries,
-      });
-
-      this.addMarkers();*/
-
       FirebaseService.getStores().onSnapshot((convo) => {
         const res: any = [];
         convo.docs.forEach((doc) => {
           res.push({ id: doc.id, ...doc.data() });
         });
 
-        const features = res.map((r: any) => {
-          return {
-            type: 'Feature' as const,
-            geometry: {
-              type: 'Point' as const,
-              coordinates: [r.coordinates?.lat, r?.coordinates?.lng] as [number, number],
-            },
-            properties: {
-              id: r.id,
-              title: r.title,
-              description: r.description,
-              rate: r.mark,
-              approved: r.approved,
-              baguettePrice: r.baguettePrice,
-              price: r.price,
-              features: r.features,
-            },
-          };
-        });
+        const features = res.map((r: any) => ({
+          type: 'Feature' as const,
+          geometry: {
+            type: 'Point' as const,
+            coordinates: [r.coordinates?.lat, r?.coordinates?.lng] as [number, number],
+          },
+          properties: {
+            id: r.id,
+            title: r.title,
+            description: r.description,
+            rate: r.mark,
+            approved: r.approved,
+            baguettePrice: r.baguettePrice,
+            price: r.price,
+            features: r.features,
+          },
+        }));
 
         const data = {
           type: 'FeatureCollection' as const,
           features,
         };
 
-        this.setState({ data });
-
-        if (map.isSourceLoaded('places')) {
-          const source = map.getSource('places') as GeoJSONSource;
-          source.setData(data);
-        } else {
-          //map.removeSource('places');
-          map.addSource('places', {
-            type: 'geojson',
-            data,
-          });
-        }
-        this.removeMarkers(() => {
-          this.addMarkers(features);
-        });
+        console.log('firebase update 1');
+        this.setState({ data }, this.setFilteredData);
       });
     });
 
     this.mapgl = map;
   }
+
+  setFilteredData = () => {
+    console.log('call setFilteredData');
+    const { data, filters } = this.state;
+
+    const features: any = [];
+    data.features.forEach((feature: any) => {
+      if (filters.byRating.length > 0) {
+        if (filters.byRating.includes(Math.round(feature.properties.rate))) {
+          features.push(feature);
+          return;
+        }
+        return;
+      }
+      features.push(feature);
+    });
+
+    const filteredData = {
+      features,
+    };
+
+    console.log('filter', filteredData);
+
+    // update internal state
+    this.setState({ filteredData });
+    if (!this.mapgl) return;
+
+    // update map
+    const sourceLoaded = this.mapgl.isSourceLoaded('places');
+    if (sourceLoaded === true) {
+      const source = this.mapgl.getSource('places') as GeoJSONSource;
+      source.setData(data);
+    } else if (sourceLoaded === false) {
+      this.mapgl.addSource('places', {
+        type: 'geojson',
+        data,
+      });
+    }
+    this.removeMarkers(() => {
+      this.addMarkers(filteredData.features);
+    });
+  };
 
   removeMarkers = (cb: Function) => {
     const { markers } = this.state;
@@ -200,14 +233,32 @@ class App extends React.Component<any, { markers: any[]; data: any }> {
     }
   };
 
+  updateFilter = (key: string, value: any) => {
+    const filters = this.state.filters;
+
+    // @ts-ignore
+    filters[key] = value;
+
+    console.log('new filters', filters);
+
+    this.setState({ filters }, this.setFilteredData);
+  };
+
   render() {
-    const { data } = this.state;
+    const { filters, filteredData: data } = this.state;
 
     return (
       <>
         <header>
           <div className="logo" />
         </header>
+        <nav className="navbar">
+          <ul>
+            <ByRating filters={filters} updateFilter={this.updateFilter} />
+            <li>Approved only</li>
+            <li>Delivery</li>
+          </ul>
+        </nav>
         <div className="sidebar">
           <div className="heading">
             <h1>Approved baguettes</h1>
