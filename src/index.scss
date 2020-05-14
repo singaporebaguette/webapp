@@ -22,6 +22,12 @@ html[data-theme='dark'] {
 
   --filter-dropdown-background-color: #212121;
   --filter-dropdown-boxshadow-color: #212121;
+
+  background-color: #212121;
+
+  body {
+    background-color: #212121 !important;
+  }
 }
 
 body {

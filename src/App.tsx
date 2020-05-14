@@ -11,8 +11,8 @@ import * as FirebaseService from './services/firebase';
 import { Filters } from './sb';
 
 enum Mode {
-  Light,
-  Dark,
+  Light = 'light',
+  Dark = 'dark',
 }
 type State = {
   markers: any[];
@@ -33,6 +33,11 @@ class App extends React.Component<any, State> {
 
     this.mapgl = null;
 
+    const mode: string | null = localStorage.getItem('mode');
+    if (mode === Mode.Dark) {
+      document.querySelector('html')?.setAttribute('data-theme', 'dark');
+    }
+
     this.state = {
       markers: [],
       data: {
@@ -44,7 +49,7 @@ class App extends React.Component<any, State> {
       filters: {
         byRating: [],
       },
-      mode: Mode.Light,
+      mode: mode === Mode.Light || mode === Mode.Dark ? mode : Mode.Light,
     };
   }
 
@@ -52,9 +57,8 @@ class App extends React.Component<any, State> {
     mapboxgl.accessToken = 'pk.eyJ1IjoiYWtzZWxzIiwiYSI6ImNqZHZ5bnBkaTJ6aXAyeHFva3Y3OHFsa2kifQ.xixo5Hr8b1Xr8MxYmWkp2g';
     const map = new mapboxgl.Map({
       container: 'map',
-      style: mapLightStyle,
+      style: this.state.mode === Mode.Light ? mapLightStyle : mapDarkStyle,
       center: [103.75, 1.4],
-      /// center: [103.59, 1.359],
       zoom: 10,
     });
 
@@ -232,6 +236,7 @@ class App extends React.Component<any, State> {
         this.mapgl.setStyle(mapDarkStyle);
       }
       this.setState({ mode: Mode.Dark });
+      localStorage.setItem('mode', Mode.Dark);
 
       document.querySelector('html')?.setAttribute('data-theme', 'dark');
     }
@@ -241,6 +246,7 @@ class App extends React.Component<any, State> {
         this.mapgl.setStyle(mapLightStyle);
       }
       this.setState({ mode: Mode.Light });
+      localStorage.setItem('mode', Mode.Light);
 
       document.querySelector('html')?.setAttribute('data-theme', 'light');
     }
