@@ -32,8 +32,16 @@ const ByRating = ({ filters, updateFilter }: Props) => {
       </span>
       <div className="dropdown-content">
         {values.map((v) => (
-          <div key={v} className="dropdown-content-item">
-            <Checkbox id={`filter-rating-${v}`} onClick={update(v)} checked={filters.byRating.includes(v)} />
+          <div
+            key={v}
+            className="dropdown-content-item"
+            onClick={(e) => {
+              e.stopPropagation();
+              e.preventDefault();
+              update(v)();
+            }}
+          >
+            <Checkbox id={`filter-rating-${v}`} checked={filters.byRating.includes(v)} />
             {/*<input className="toggle" type="checkbox" checked={filters.byRating.includes(v)} />*/}
             <div className="rating">
               {[...Array(v)].map((_, i) => (
