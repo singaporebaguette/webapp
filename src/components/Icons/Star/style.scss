@@ -10,11 +10,11 @@
 
 .rating-star.empty {
   opacity: 0.1;
-  background-image: url(/star-full.svg);
+  background-image: var(--star-icon);
 }
 .rating-star.full {
   opacity: 0.9;
-  background-image: url(/star-full.svg);
+  background-image: var(--star-icon);
 }
 
 .rating {

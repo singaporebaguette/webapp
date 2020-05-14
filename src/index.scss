@@ -1,3 +1,23 @@
+html {
+  --text-h1-color: #000;
+  --item-background-color: rgba(255, 255, 255, 0.75);
+  --navbar-background-color: #fff;
+  --navbar-text-color: rgba(0, 0, 0, 0.8);
+  --item-title-color: #3a64ad;
+
+  --star-icon: url(/star-light.svg);
+}
+
+html[data-theme='dark'] {
+  --text-h1-color: #fff;
+  --item-background-color: rgba(0, 0, 0, 0.4);
+  --navbar-background-color: rgba(0, 0, 0, 0.4);
+  --navbar-text-color: rgba(255, 255, 255, 0.6);
+  --item-title-color: #ff9f7c;
+
+  --star-icon: url(/star-dark.svg);
+}
+
 body {
   color: #636a71;
   background-color: #f0f3f7;
@@ -86,7 +106,7 @@ a:hover {
   text-decoration: none;
 
   padding: 16px;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: var(--item-background-color);
   border-radius: 8px;
   margin-top: 16px;
 }
@@ -231,14 +251,19 @@ a:hover {
 }
 
 .navbar {
-  background: #fff;
-  box-shadow: 1px 0 0 1px #dfe2e6;
+  background: var(--navbar-background-color);
+  color: var(--navbar-text-color);
+
+  box-shadow: 1px 0 0 1px var(--navbar-background-color);
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 9900;
   height: 48px;
+
+  display: flex;
+  justify-content: space-between;
 
   ul {
     list-style: none;
@@ -298,5 +323,5 @@ h1 {
   font-size: 3rem;
   line-height: 4rem;
   font-weight: 900;
-  color: #000;
+  color: var(--text-h1-color);
 }

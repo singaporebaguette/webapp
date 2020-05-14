@@ -10,12 +10,20 @@ import ByRating from './components/Filters/ByRating';
 import * as FirebaseService from './services/firebase';
 import { Filters } from './sb';
 
+enum Mode {
+  Light,
+  Dark,
+}
 type State = {
   markers: any[];
   data: any;
   filteredData: any;
   filters: Filters;
+  mode: Mode;
 };
+
+const mapDarkStyle = 'mapbox://styles/aksels/cka71ytto0yd41iqugrqnzvb7';
+const mapLightStyle = 'mapbox://styles/aksels/cka3ngnee0kr21io7g77hocrr';
 
 class App extends React.Component<any, State> {
   mapgl: mapboxgl.Map | null;
@@ -36,6 +44,7 @@ class App extends React.Component<any, State> {
       filters: {
         byRating: [],
       },
+      mode: Mode.Light,
     };
   }
 
@@ -43,7 +52,7 @@ class App extends React.Component<any, State> {
     mapboxgl.accessToken = 'pk.eyJ1IjoiYWtzZWxzIiwiYSI6ImNqZHZ5bnBkaTJ6aXAyeHFva3Y3OHFsa2kifQ.xixo5Hr8b1Xr8MxYmWkp2g';
     const map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/aksels/cka3ngnee0kr21io7g77hocrr',
+      style: mapLightStyle,
       center: [103.75, 1.4],
       /// center: [103.59, 1.359],
       zoom: 10,
@@ -215,6 +224,28 @@ class App extends React.Component<any, State> {
       .addTo(this.mapgl);
   };
 
+  toggleDarkMode = () => {
+    console.log('dark mode');
+
+    if (this.state.mode === Mode.Light) {
+      if (this.mapgl) {
+        this.mapgl.setStyle(mapDarkStyle);
+      }
+      this.setState({ mode: Mode.Dark });
+
+      document.querySelector('html')?.setAttribute('data-theme', 'dark');
+    }
+
+    if (this.state.mode === Mode.Dark) {
+      if (this.mapgl) {
+        this.mapgl.setStyle(mapLightStyle);
+      }
+      this.setState({ mode: Mode.Light });
+
+      document.querySelector('html')?.setAttribute('data-theme', 'light');
+    }
+  };
+
   clickStore = (store: any) => {
     this.flyToStore(store);
     /* Close all other popups and display popup for clicked store */
@@ -255,6 +286,9 @@ class App extends React.Component<any, State> {
             <ByRating filters={filters} updateFilter={this.updateFilter} />
             <li>Approved only</li>
             <li>Delivery</li>
+          </ul>
+          <ul>
+            <li onClick={this.toggleDarkMode}>{this.state.mode === Mode.Dark ? 'Light mode' : 'Dark mode'}</li>
           </ul>
         </nav>
         <div className="sidebar">
