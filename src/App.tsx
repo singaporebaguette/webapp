@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
-import mapboxgl, {GeoJSONSource} from 'mapbox-gl';
+import mapboxgl, { GeoJSONSource } from 'mapbox-gl';
 
-import Rating from './components/Rating'
-import Price from './components/Price'
+import Rating from './components/Rating';
+import Price from './components/Price';
 import Features from './components/Features';
 import Approvness from './components/Approvness';
 
 import * as FirebaseService from './services/firebase';
 
-class App extends React.Component<any, { markers: any[]; data: any; }> {
+class App extends React.Component<any, { markers: any[]; data: any }> {
   mapgl: mapboxgl.Map | null;
 
   constructor(props: any) {
@@ -20,9 +20,9 @@ class App extends React.Component<any, { markers: any[]; data: any; }> {
     this.state = {
       markers: [],
       data: {
-        features: []
-      }
-    }
+        features: [],
+      },
+    };
   }
 
   componentDidMount(): void {
@@ -46,41 +46,38 @@ class App extends React.Component<any, { markers: any[]; data: any; }> {
 
       this.addMarkers();*/
 
-
       FirebaseService.getStores().onSnapshot((convo) => {
         const res: any = [];
         convo.docs.forEach((doc) => {
           res.push({ id: doc.id, ...doc.data() });
         });
 
-
-        const features = res.map((r:any) => {
-            return ({
-              type: 'Feature' as const,
-              geometry: {
-                type: 'Point' as const,
-                coordinates: [r.coordinates?.lat, r?.coordinates?.lng] as [number, number],
-              },
-              properties: {
-                id: r.id,
-                title: r.title,
-                description: r.description,
-                rate: r.mark,
-                approved: r.approved,
-                baguettePrice: r.baguettePrice,
-                price: r.price,
-                features: r.features,
-              },
-            })
-          }
-        )
+        const features = res.map((r: any) => {
+          return {
+            type: 'Feature' as const,
+            geometry: {
+              type: 'Point' as const,
+              coordinates: [r.coordinates?.lat, r?.coordinates?.lng] as [number, number],
+            },
+            properties: {
+              id: r.id,
+              title: r.title,
+              description: r.description,
+              rate: r.mark,
+              approved: r.approved,
+              baguettePrice: r.baguettePrice,
+              price: r.price,
+              features: r.features,
+            },
+          };
+        });
 
         const data = {
           type: 'FeatureCollection' as const,
           features,
         };
 
-        this.setState({ data })
+        this.setState({ data });
 
         if (map.isSourceLoaded('places')) {
           const source = map.getSource('places') as GeoJSONSource;
@@ -106,10 +103,12 @@ class App extends React.Component<any, { markers: any[]; data: any; }> {
 
     markers.forEach((marker: any) => {
       marker.remove();
-    })
+    });
 
-    this.setState({ markers: [] }, () => { cb(); })
-  }
+    this.setState({ markers: [] }, () => {
+      cb();
+    });
+  };
 
   addMarkers = (features: any) => {
     /* For each feature in the GeoJSON object above: */
@@ -121,7 +120,6 @@ class App extends React.Component<any, { markers: any[]; data: any; }> {
       el.id = 'marker-' + marker.properties.id;
       /* Assign the `marker` class to each marker for styling. */
       el.className = 'marker';
-
 
       /**
        * Create a marker using the div element

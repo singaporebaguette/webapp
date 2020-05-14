@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './index.css'
+import './index.css';
 
 /*
 { id: 1, name: 'Approved' },
@@ -18,6 +18,6 @@ const Approvness = ({ approved }: { approved: number }) => (
     {approved === 4 && <div className="approvness no " />}
     {approved === 5 && <div className="approvness offense " />}
   </>
-)
+);
 
 export default Approvness;

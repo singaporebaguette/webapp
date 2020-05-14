@@ -1,6 +1,6 @@
 .dollar {
-  height: 16px;
-  width: 16px;
+  height: 22px;
+  width: 22px;
 
   background-color: rgba(0, 0, 0, 0);
   background-size: contain;
@@ -18,4 +18,3 @@
 .price {
   display: flex;
 }
-

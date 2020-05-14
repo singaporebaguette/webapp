@@ -9,4 +9,3 @@ const db = firebase.firestore();
 export const getStores = () => {
   return db.collection('stores');
 };
-

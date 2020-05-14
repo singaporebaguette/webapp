@@ -1,5 +1,6 @@
 body {
-  color: #404040;
+  color: #636a71;
+  background-color: #f0f3f7;
   font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
   margin: 0;
   padding: 0;
@@ -13,24 +14,38 @@ body {
 }
 
 .sidebar {
-  position: absolute;
-  top: 0px;
-  width: 33%;
-  height: 100%;
-  left: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+  margin-right: 40%;
+  position: relative;
+  z-index: 9700;
+
+  width: 60%;
+
   overflow: hidden;
-  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  min-height: 100vh;
+
+  @media (min-width: 992px) {
+    width: 620px;
+  }
 }
 .pad2 {
   padding: 20px;
 }
 
 .map {
-  position: absolute;
-  top: 0px;
-  left: 33%;
-  width: 67%;
+  position: fixed;
+  z-index: 9600;
+  right: 0;
+  top: 0;
   bottom: 0;
+
+  width: 40%;
+  overflow: hidden;
+  min-height: 100vh;
+
+  @media (min-width: 992px) {
+    width: calc(100% - 620px);
+  }
 }
 
 h1 {
@@ -63,7 +78,9 @@ a:hover {
 .listings {
   height: 100%;
   overflow: auto;
-  padding-bottom: 60px;
+
+  padding: 32px 48px 92px;
+  transition: padding-top 0.6s ease;
 }
 
 .listings .item {
@@ -71,6 +88,15 @@ a:hover {
   border-bottom: 1px solid #eee;
   padding: 10px;
   text-decoration: none;
+
+  padding: 16px;
+  border: 1px solid #dfe2e6;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 16px;
+  &:first-child {
+    margin-top: 0px !important;
+  }
 }
 
 .listings .item:last-child {
@@ -90,7 +116,6 @@ a:hover {
   flex-grow: 1;
 }
 .title-container > .rating {
-
 }
 
 .listings .item .title small {
@@ -191,7 +216,6 @@ a:hover {
   height: 128px;
   width: 256px;
 
-
   background-image: url(/logo.svg);
   background-color: rgba(0, 0, 0, 0);
   background-size: contain;
@@ -204,7 +228,7 @@ a:hover {
   z-index: 9999;
 }
 
-@media (max-width:750px) {
+@media (max-width: 750px) {
   .logo {
     height: 64px;
     width: 128px;
