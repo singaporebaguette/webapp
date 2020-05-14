@@ -9,8 +9,8 @@
 }
 
 .rating-star.empty {
-  opacity: 0.6;
-  background-image: url(/star-empty.svg);
+  opacity: 0.1;
+  background-image: url(/star-full.svg);
 }
 .rating-star.full {
   opacity: 0.9;
