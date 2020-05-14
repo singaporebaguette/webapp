@@ -2,10 +2,7 @@ import React from 'react';
 import './App.css';
 import mapboxgl, { GeoJSONSource } from 'mapbox-gl';
 
-import Rating from './components/Rating';
-import Price from './components/Price';
-import Features from './components/Features';
-import Approvness from './components/Approvness';
+import ListItem from 'src/components/ListItem';
 
 // filters
 import ByRating from './components/Filters/ByRating';
@@ -263,24 +260,7 @@ class App extends React.Component<any, State> {
         <div className="sidebar">
           <div id="listings" className="listings">
             {data.features.map((store: any) => (
-              <div
-                key={`listing-${store.properties.id}`}
-                id={`listing-${store.properties.id}`}
-                className="item"
-                onClick={() => this.clickStore(store)}
-              >
-                <div className="title-container">
-                  <a href="#" className="title" id="link-1">
-                    {store.properties.title}
-                  </a>
-                  <Approvness approved={store.properties.approved} />
-                </div>
-                <div style={{ display: 'flex', alignContent: 'center', alignItems: 'center' }}>
-                  <Rating mark={store.properties.rate} />
-                  <Price price={store.properties.price} />
-                </div>
-                <Features features={store.properties.features} />
-              </div>
+              <ListItem onClick={() => this.clickStore(store)} store={store} />
             ))}
           </div>
         </div>
