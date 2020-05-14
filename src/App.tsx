@@ -47,7 +47,8 @@ class App extends React.Component<any, State> {
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/aksels/cka3ngnee0kr21io7g77hocrr',
-      center: [103.809709, 1.364913],
+      center: [103.822381, 1.354874],
+      /// center: [103.59, 1.359],
       zoom: 10,
     });
 
@@ -260,9 +261,6 @@ class App extends React.Component<any, State> {
           </ul>
         </nav>
         <div className="sidebar">
-          <div className="heading">
-            <h1>Approved baguettes</h1>
-          </div>
           <div id="listings" className="listings">
             {data.features.map((store: any) => (
               <div
@@ -277,8 +275,10 @@ class App extends React.Component<any, State> {
                   </a>
                   <Approvness approved={store.properties.approved} />
                 </div>
-                <Rating mark={store.properties.rate} />
-                <Price price={store.properties.price} />
+                <div style={{ display: 'flex', alignContent: 'center', alignItems: 'center' }}>
+                  <Rating mark={store.properties.rate} />
+                  <Price price={store.properties.price} />
+                </div>
                 <Features features={store.properties.features} />
               </div>
             ))}

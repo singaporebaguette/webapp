@@ -1,7 +1,7 @@
 body {
   color: #636a71;
   background-color: #f0f3f7;
-  font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -14,7 +14,6 @@ body {
 }
 
 .sidebar {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
   margin-right: 40%;
   position: relative;
   z-index: 9700;
@@ -27,6 +26,8 @@ body {
   @media (min-width: 992px) {
     width: 620px;
   }
+
+  background: transparent;
 }
 .pad2 {
   padding: 20px;
@@ -38,14 +39,11 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
+  left: 0;
 
-  width: 40%;
+  width: 130%;
+  height: 100vh;
   overflow: hidden;
-  min-height: 100vh;
-
-  @media (min-width: 992px) {
-    width: calc(100% - 620px);
-  }
 }
 
 h1 {
@@ -79,24 +77,18 @@ a:hover {
   height: 100%;
   overflow: auto;
 
-  padding: 32px 48px 92px;
+  padding: 48px 48px 92px;
   transition: padding-top 0.6s ease;
 }
 
 .listings .item {
   display: block;
-  border-bottom: 1px solid #eee;
-  padding: 10px;
   text-decoration: none;
 
   padding: 16px;
-  border: 1px solid #dfe2e6;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.75);
   border-radius: 8px;
   margin-top: 16px;
-  &:first-child {
-    margin-top: 0px !important;
-  }
 }
 
 .listings .item:last-child {
@@ -270,8 +262,6 @@ a:hover {
   z-index: 1;
   border-radius: 4px;
   padding-top: 16px;
-
-  display: block;
 }
 
 .dropdown:hover .dropdown-content {
