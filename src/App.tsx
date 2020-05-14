@@ -44,7 +44,7 @@ class App extends React.Component<any, State> {
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/aksels/cka3ngnee0kr21io7g77hocrr',
-      center: [103.822381, 1.354874],
+      center: [103.75, 1.4],
       /// center: [103.59, 1.359],
       zoom: 10,
     });
