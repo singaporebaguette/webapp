@@ -282,3 +282,12 @@ a:hover {
   justify-content: flex-start;
   align-items: center;
 }
+
+.visible,
+.invisible {
+  transition: opacity 0.4s ease;
+}
+
+.invisible {
+  opacity: 0;
+}

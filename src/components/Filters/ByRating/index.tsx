@@ -26,7 +26,10 @@ const ByRating = ({ filters, updateFilter }: Props) => {
 
   return (
     <li className="dropdown">
-      <span>Rating</span>
+      <span>
+        Rating{' '}
+        <span className={filters.byRating.length > 0 ? 'visible' : 'invisible'}>({filters.byRating.length})</span>
+      </span>
       <div className="dropdown-content">
         {values.map((v) => (
           <div key={v} className="dropdown-content-item">
