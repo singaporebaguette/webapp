@@ -258,6 +258,7 @@ class App extends React.Component<any, State> {
           </ul>
         </nav>
         <div className="sidebar">
+          <h1>French approved baguettes.</h1>
           <div id="listings" className="listings">
             {data.features.map((store: any) => (
               <ListItem onClick={() => this.clickStore(store)} store={store} />
