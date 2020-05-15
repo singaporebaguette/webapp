@@ -164,7 +164,7 @@ class App extends React.Component<any, State> {
   addMarkers = (features: any) => {
     /* For each feature in the GeoJSON object above: */
     const markers = features.map((marker: any) => {
-      if (!this.mapgl) return;
+      if (!this.mapgl) return null;
       /* Create a div element for the marker. */
       var el = document.createElement('div');
       /* Assign a unique `id` to the marker. */

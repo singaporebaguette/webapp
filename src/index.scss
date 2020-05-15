@@ -182,6 +182,10 @@ a:hover {
 
 .title-container {
   display: flex;
+
+  h2 {
+    cursor: pointer;
+  }
 }
 
 .title-container .title {
