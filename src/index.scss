@@ -8,7 +8,10 @@ html {
   --item-background-color: rgba(255, 255, 255, 0.9);
   --navbar-background-color: #fff;
   --navbar-text-color: rgba(0, 0, 0, 0.8);
-  --item-title-color: #3a64adff;
+
+  --item-title-color: rgba(58, 100, 173, 0.5);
+  --item-title-color-hover: rgba(58, 100, 173, 0.7);
+  --item-title-color-active: rgba(58, 100, 173, 1);
 
   --star-icon: url(/star-light.svg);
 
@@ -38,7 +41,9 @@ html[data-theme='dark'] {
   --navbar-text-color: rgba(255, 255, 255, 0.6);
 
   --item-background-color: rgba(0, 0, 0, 0.7);
-  --item-title-color: rgba(255, 159, 124, 1);
+  --item-title-color: rgba(255, 159, 124, 0.5);
+  --item-title-color-hover: rgba(255, 159, 124, 0.7);
+  --item-title-color-active: rgba(255, 159, 124, 1);
   --item-footer-color: rgba(255, 255, 255, 0.2);
   --item-box-shadow-color: rgba(255, 255, 255, 0.05);
 
@@ -105,12 +110,14 @@ body {
 }
 
 #overlay {
-  position: absolute;
+  position: fixed;
   z-index: 9601;
   width: 100vw; /* Full width (cover the whole page) */
   height: 100vh; /* Full height (cover the whole page) */
   opacity: 1;
-  background-image: var(--overlay-background);
+  @media (min-width: 992px) {
+    background-image: var(--overlay-background);
+  }
   pointer-events: none;
   top: 0;
   left: 0;
@@ -180,7 +187,6 @@ a:hover {
 }
 .listings .item .title {
   display: block;
-  color: #37474f;
   font-weight: 700;
 }
 
@@ -204,9 +210,12 @@ a:hover {
 .listings .item .title small {
   font-weight: 400;
 }
-.listings .item.active .title,
+.listings .item.active .title {
+  color: var(--item-title-color-active);
+}
+
 .listings .item .title:hover {
-  color: var(--item-title-color);
+  color: var(--item-title-color-hover);
 }
 .listings .item.active {
   animation: activerightborder 0.6s infinite ease-in-out;
