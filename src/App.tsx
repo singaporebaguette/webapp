@@ -314,8 +314,6 @@ class App extends React.Component<any, State> {
           <ul>
             <ByRating filters={filters} updateFilter={this.updateFilter} />
             <ByPrice filters={filters} updateFilter={this.updateFilter} />
-            <li>Approved only</li>
-            <li>Delivery</li>
           </ul>
           <ul>
             <li>
