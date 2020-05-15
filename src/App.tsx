@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import mapboxgl, { GeoJSONSource } from 'mapbox-gl';
+import { Flipper, Flipped } from 'react-flip-toolkit';
 
 import ListItem from 'src/components/ListItem';
 import ListItemLoading from 'src/components/ListItemLoading';
@@ -262,7 +263,26 @@ class App extends React.Component<any, State> {
   };
 
   clickStore = (store: any) => {
-    this.setState({ activeStore: store.properties.id });
+    const activeStore = store.properties.id;
+    const filtered = {
+      features: [...this.state.filteredData.features],
+    };
+
+    let index = -1;
+    let f = null;
+    for (let i = 0; i < filtered.features.length; i++) {
+      const feature = filtered.features[i];
+      if (feature.properties.id === activeStore) {
+        index = i;
+        f = feature;
+        break;
+      }
+    }
+
+    filtered.features.splice(index, 1);
+    filtered.features = [f, ...filtered.features];
+
+    this.setState({ activeStore, filteredData: filtered });
     this.flyToStore(store);
     /* Close all other popups and display popup for clicked store */
     this.createPopUp(store);
@@ -312,26 +332,21 @@ class App extends React.Component<any, State> {
                 <ListItemLoading />
               </>
             )}
-            {!loading && (
+            {!loading && data.features.length > 0 && (
               <>
-                {activeStore &&
-                  data.features.map(
-                    (store: any) =>
-                      store.properties.id === activeStore && (
+                <Flipper flipKey={data.features.map((f: any) => f.properties.id).join('-')}>
+                  {data.features.map((store: any) => (
+                    <Flipped key={store.properties.id} flipId={store.properties.id}>
+                      <div>
                         <ListItem
-                          active
-                          key={store.properties.id}
+                          active={store.properties.id === activeStore}
                           onClick={() => this.clickStore(store)}
                           store={store}
                         />
-                      )
-                  )}
-                {data.features.map(
-                  (store: any) =>
-                    store.properties.id !== activeStore && (
-                      <ListItem key={store.properties.id} onClick={() => this.clickStore(store)} store={store} />
-                    )
-                )}
+                      </div>
+                    </Flipped>
+                  ))}
+                </Flipper>
               </>
             )}
           </div>
