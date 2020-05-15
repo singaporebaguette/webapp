@@ -187,19 +187,7 @@ class App extends React.Component<any, State> {
       el.addEventListener('click', (e) => {
         /* Fly to the point */
         this.flyToStore(marker);
-        this.setState({ activeStore: marker.properties.id });
-        /* Close all other popups and display popup for clicked store */
-        // createPopUp(marker);
-        /* Highlight listing in sidebar */
-        var activeItem = document.getElementsByClassName('active');
-        e.stopPropagation();
-        if (activeItem[0]) {
-          activeItem[0].classList.remove('active');
-        }
-        var listing = document.getElementById('listing-' + marker.properties.id);
-        if (listing) {
-          listing.classList.add('active');
-        }
+        this.clickStore(marker);
       });
 
       return m;
