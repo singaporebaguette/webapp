@@ -49,7 +49,7 @@ class App extends React.Component<any, State> {
         features: [],
       },
       filters: {
-        byRating: [],
+        byRating: [3, 4, 5],
         byPrice: [],
       },
       mode: mode === Mode.Light || mode === Mode.Dark ? mode : Mode.Light,
@@ -300,6 +300,13 @@ class App extends React.Component<any, State> {
   render() {
     const { filters, filteredData: data, loading, activeStore } = this.state;
 
+    const byRating = this.state.filters.byRating;
+    const notApprovedOnly =
+      (byRating.includes(2) || byRating.includes(1)) &&
+      !byRating.includes(3) &&
+      !byRating.includes(4) &&
+      !byRating.includes(5);
+
     console.log('activeStore:', activeStore);
     return (
       <>
@@ -320,7 +327,7 @@ class App extends React.Component<any, State> {
           </ul>
         </nav>
         <div className="sidebar">
-          <h1>French approved baguettes.</h1>
+          <h1>French {notApprovedOnly ? 'disapproved' : 'approved'} baguettes.</h1>
           <div id="listings" className="listings">
             {loading && (
               <>
