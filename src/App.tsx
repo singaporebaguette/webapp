@@ -231,9 +231,7 @@ class App extends React.Component<any, State> {
     if (popUps[0]) popUps[0].remove();
     new mapboxgl.Popup({ closeOnClick: false })
       .setLngLat(currentFeature.geometry.coordinates)
-      .setHTML(
-        '<h3>' + currentFeature.properties.title + '</h3>' + '<h4>' + currentFeature.properties.description + '</h4>'
-      )
+      .setHTML('<span></span><span></span><span></span><span></span>')
       .addTo(this.mapgl);
   };
 
@@ -264,19 +262,10 @@ class App extends React.Component<any, State> {
   };
 
   clickStore = (store: any) => {
+    this.setState({ activeStore: store.properties.id });
     this.flyToStore(store);
     /* Close all other popups and display popup for clicked store */
     this.createPopUp(store);
-    /* Highlight listing in sidebar */
-    var activeItem = document.getElementsByClassName('active');
-
-    if (activeItem[0]) {
-      activeItem[0].classList.remove('active');
-    }
-    var listing = document.getElementById(store.properties.id);
-    if (listing) {
-      listing.classList.add('active');
-    }
   };
 
   updateFilter = (key: string, value: any) => {
