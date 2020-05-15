@@ -206,7 +206,7 @@ a:hover {
 }
 .listings .item.active .title,
 .listings .item .title:hover {
-  color: #8cc63f;
+  color: var(--item-title-color);
 }
 .listings .item.active {
   animation: activerightborder 0.6s infinite ease-in-out;
