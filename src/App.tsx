@@ -307,9 +307,7 @@ class App extends React.Component<any, State> {
 
     return (
       <>
-        <header>
-          <div className="logo" />
-        </header>
+        <div className="logo" />
         <nav className="navbar">
           <ul>
             <ByRating filters={filters} updateFilter={this.updateFilter} />

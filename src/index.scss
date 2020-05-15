@@ -1,5 +1,6 @@
 * {
   transition: background-color, color 0.2s ease;
+  box-sizing: border-box;
 }
 
 html {
@@ -73,6 +74,9 @@ body {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 * {
@@ -291,7 +295,7 @@ a:hover {
   background-size: contain;
   background-repeat: no-repeat;
 
-  position: absolute;
+  position: fixed;
   bottom: 16px;
   right: 16px;
 
