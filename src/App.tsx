@@ -302,8 +302,8 @@ class App extends React.Component<any, State> {
             <li>Delivery</li>
           </ul>
           <ul>
-            <li onClick={this.toggleDarkMode}>
-              <DarkModeSwitch mode={this.state.mode} />
+            <li>
+              <DarkModeSwitch mode={this.state.mode} onClick={this.toggleDarkMode} />
             </li>
           </ul>
         </nav>
