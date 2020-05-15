@@ -7,14 +7,11 @@ import ListItem from 'src/components/ListItem';
 // filters
 import ByRating from './components/Filters/ByRating';
 import ByPrice from './components/Filters/ByPrice';
+import DarkModeSwitch from './components/DarkModeSwitch';
 
 import * as FirebaseService from './services/firebase';
-import { Filters } from './sb';
+import { Filters, Mode } from './sb.d';
 
-enum Mode {
-  Light = 'light',
-  Dark = 'dark',
-}
 type State = {
   markers: any[];
   data: any;
@@ -234,9 +231,11 @@ class App extends React.Component<any, State> {
       .addTo(this.mapgl);
   };
 
-  toggleDarkMode = () => {
-    console.log('dark mode');
+  toggleDarkMode = (e: any) => {
+    e.stopPropagation();
+    e.preventDefault();
 
+    console.log('toggle dakr mode');
     if (this.state.mode === Mode.Light) {
       if (this.mapgl) {
         this.mapgl.setStyle(mapDarkStyle);
@@ -245,6 +244,7 @@ class App extends React.Component<any, State> {
       localStorage.setItem('mode', Mode.Dark);
 
       document.querySelector('html')?.setAttribute('data-theme', 'dark');
+      return;
     }
 
     if (this.state.mode === Mode.Dark) {
@@ -288,6 +288,7 @@ class App extends React.Component<any, State> {
   render() {
     const { filters, filteredData: data } = this.state;
 
+    console.log('this.stztE.mode', this.state.mode);
     return (
       <>
         <header>
@@ -301,7 +302,9 @@ class App extends React.Component<any, State> {
             <li>Delivery</li>
           </ul>
           <ul>
-            <li onClick={this.toggleDarkMode}>{this.state.mode === Mode.Dark ? 'Light mode' : 'Dark mode'}</li>
+            <li onClick={this.toggleDarkMode}>
+              <DarkModeSwitch mode={this.state.mode} />
+            </li>
           </ul>
         </nav>
         <div className="sidebar">
