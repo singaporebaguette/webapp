@@ -19,6 +19,7 @@ type State = {
   filteredData: any;
   filters: Filters;
   mode: Mode;
+  loading: boolean;
 };
 
 const mapDarkStyle = 'mapbox://styles/aksels/cka71ytto0yd41iqugrqnzvb7';
@@ -50,6 +51,7 @@ class App extends React.Component<any, State> {
         byPrice: [],
       },
       mode: mode === Mode.Light || mode === Mode.Dark ? mode : Mode.Light,
+      loading: true,
     };
   }
 
@@ -93,7 +95,7 @@ class App extends React.Component<any, State> {
         };
 
         console.log('firebase update 1');
-        this.setState({ data }, this.setFilteredData);
+        this.setState({ data, loading: false }, this.setFilteredData);
       });
     });
 
@@ -284,7 +286,7 @@ class App extends React.Component<any, State> {
   };
 
   render() {
-    const { filters, filteredData: data } = this.state;
+    const { filters, filteredData: data, loading } = this.state;
 
     console.log('this.stztE.mode', this.state.mode);
     return (
@@ -308,10 +310,23 @@ class App extends React.Component<any, State> {
         <div className="sidebar">
           <h1>French approved baguettes.</h1>
           <div id="listings" className="listings">
-            <ListItemLoading />
-            {data.features.map((store: any) => (
-              <ListItem key={store.properties.id} onClick={() => this.clickStore(store)} store={store} />
-            ))}
+            {loading && (
+              <>
+                <ListItemLoading />
+                <ListItemLoading />
+                <ListItemLoading />
+                <ListItemLoading />
+                <ListItemLoading />
+                <ListItemLoading />
+              </>
+            )}
+            {!loading && (
+              <>
+                {data.features.map((store: any) => (
+                  <ListItem key={store.properties.id} onClick={() => this.clickStore(store)} store={store} />
+                ))}
+              </>
+            )}
           </div>
         </div>
         <div id="map" className="map" />

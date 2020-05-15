@@ -32,6 +32,8 @@
  */
 
 .item-skeleton {
+  margin-top: 16px;
+
   opacity: 0.3;
   width: 100%;
   height: var(--card-height);
@@ -77,7 +79,7 @@
         0 0; //card;
 
     background-repeat: no-repeat;
-    animation: loading 1.5s infinite;
+    animation: loading 1s infinite;
   }
 }
 
