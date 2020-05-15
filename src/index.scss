@@ -365,6 +365,12 @@ a:hover {
   z-index: 1;
   border-radius: 4px;
   padding-top: 16px;
+  top: 48px;
+
+  @media (max-width: 991px) {
+    left: 10px;
+    width: calc(100% - 20px);
+  }
 }
 
 .dropdown:hover .dropdown-content {
