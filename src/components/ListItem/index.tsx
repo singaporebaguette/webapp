@@ -18,7 +18,7 @@ export default ({ onClick, store, active }: Props) => (
   >
     <div className="main-content">
       <div className="title-container">
-        <h2>{store.properties.title}</h2>
+        <h2 className="title">{store.properties.title}</h2>
         <Approvness approved={store.properties.approved} />
       </div>
       <div style={{ display: 'flex', alignContent: 'center', alignItems: 'baseline' }}>

@@ -249,6 +249,8 @@ class App extends React.Component<any, State> {
   };
 
   clickStore = (store: any) => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
     const activeStore = store.properties.id;
     const filtered = {
       features: [...this.state.filteredData.features],
