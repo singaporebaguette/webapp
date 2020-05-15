@@ -7,13 +7,13 @@ import Features from '../Features';
 
 import './style.scss';
 
-type Props = { onClick: Function; store: any };
+type Props = { onClick: Function; store: any; active?: boolean };
 
-export default ({ onClick, store }: Props) => (
+export default ({ onClick, store, active }: Props) => (
   <div
     key={`listing-${store.properties.id}`}
     id={`listing-${store.properties.id}`}
-    className="item"
+    className={`item ${active ? 'active' : ''}`}
     onClick={() => onClick()}
   >
     <div className="main-content">

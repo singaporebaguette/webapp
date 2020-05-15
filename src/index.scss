@@ -17,7 +17,7 @@ html {
   --logo-background: url(/logo.svg);
 
   --item-footer-color: rgba(0, 0, 0, 0.05);
-  --item-box-shadow-color: rgba(0, 0, 0, 0.5);
+  --item-box-shadow-color: rgba(0, 0, 0, 0.25);
 
   --popup-color: rgba(255, 159, 124, 0.5);
   --popup-color-alt: #3a64ad20;
@@ -171,8 +171,23 @@ a:hover {
   color: #8cc63f;
 }
 .listings .item.active {
-  background-color: #f8f8f8;
+  animation: activerightborder 0.6s infinite ease-in-out;
+  .features {
+    border-bottom-right-radius: 0;
+  }
 }
+@keyframes activerightborder {
+  0% {
+    border-right: 8px solid var(--popup-color);
+  }
+  50% {
+    border-right: 8px solid var(--popup-color-alt);
+  }
+  100% {
+    border-right: 8px solid var(--popup-color);
+  }
+}
+
 ::-webkit-scrollbar {
   width: 3px;
   height: 3px;
@@ -241,7 +256,7 @@ a:hover {
 
   background-image: var(--logo-background);
   background-color: rgba(0, 0, 0, 0);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 
   position: absolute;

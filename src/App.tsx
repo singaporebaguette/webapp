@@ -318,7 +318,12 @@ class App extends React.Component<any, State> {
                   data.features.map(
                     (store: any) =>
                       store.properties.id === activeStore && (
-                        <ListItem key={store.properties.id} onClick={() => this.clickStore(store)} store={store} />
+                        <ListItem
+                          active
+                          key={store.properties.id}
+                          onClick={() => this.clickStore(store)}
+                          store={store}
+                        />
                       )
                   )}
                 {data.features.map(
