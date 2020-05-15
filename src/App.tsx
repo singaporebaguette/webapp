@@ -49,7 +49,7 @@ class App extends React.Component<any, State> {
         features: [],
       },
       filters: {
-        byRating: [3, 4, 5],
+        byRating: [],
         byPrice: [],
       },
       mode: mode === Mode.Light || mode === Mode.Dark ? mode : Mode.Light,
