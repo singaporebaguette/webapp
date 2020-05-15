@@ -21,6 +21,14 @@ html {
 
   --popup-color: rgba(255, 159, 124, 0.5);
   --popup-color-alt: #3a64ad20;
+
+  --overlay-background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.6) 5%,
+    rgba(255, 255, 255, 0.4) 10%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 html[data-theme='dark'] {
@@ -48,6 +56,13 @@ html[data-theme='dark'] {
 
   --popup-color: var(--item-title-color);
   --popup-color-alt: #3a64adff;
+
+  --overlay-background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.4) 10%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 body {
@@ -83,6 +98,18 @@ body {
 }
 .pad2 {
   padding: 20px;
+}
+
+#overlay {
+  position: absolute;
+  z-index: 9601;
+  width: 100vw; /* Full width (cover the whole page) */
+  height: 100vh; /* Full height (cover the whole page) */
+  opacity: 1;
+  background-image: var(--overlay-background);
+  pointer-events: none;
+  top: 0;
+  left: 0;
 }
 
 .map {

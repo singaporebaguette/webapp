@@ -351,6 +351,7 @@ class App extends React.Component<any, State> {
             )}
           </div>
         </div>
+        <div id="overlay" />
         <div id="map" className="map" />
       </>
     );
