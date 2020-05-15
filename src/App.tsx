@@ -20,6 +20,7 @@ type State = {
   filters: Filters;
   mode: Mode;
   loading: boolean;
+  activeStore: string | null;
 };
 
 const mapDarkStyle = 'mapbox://styles/aksels/cka71ytto0yd41iqugrqnzvb7';
@@ -52,6 +53,7 @@ class App extends React.Component<any, State> {
       },
       mode: mode === Mode.Light || mode === Mode.Dark ? mode : Mode.Light,
       loading: true,
+      activeStore: null,
     };
   }
 
@@ -94,7 +96,6 @@ class App extends React.Component<any, State> {
           features,
         };
 
-        console.log('firebase update 1');
         this.setState({ data, loading: false }, this.setFilteredData);
       });
     });
@@ -186,6 +187,8 @@ class App extends React.Component<any, State> {
       el.addEventListener('click', (e) => {
         /* Fly to the point */
         this.flyToStore(marker);
+        this.setState({ activeStore: marker.properties.id });
+        console.log('marker', marker);
         /* Close all other popups and display popup for clicked store */
         // createPopUp(marker);
         /* Highlight listing in sidebar */
@@ -286,9 +289,9 @@ class App extends React.Component<any, State> {
   };
 
   render() {
-    const { filters, filteredData: data, loading } = this.state;
+    const { filters, filteredData: data, loading, activeStore } = this.state;
 
-    console.log('this.stztE.mode', this.state.mode);
+    console.log('activeStore:', activeStore);
     return (
       <>
         <header>
@@ -322,9 +325,19 @@ class App extends React.Component<any, State> {
             )}
             {!loading && (
               <>
-                {data.features.map((store: any) => (
-                  <ListItem key={store.properties.id} onClick={() => this.clickStore(store)} store={store} />
-                ))}
+                {activeStore &&
+                  data.features.map(
+                    (store: any) =>
+                      store.properties.id === activeStore && (
+                        <ListItem key={store.properties.id} onClick={() => this.clickStore(store)} store={store} />
+                      )
+                  )}
+                {data.features.map(
+                  (store: any) =>
+                    store.properties.id !== activeStore && (
+                      <ListItem key={store.properties.id} onClick={() => this.clickStore(store)} store={store} />
+                    )
+                )}
               </>
             )}
           </div>

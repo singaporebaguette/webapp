@@ -12,8 +12,6 @@ export default ({ mode, onClick }: { mode: Mode; onClick: Function }) => {
   const [playOn] = useSound(switchOnSound);
   const [playOff] = useSound(switchOffSound);
 
-  console.log('checked', mode === Mode.Dark, mode, Mode.Dark);
-
   return (
     <div
       className="toggleWrapper"
