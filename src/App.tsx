@@ -105,7 +105,6 @@ class App extends React.Component<any, State> {
   }
 
   setFilteredData = () => {
-    console.log('call setFilteredData');
     const { data, filters } = this.state;
 
     const filtersFunctions: Function[] = [];
@@ -189,7 +188,6 @@ class App extends React.Component<any, State> {
         /* Fly to the point */
         this.flyToStore(marker);
         this.setState({ activeStore: marker.properties.id });
-        console.log('marker', marker);
         /* Close all other popups and display popup for clicked store */
         // createPopUp(marker);
         /* Highlight listing in sidebar */
@@ -307,7 +305,6 @@ class App extends React.Component<any, State> {
       !byRating.includes(4) &&
       !byRating.includes(5);
 
-    console.log('activeStore:', activeStore);
     return (
       <>
         <header>

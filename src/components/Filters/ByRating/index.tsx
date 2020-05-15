@@ -8,9 +8,7 @@ type Props = { filters: Filters; updateFilter: (key: string, value: any) => void
 
 const ByRating = ({ filters, updateFilter }: Props) => {
   const update = (rating: number) => () => {
-    console.log('update', rating);
     const filter = [...filters.byRating];
-    console.log('in', filter);
 
     if (filter.includes(rating)) {
       filter.splice(filter.indexOf(rating), 1);
@@ -18,7 +16,6 @@ const ByRating = ({ filters, updateFilter }: Props) => {
       filter.push(rating);
     }
 
-    console.log('UPDATE FILTER', filter);
     updateFilter('byRating', filter);
   };
 
