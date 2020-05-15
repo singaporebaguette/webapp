@@ -20,6 +20,14 @@
 }
 
 .features {
+  background-color: red;
   margin-top: 16px;
   display: flex;
+
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  padding: 8px;
+
+  background-color: var(--item-footer-color);
 }

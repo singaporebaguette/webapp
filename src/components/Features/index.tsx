@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './index.css';
+import './index.scss';
 
 const Features = ({ features }: { features: any[] }) => {
   if (!(features instanceof Array)) return null;

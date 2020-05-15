@@ -13,6 +13,10 @@ html {
 
   --filter-dropdown-background-color: #f1f1f1;
   --filter-dropdown-boxshadow-color: rgba(0, 0, 0, 0.2);
+
+  --logo-background: url(/logo.svg);
+
+  --item-footer-color: rgba(0, 0, 0, 0.05);
 }
 
 html[data-theme='dark'] {
@@ -32,6 +36,10 @@ html[data-theme='dark'] {
   body {
     background-color: #212121 !important;
   }
+
+  --logo-background: url(/logo-dark.svg);
+
+  --item-footer-color: rgba(255, 255, 255, 0.2);
 }
 
 body {
@@ -121,7 +129,6 @@ a:hover {
   display: block;
   text-decoration: none;
 
-  padding: 16px;
   background-color: var(--item-background-color);
   border-radius: 8px;
   margin-top: 16px;
@@ -244,9 +251,9 @@ a:hover {
   height: 128px;
   width: 256px;
 
-  background-image: url(/logo.svg);
+  background-image: var(--logo-background);
   background-color: rgba(0, 0, 0, 0);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 
   position: absolute;

@@ -3,6 +3,7 @@ import './App.css';
 import mapboxgl, { GeoJSONSource } from 'mapbox-gl';
 
 import ListItem from 'src/components/ListItem';
+import ListItemLoading from 'src/components/ListItemLoading';
 
 // filters
 import ByRating from './components/Filters/ByRating';
@@ -307,6 +308,7 @@ class App extends React.Component<any, State> {
         <div className="sidebar">
           <h1>French approved baguettes.</h1>
           <div id="listings" className="listings">
+            <ListItemLoading />
             {data.features.map((store: any) => (
               <ListItem key={store.properties.id} onClick={() => this.clickStore(store)} store={store} />
             ))}
