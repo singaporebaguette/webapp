@@ -235,7 +235,6 @@ class App extends React.Component<any, State> {
     e.stopPropagation();
     e.preventDefault();
 
-    console.log('toggle dakr mode');
     if (this.state.mode === Mode.Light) {
       if (this.mapgl) {
         this.mapgl.setStyle(mapDarkStyle);
@@ -279,8 +278,6 @@ class App extends React.Component<any, State> {
 
     // @ts-ignore
     filters[key] = value;
-
-    console.log('new filters', filters);
 
     this.setState({ filters }, this.setFilteredData);
   };
