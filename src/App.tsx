@@ -11,7 +11,8 @@ import ByRating from './components/Filters/ByRating';
 import ByPrice from './components/Filters/ByPrice';
 import DarkModeSwitch from './components/DarkModeSwitch';
 
-import * as FirebaseService from './services/firebase';
+import rawData from './data';
+
 import { Filters, Mode } from './sb.d';
 
 type State = {
@@ -68,37 +69,30 @@ class App extends React.Component<any, State> {
     });
 
     map.on('load', (e) => {
-      FirebaseService.getStores().onSnapshot((convo) => {
-        const res: any = [];
-        convo.docs.forEach((doc) => {
-          res.push({ id: doc.id, ...doc.data() });
-        });
+      const features = rawData.map((r: any) => ({
+        type: 'Feature' as const,
+        geometry: {
+          type: 'Point' as const,
+          coordinates: [r.coordinates?.lat, r?.coordinates?.lng] as [number, number],
+        },
+        properties: {
+          id: r.id,
+          title: r.title,
+          description: r.description,
+          rate: r.mark,
+          approved: r.approved,
+          baguettePrice: r.baguettePrice,
+          price: r.price,
+          features: r.features,
+        },
+      }));
 
-        const features = res.map((r: any) => ({
-          type: 'Feature' as const,
-          geometry: {
-            type: 'Point' as const,
-            coordinates: [r.coordinates?.lat, r?.coordinates?.lng] as [number, number],
-          },
-          properties: {
-            id: r.id,
-            title: r.title,
-            description: r.description,
-            rate: r.mark,
-            approved: r.approved,
-            baguettePrice: r.baguettePrice,
-            price: r.price,
-            features: r.features,
-          },
-        }));
+      const data = {
+        type: 'FeatureCollection' as const,
+        features,
+      };
 
-        const data = {
-          type: 'FeatureCollection' as const,
-          features,
-        };
-
-        this.setState({ data, loading: false }, this.setFilteredData);
-      });
+      this.setState({ data, loading: false }, this.setFilteredData);
     });
 
     this.mapgl = map;
