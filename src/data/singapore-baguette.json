@@ -1,0 +1,421 @@
+[
+  {
+    "id": "0R86nK05iwBGvVPcrFNu",
+    "createdate": {
+      "_seconds": 1589378711,
+      "_nanoseconds": 592000000
+    },
+    "lastupdate": {
+      "_seconds": 1589378711,
+      "_nanoseconds": 592000000
+    },
+    "description": "Changi T2 Arrival",
+    "title": "Paris Baguette",
+    "coordinates": {
+      "lat": 103.988813,
+      "lng": 1.356187
+    },
+    "mark": 0,
+    "approved": 5,
+    "createdby": "aksels.ledins@gmail.com",
+    "features": ["eat-in", "delivery"],
+    "price": 4,
+    "updatedby": "aksels.ledins@gmail.com"
+  },
+  {
+    "id": "42XXlIVNtIWNoHFOkBzq",
+    "lastupdate": {
+      "_seconds": 1589378645,
+      "_nanoseconds": 285000000
+    },
+    "description": "Changi T4 Arrival",
+    "title": "Paris Baguette",
+    "coordinates": {
+      "lng": 1.338437,
+      "lat": 103.983063
+    },
+    "mark": 4,
+    "approved": 2,
+    "createdby": "aksels.ledins@gmail.com",
+    "features": ["eat-in"],
+    "price": 4,
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589378590,
+      "_nanoseconds": 159000000
+    }
+  },
+  {
+    "id": "5RbMcxfYCTAyCWKkZHd5",
+    "features": ["delivery"],
+    "price": 3,
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589379126,
+      "_nanoseconds": 865000000
+    },
+    "lastupdate": {
+      "_seconds": 1589379126,
+      "_nanoseconds": 865000000
+    },
+    "baguettePrice": 4.5,
+    "title": "Simply Bread",
+    "coordinates": {
+      "lat": 103.795813,
+      "lng": 1.330687
+    },
+    "mark": 3,
+    "approved": 2,
+    "createdby": "aksels.ledins@gmail.com"
+  },
+  {
+    "id": "7bSwxL155Rh8bYsMLvho",
+    "price": 4,
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589378518,
+      "_nanoseconds": 157000000
+    },
+    "lastupdate": {
+      "_seconds": 1589378548,
+      "_nanoseconds": 76000000
+    },
+    "description": "UOB Plaza",
+    "title": "Paris Baguette",
+    "coordinates": {
+      "lat": 103.850688,
+      "lng": 1.285438
+    },
+    "mark": 0,
+    "approved": 5,
+    "createdby": "aksels.ledins@gmail.com",
+    "features": ["eat-in", "delivery"]
+  },
+  {
+    "id": "AExSR2lZ5kwp6NhmmXxE",
+    "lastupdate": {
+      "_seconds": 1589378451,
+      "_nanoseconds": 514000000
+    },
+    "description": "Suntec City",
+    "title": "Paris Baguette",
+    "coordinates": {
+      "lat": 103.858688,
+      "lng": 1.295687
+    },
+    "mark": 0,
+    "approved": 5,
+    "createdby": "aksels.ledins@gmail.com",
+    "features": ["delivery", "eat-in"],
+    "price": 4,
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589378451,
+      "_nanoseconds": 514000000
+    }
+  },
+  {
+    "id": "GEO3kWeo5l2V6lfsDzLR",
+    "lastupdate": {
+      "_seconds": 1589378066,
+      "_nanoseconds": 217000000
+    },
+    "coordinates": {
+      "lng": 1.278937,
+      "lat": 103.848813
+    },
+    "mark": 0,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "price": 4,
+    "createdate": {
+      "_seconds": 1589378041,
+      "_nanoseconds": 352000000
+    },
+    "baguettePrice": -1,
+    "title": "Paris Baguette",
+    "description": "Robinson Rd",
+    "approved": 5,
+    "features": ["delivery", "eat-in"]
+  },
+  {
+    "id": "KjsHWrMnR1Qc0DQVZUN0",
+    "price": 4,
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589378866,
+      "_nanoseconds": 46000000
+    },
+    "lastupdate": {
+      "_seconds": 1589378866,
+      "_nanoseconds": 46000000
+    },
+    "description": "Terminal 3, Arrival Hall, Level 1",
+    "title": "Paris Baguette",
+    "coordinates": {
+      "lat": 103.986188,
+      "lng": 1.355562
+    },
+    "mark": 4,
+    "approved": 2,
+    "createdby": "aksels.ledins@gmail.com",
+    "features": ["eat-in"]
+  },
+  {
+    "id": "KsymSRLnRIhU9XauM8Lr",
+    "price": 4,
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589378118,
+      "_nanoseconds": 315000000
+    },
+    "lastupdate": {
+      "_seconds": 1589378124,
+      "_nanoseconds": 827000000
+    },
+    "description": "Shenton Way",
+    "title": "Paris Baguette",
+    "coordinates": {
+      "lat": 103.850813,
+      "lng": 1.279688
+    },
+    "mark": 0,
+    "approved": 5,
+    "createdby": "aksels.ledins@gmail.com",
+    "features": ["delivery", "eat-in"]
+  },
+  {
+    "id": "MTr1mlX7NmRRax4atoG7",
+    "mark": 4.5,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "price": 4,
+    "createdate": {
+      "_seconds": 1589377902,
+      "_nanoseconds": 825000000
+    },
+    "baguettePrice": 4,
+    "description": "Serangoon",
+    "title": "Maison Kayser",
+    "approved": 1,
+    "features": ["delivery", "croissant", "eat-in"],
+    "lastupdate": {
+      "_seconds": 1589377902,
+      "_nanoseconds": 826000000
+    },
+    "coordinates": {
+      "lng": 1.364937,
+      "lat": 103.865438
+    }
+  },
+  {
+    "id": "MwEammvf3STZNvn1zpo0",
+    "lastupdate": {
+      "_seconds": 1589377849,
+      "_nanoseconds": 92000000
+    },
+    "coordinates": {
+      "lat": 103.837313,
+      "lng": 1.300187
+    },
+    "mark": 4.5,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "price": 4,
+    "createdate": {
+      "_seconds": 1589377849,
+      "_nanoseconds": 92000000
+    },
+    "baguettePrice": 4,
+    "description": "Somerset",
+    "title": "Maison Kayser",
+    "approved": 1,
+    "features": ["delivery", "croissant", "eat-in"]
+  },
+  {
+    "id": "Om6HtZn2v5MjVAvu2Myx",
+    "lastupdate": {
+      "_seconds": 1589378216,
+      "_nanoseconds": 693000000
+    },
+    "description": "Raffles Quay",
+    "title": "Paris Baguette",
+    "coordinates": {
+      "lng": 1.281437,
+      "lat": 103.851063
+    },
+    "mark": 0,
+    "approved": 5,
+    "createdby": "aksels.ledins@gmail.com",
+    "features": ["delivery", "eat-in"],
+    "price": 4,
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589378216,
+      "_nanoseconds": 693000000
+    }
+  },
+  {
+    "id": "WTJlGdQl34em1saBfGJk",
+    "coordinates": {
+      "lat": 103.743438,
+      "lng": 1.333062
+    },
+    "mark": 0,
+    "approved": 5,
+    "createdby": "aksels.ledins@gmail.com",
+    "features": ["delivery", "eat-in"],
+    "price": 4,
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589378334,
+      "_nanoseconds": 770000000
+    },
+    "lastupdate": {
+      "_seconds": 1589378334,
+      "_nanoseconds": 770000000
+    },
+    "description": "Jurong",
+    "title": "Paris Baguette"
+  },
+  {
+    "id": "gelvmb39k9ygFasKmsOo",
+    "approved": 1,
+    "features": ["delivery", "eat-in", "croissant"],
+    "lastupdate": {
+      "_seconds": 1589377787,
+      "_nanoseconds": 953000000
+    },
+    "coordinates": {
+      "lng": 1.293563,
+      "lat": 103.858188
+    },
+    "mark": 4.5,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "price": 4,
+    "createdate": {
+      "_seconds": 1589377787,
+      "_nanoseconds": 953000000
+    },
+    "baguettePrice": 4,
+    "description": "Suntec City",
+    "title": "Maison Kayser"
+  },
+  {
+    "id": "mj1IaRBbWxW2u2dUGjdP",
+    "mark": 0,
+    "approved": 5,
+    "createdby": "aksels.ledins@gmail.com",
+    "features": ["delivery"],
+    "price": 4,
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589378404,
+      "_nanoseconds": 915000000
+    },
+    "lastupdate": {
+      "_seconds": 1589378411,
+      "_nanoseconds": 493000000
+    },
+    "description": "Bugis",
+    "title": "Paris Baguette",
+    "coordinates": {
+      "lat": 103.855563,
+      "lng": 1.299312
+    }
+  },
+  {
+    "id": "nJrpdSIja61zJHgntgkZ",
+    "description": "Cross ST",
+    "title": "Maison Kayser",
+    "approved": 1,
+    "features": ["delivery", "eat-in", "croissant"],
+    "lastupdate": {
+      "_seconds": 1589377710,
+      "_nanoseconds": 305000000
+    },
+    "coordinates": {
+      "lat": 103.847063,
+      "lng": 1.283563
+    },
+    "mark": 4.5,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "price": 4,
+    "createdate": {
+      "_seconds": 1589377710,
+      "_nanoseconds": 305000000
+    },
+    "baguettePrice": 4
+  },
+  {
+    "id": "qcleZ8yrLJzTUaHa1N0n",
+    "coordinates": {
+      "lat": 103.990188,
+      "lng": 1.360312
+    },
+    "mark": 4,
+    "approved": 2,
+    "createdby": "aksels.ledins@gmail.com",
+    "features": ["eat-in"],
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589378786,
+      "_nanoseconds": 296000000
+    },
+    "lastupdate": {
+      "_seconds": 1589378786,
+      "_nanoseconds": 297000000
+    },
+    "description": "Jewel",
+    "title": "Paris Baguette"
+  },
+  {
+    "id": "s3ZI6nh99BrHPTMP8Lah",
+    "lastupdate": {
+      "_seconds": 1589378294,
+      "_nanoseconds": 269000000
+    },
+    "description": "Orchard rd",
+    "title": "Paris Baguette",
+    "coordinates": {
+      "lat": 103.833313,
+      "lng": 1.303562
+    },
+    "mark": 0,
+    "approved": 5,
+    "createdby": "aksels.ledins@gmail.com",
+    "features": ["delivery", "eat-in"],
+    "price": 4,
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589378294,
+      "_nanoseconds": 269000000
+    }
+  },
+  {
+    "id": "wB1sKPbU7Czd1JNAmnJs",
+    "coordinates": {
+      "lat": 103.849688,
+      "lng": 1.285187
+    },
+    "mark": 4.5,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "price": 3,
+    "createdate": {
+      "_seconds": 1589294609,
+      "_nanoseconds": 598000000
+    },
+    "baguettePrice": 4,
+    "title": "Maison Kayser",
+    "description": "Ok",
+    "approved": 1,
+    "features": ["delivery", "eat-in", "croissant"],
+    "lastupdate": {
+      "_seconds": 1589377734,
+      "_nanoseconds": 405000000
+    }
+  }
+]
