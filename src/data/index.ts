@@ -45,6 +45,8 @@ export type Store = {
   approvedLevel: ApprovedLevel;
 
   title: string;
+  description: string;
+
   address: string;
   link: string;
   features: Feature[];
@@ -59,6 +61,8 @@ export type Store = {
   coordinates: Coordinates;
 
   'google-rating': number;
+  'internal-rating': number;
+  hasBaguette: boolean;
 };
 
 export default data as Store[];
