@@ -87,7 +87,11 @@ class App extends React.Component<any, State> {
     });
 
     // update internal state
-    this.setState({ filteredData });
+    this.setState({
+      filteredData,
+      title:
+        filteredData.length === 0 ? 'Oh snap! No stores matching your search criteria were found.' : initialState.title,
+    });
     if (!this.mapgl) return;
 
     // update map
