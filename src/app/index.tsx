@@ -276,19 +276,17 @@ class App extends React.Component<any, State> {
       <>
         <div className="bottom-right">
           <div className="logo" onClick={this.flyInitialState} />
+          {/*
           <div className="personal-branding">
             <a href="https://www.linkedin.com/in/akselsledins/" target="_blank" rel="noreferrer noopener">
               Aksels Ledins
-            </a>
-            <span className="spacer">/</span>
-            <a href="https://www.linkedin.com/in/gilone-ldm" target="_blank" rel="noreferrer noopener">
-              Gilone De Maillargues
             </a>
             <span className="spacer">/</span>
             <a href="https://aksels.io" target="_blank" rel="noreferrer noopener">
               Read about this
             </a>
           </div>
+          */}
         </div>
         <nav className="navbar">
           <ul>
