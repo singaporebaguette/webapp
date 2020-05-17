@@ -14,7 +14,7 @@ const ByBaguette = ({ filters, updateFilter }: Props) => {
   };
 
   return (
-    <li style={{ display: 'flex', alignContent: 'center' }}>
+    <li>
       <div
         onClick={(e) => {
           e.stopPropagation();

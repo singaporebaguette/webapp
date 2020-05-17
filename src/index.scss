@@ -104,6 +104,8 @@ body {
   }
 
   background: transparent;
+
+  pointer-events: none;
 }
 .pad2 {
   padding: 20px;
@@ -165,7 +167,7 @@ a:hover {
 
   transition: padding-top 0.6s ease;
 
-  padding: 35vh 24px 92px;
+  padding: 0 24px 92px;
   @media (min-width: 992px) {
     padding: 48px 48px 92px;
   }
@@ -350,13 +352,28 @@ a:hover {
   display: flex;
   justify-content: space-between;
 
+  ul:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
   ul {
     list-style: none;
+    @media (max-width: 992px) {
+      padding-left: 8px;
+    }
 
     li {
-      float: left;
+      display: flex;
+      align-content: center;
+      align-items: center;
       height: 48px;
       padding: 0 16px;
+      @media (max-width: 992px) {
+        padding: 0 8px;
+      }
 
       cursor: pointer;
     }
@@ -410,7 +427,7 @@ a:hover {
 
 h1 {
   margin-top: 48px;
-  margin-bottom: 0;
+  margin-bottom: 35vh;
 
   font-weight: 900;
   color: var(--text-h1-color);
@@ -422,5 +439,6 @@ h1 {
     font-size: 3rem;
     line-height: 4rem;
     padding: 48px 48px 0px;
+    margin-bottom: 5vh;
   }
 }

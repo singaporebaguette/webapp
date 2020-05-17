@@ -276,11 +276,7 @@ class App extends React.Component<any, State> {
             <ByRating filters={filters} updateFilter={this.updateFilter} />
             <ByBaguette filters={filters} updateFilter={this.updateFilter} />
           </ul>
-          <ul>
-            <li>
-              <DarkModeSwitch mode={this.state.mode} onClick={this.toggleDarkMode} />
-            </li>
-          </ul>
+          <DarkModeSwitch mode={this.state.mode} onClick={this.toggleDarkMode} />
         </nav>
         <div className="sidebar">
           <h1>{this.state.title}</h1>
