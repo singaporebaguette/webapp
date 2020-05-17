@@ -294,17 +294,28 @@ class App extends React.Component<any, State> {
               this.unfocusStore();
             }}
           />
-          {/*
           <div className="personal-branding">
-            <a href="https://www.linkedin.com/in/akselsledins/" target="_blank" rel="noreferrer noopener">
-              Aksels Ledins
+            <span className="hideOnSmall">
+              <a href="https://www.linkedin.com/in/akselsledins/" target="_blank" rel="noreferrer noopener">
+                Aksels Ledins
+              </a>
+              <span className="spacer">/</span>
+              <a href="https://www.linkedin.com/in/gilone-ldm/" target="_blank" rel="noreferrer noopener">
+                Gilone De Maillargues
+              </a>
+
+              <span className="spacer">/</span>
+            </span>
+            <a href="mailto:aksels.ledins+singaporebaguette@gmail.com" target="_blank" rel="noreferrer noopener">
+              Something wrong? Inaccurate data?
             </a>
-            <span className="spacer">/</span>
-            <a href="https://aksels.io" target="_blank" rel="noreferrer noopener">
-              Read about this
-            </a>
+            <span className="hideOnSmall">
+              <span className="spacer">/</span>
+              <a href="https://aksels.io" target="_blank" rel="noreferrer noopener">
+                Read about this
+              </a>
+            </span>
           </div>
-          */}
         </div>
         <nav className="navbar">
           <ul>

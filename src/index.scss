@@ -306,7 +306,7 @@ a:hover {
 
 .bottom-right {
   position: fixed;
-  bottom: 16px;
+  bottom: 6px;
   right: 12px;
 
   display: flex;
@@ -323,13 +323,12 @@ a:hover {
   .personal-branding {
     display: flex;
     justify-content: flex-end;
-    margin-top: 8px;
+    margin-top: 16px;
     color: #ff4081;
     font-size: 0.7rem;
-    opacity: 0.8;
 
     @media (max-width: 992px) {
-      font-size: 0.6rem;
+      font-size: 0.8rem;
     }
 
     .spacer {
@@ -338,15 +337,16 @@ a:hover {
       font-weight: bold;
     }
     &:hover {
-      opacity: 1;
       color: #448aff;
-      a {
-        color: #ff4081;
-      }
     }
     a {
       color: #448aff;
       text-decoration: none;
+      &:hover {
+        opacity: 1;
+
+        color: #ff4081;
+      }
     }
   }
 }
@@ -480,5 +480,11 @@ h1 {
     line-height: 4rem;
     padding: 48px 48px 0px;
     margin-bottom: 5vh;
+  }
+}
+
+.hideOnSmall {
+  @media (max-width: 992px) {
+    display: none;
   }
 }
