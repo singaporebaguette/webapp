@@ -212,6 +212,7 @@ class App extends React.Component<any, State> {
   unfocusStore = () => {
     this.removePopUp();
     this.setState({ activeStore: null, title: initialState.title });
+    this.props.history.push({ path: '/', search: '' });
   };
   clickStore = (store: Store) => {
     this.props.history.push({ path: '/', search: `?store=${store.id}` });
@@ -285,7 +286,14 @@ class App extends React.Component<any, State> {
     return (
       <>
         <div className="bottom-right">
-          <div className="logo" onClick={this.flyInitialState} />
+          <div
+            className="logo"
+            onClick={() => {
+              this.flyInitialState();
+              this.removePopUp();
+              this.unfocusStore();
+            }}
+          />
           {/*
           <div className="personal-branding">
             <a href="https://www.linkedin.com/in/akselsledins/" target="_blank" rel="noreferrer noopener">
