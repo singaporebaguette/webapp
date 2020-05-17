@@ -256,6 +256,11 @@ a:hover {
   width: 64px;
   background-image: url(/marker.svg);
   background-color: rgba(0, 0, 0, 0);
+  opacity: 0.8;
+}
+
+.marker.nobaguette {
+  filter: grayscale(1);
 }
 
 .clearfix {

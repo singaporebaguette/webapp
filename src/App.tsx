@@ -11,14 +11,13 @@ import ByRating from './components/Filters/ByRating';
 import ByPrice from './components/Filters/ByPrice';
 import DarkModeSwitch from './components/DarkModeSwitch';
 
-import rawData from './data';
+import rawData, { Store } from './data';
 
 import { Filters, Mode } from './sb.d';
 
 type State = {
   markers: any[];
-  data: any;
-  filteredData: any;
+  filteredData: Store[];
   filters: Filters;
   mode: Mode;
   loading: boolean;
@@ -27,6 +26,19 @@ type State = {
 
 const mapDarkStyle = 'mapbox://styles/aksels/cka71ytto0yd41iqugrqnzvb7';
 const mapLightStyle = 'mapbox://styles/aksels/cka3ngnee0kr21io7g77hocrr';
+
+const storesToMapFeatures = (stores: Store[]) => {
+  const features = stores.map((r) => ({
+    type: 'Feature' as const,
+    geometry: {
+      type: 'Point' as const,
+      coordinates: [r.coordinates?.lat, r?.coordinates?.lng] as [number, number],
+    },
+    properties: r as any,
+  }));
+
+  return features;
+};
 
 class App extends React.Component<any, State> {
   mapgl: mapboxgl.Map | null;
@@ -43,12 +55,7 @@ class App extends React.Component<any, State> {
 
     this.state = {
       markers: [],
-      data: {
-        features: [],
-      },
-      filteredData: {
-        features: [],
-      },
+      filteredData: [],
       filters: {
         byRating: [],
         byPrice: [],
@@ -69,59 +76,29 @@ class App extends React.Component<any, State> {
     });
 
     map.on('load', (e) => {
-      const features = rawData.map((r: any) => ({
-        type: 'Feature' as const,
-        geometry: {
-          type: 'Point' as const,
-          coordinates: [r.coordinates?.lat, r?.coordinates?.lng] as [number, number],
-        },
-        properties: {
-          id: r.id,
-          title: r.title,
-          description: r.description,
-          rate: r.mark,
-          approved: r.approved,
-          baguettePrice: r.baguettePrice,
-          price: r.price,
-          features: r.features,
-        },
-      }));
-
-      const data = {
-        type: 'FeatureCollection' as const,
-        features,
-      };
-
-      this.setState({ data, loading: false }, this.setFilteredData);
+      this.setState({ loading: false }, this.setFilteredData);
     });
 
     this.mapgl = map;
   }
 
   setFilteredData = () => {
-    const { data, filters } = this.state;
+    const { filters } = this.state;
 
     const filtersFunctions: Function[] = [];
 
     if (filters.byRating.length > 0) {
-      filtersFunctions.push((feature: any) => filters.byRating.includes(Math.round(feature.properties.rate)));
-    }
-    if (filters.byPrice.length > 0) {
-      filtersFunctions.push((feature: any) => filters.byPrice.includes(Math.round(feature.properties.price)));
+      filtersFunctions.push((feature: Store) => filters.byRating.includes(Math.round(feature['google-rating'])));
     }
 
-    const features: any = [];
-    data.features.forEach((feature: any) => {
+    const filteredData: Store[] = [];
+    rawData.forEach((feature) => {
       for (const f of filtersFunctions) {
         if (!f(feature)) return;
       }
 
-      features.push(feature);
+      filteredData.push(feature);
     });
-
-    const filteredData = {
-      features,
-    };
 
     // update internal state
     this.setState({ filteredData });
@@ -131,15 +108,14 @@ class App extends React.Component<any, State> {
     const sourceLoaded = this.mapgl.isSourceLoaded('places');
     if (sourceLoaded === true) {
       const source = this.mapgl.getSource('places') as GeoJSONSource;
-      source.setData(data);
+      // @ts-ignore
+      source.setData(storesToMapFeatures(filteredData));
     } else if (sourceLoaded === false) {
-      this.mapgl.addSource('places', {
-        type: 'geojson',
-        data,
-      });
+      // @ts-ignore
+      this.mapgl.addSource('places', storesToMapFeatures(filteredData));
     }
     this.removeMarkers(() => {
-      this.addMarkers(filteredData.features);
+      this.addMarkers(filteredData);
     });
   };
 
@@ -155,22 +131,26 @@ class App extends React.Component<any, State> {
     });
   };
 
-  addMarkers = (features: any) => {
+  addMarkers = (stores: Store[]) => {
     /* For each feature in the GeoJSON object above: */
-    const markers = features.map((marker: any) => {
+    const markers = stores.map((store) => {
       if (!this.mapgl) return null;
       /* Create a div element for the marker. */
       var el = document.createElement('div');
       /* Assign a unique `id` to the marker. */
-      el.id = 'marker-' + marker.properties.id;
+      el.id = 'marker-' + store.id;
       /* Assign the `marker` class to each marker for styling. */
-      el.className = 'marker';
+      if (store.hasBaguette) {
+        el.className = 'marker';
+      } else {
+        el.className = 'marker nobaguette';
+      }
 
       /**
        * Create a marker using the div element
        * defined above and add it to the map.
        **/
-      const m = new mapboxgl.Marker(el, { offset: [0, -32] }).setLngLat(marker.geometry.coordinates).addTo(this.mapgl);
+      const m = new mapboxgl.Marker(el, { offset: [0, -32] }).setLngLat(store.coordinates).addTo(this.mapgl);
 
       /**
        * Listen to the element and when it is clicked, do three things:
@@ -180,8 +160,8 @@ class App extends React.Component<any, State> {
        **/
       el.addEventListener('click', (e) => {
         /* Fly to the point */
-        this.flyToStore(marker);
-        this.clickStore(marker);
+        this.flyToStore(store);
+        this.clickStore(store);
       });
 
       return m;
@@ -194,10 +174,10 @@ class App extends React.Component<any, State> {
    * Use Mapbox GL JS's `flyTo` to move the camera smoothly
    * a given center point.
    **/
-  flyToStore = (currentFeature: any) => {
+  flyToStore = (store: Store) => {
     if (this.mapgl) {
       this.mapgl.flyTo({
-        center: currentFeature.geometry.coordinates,
+        center: store.coordinates,
         zoom: 15,
       });
     }
@@ -205,13 +185,13 @@ class App extends React.Component<any, State> {
   /**
    * Create a Mapbox GL JS `Popup`.
    **/
-  createPopUp = (currentFeature: any) => {
+  createPopUp = (store: Store) => {
     if (!this.mapgl) return;
 
     var popUps = document.getElementsByClassName('mapboxgl-popup');
     if (popUps[0]) popUps[0].remove();
     new mapboxgl.Popup({ closeOnClick: false })
-      .setLngLat(currentFeature.geometry.coordinates)
+      .setLngLat(store.coordinates)
       .setHTML('<span></span><span></span><span></span><span></span>')
       .addTo(this.mapgl);
   };
@@ -242,27 +222,27 @@ class App extends React.Component<any, State> {
     }
   };
 
-  clickStore = (store: any) => {
+  clickStore = (store: Store) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    const activeStore = store.properties.id;
-    const filtered = {
-      features: [...this.state.filteredData.features],
-    };
+    const activeStore = store.id;
+    let filtered = [...this.state.filteredData];
 
     let index = -1;
     let f = null;
-    for (let i = 0; i < filtered.features.length; i++) {
-      const feature = filtered.features[i];
-      if (feature.properties.id === activeStore) {
+    for (let i = 0; i < filtered.length; i++) {
+      const feature = filtered[i];
+      if (feature.id === activeStore) {
         index = i;
         f = feature;
         break;
       }
     }
 
-    filtered.features.splice(index, 1);
-    filtered.features = [f, ...filtered.features];
+    if (f) {
+      filtered.splice(index, 1);
+      filtered = [f, ...filtered];
+    }
 
     this.setState({ activeStore, filteredData: filtered });
     this.flyToStore(store);
@@ -316,14 +296,14 @@ class App extends React.Component<any, State> {
                 <ListItemLoading />
               </>
             )}
-            {!loading && data.features.length > 0 && (
+            {!loading && data.length > 0 && (
               <>
-                <Flipper flipKey={data.features.map((f: any) => f.properties.id).join('-')}>
-                  {data.features.map((store: any) => (
-                    <Flipped key={store.properties.id} flipId={store.properties.id}>
+                <Flipper flipKey={data.map((f) => f.id).join('-')}>
+                  {data.map((store) => (
+                    <Flipped key={store.id} flipId={store.id}>
                       <div>
                         <ListItem
-                          active={store.properties.id === activeStore}
+                          active={store.id === activeStore}
                           onClick={() => this.clickStore(store)}
                           store={store}
                         />
