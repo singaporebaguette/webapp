@@ -1,6 +1,12 @@
+export enum BaguetteFilter {
+  HasBaguette,
+  NoBaguette,
+  Both,
+}
+
 export type Filters = {
   byRating: number[];
-  byPrice: number[];
+  byBaguette: BaguetteFilter;
 };
 
 export enum Mode {

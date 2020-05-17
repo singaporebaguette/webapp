@@ -1,19 +1,18 @@
 import React from 'react';
 import './App.css';
 import mapboxgl, { GeoJSONSource } from 'mapbox-gl';
-import { Flipper, Flipped } from 'react-flip-toolkit';
+import { Flipped, Flipper } from 'react-flip-toolkit';
 
 import ListItem from 'src/components/ListItem';
 import ListItemLoading from 'src/components/ListItemLoading';
-
 // filters
 import ByRating from './components/Filters/ByRating';
-import ByPrice from './components/Filters/ByPrice';
+import ByBaguette from './components/Filters/ByBaguette';
 import DarkModeSwitch from './components/DarkModeSwitch';
 
 import rawData, { Store } from './data';
 
-import { Filters, Mode } from './sb.d';
+import { BaguetteFilter, Filters, Mode } from './sb.d';
 
 type State = {
   markers: any[];
@@ -58,7 +57,7 @@ class App extends React.Component<any, State> {
       filteredData: [],
       filters: {
         byRating: [],
-        byPrice: [],
+        byBaguette: BaguetteFilter.HasBaguette,
       },
       mode: mode === Mode.Light || mode === Mode.Dark ? mode : Mode.Light,
       loading: true,
@@ -88,7 +87,13 @@ class App extends React.Component<any, State> {
     const filtersFunctions: Function[] = [];
 
     if (filters.byRating.length > 0) {
-      filtersFunctions.push((feature: Store) => filters.byRating.includes(Math.round(feature['google-rating'])));
+      filtersFunctions.push((store: Store) => filters.byRating.includes(Math.round(store['google-rating'])));
+    }
+    if (filters.byBaguette === BaguetteFilter.HasBaguette) {
+      filtersFunctions.push((store: Store) => store.hasBaguette);
+    }
+    if (filters.byBaguette === BaguetteFilter.NoBaguette) {
+      filtersFunctions.push((store: Store) => !store.hasBaguette);
     }
 
     const filteredData: Store[] = [];
@@ -275,7 +280,7 @@ class App extends React.Component<any, State> {
         <nav className="navbar">
           <ul>
             <ByRating filters={filters} updateFilter={this.updateFilter} />
-            <ByPrice filters={filters} updateFilter={this.updateFilter} />
+            <ByBaguette filters={filters} updateFilter={this.updateFilter} />
           </ul>
           <ul>
             <li>
