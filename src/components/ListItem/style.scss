@@ -10,6 +10,7 @@
 
   .main-content {
     padding: 16px;
+    padding-bottom: 0;
   }
 }
 
@@ -25,4 +26,29 @@
   margin-top: 16px;
   padding-left: 4px;
   font-style: italic;
+}
+
+.item-feature {
+  margin-top: 32px;
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+
+  .icon {
+    margin-right: 8px;
+  }
+}
+
+.item-link {
+  display: flex;
+  justify-content: flex-end;
+
+  filter: grayscale(1);
+
+  -webkit-transition: -webkit-filter 500ms linear;
+  &:hover {
+    filter: none;
+  }
 }
