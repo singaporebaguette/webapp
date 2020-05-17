@@ -311,7 +311,7 @@ class App extends React.Component<any, State> {
             </a>
             <span className="hideOnSmall">
               <span className="spacer">/</span>
-              <a href="https://aksels.io" target="_blank" rel="noreferrer noopener">
+              <a href="https://aksels.io/posts/singapore-baguette" target="_blank" rel="noreferrer noopener">
                 Read about this
               </a>
             </span>
