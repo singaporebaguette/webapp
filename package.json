@@ -46,6 +46,7 @@
   },
   "devDependencies": {
     "@types/mapbox-gl": "^1.9.1",
+    "@types/qs": "^6.9.2",
     "@types/react-router-dom": "^5.1.5",
     "prettier": "^2.0.5"
   }
