@@ -8,4 +8,5 @@ export type State = {
   mode: Mode;
   loading: boolean;
   activeStore: string | null;
+  title: string | JSX.Element;
 };

@@ -1,6 +1,8 @@
 import { BaguetteFilter, Mode } from 'src/sb.d';
+import { State } from './types';
 
-export const state = (mode: Mode) => ({
+const title = 'French approved baguettes.';
+export const state = (mode: Mode): State => ({
   markers: [],
   filteredData: [],
   filters: {
@@ -10,6 +12,7 @@ export const state = (mode: Mode) => ({
   mode: mode === Mode.Light || mode === Mode.Dark ? mode : Mode.Light,
   loading: true,
   activeStore: null,
+  title: title,
 });
 
 export const mapPosition = {
@@ -20,4 +23,5 @@ export const mapPosition = {
 export default {
   state,
   mapPosition,
+  title,
 };

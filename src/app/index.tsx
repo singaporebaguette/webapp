@@ -10,16 +10,14 @@ import ByRating from 'src/components/Filters/ByRating';
 import ByBaguette from 'src/components/Filters/ByBaguette';
 import DarkModeSwitch from 'src/components/DarkModeSwitch';
 
-import rawData, { Store } from 'src/data';
+import rawData, { ApprovedLevel, Store } from 'src/data';
 import { storesToMapFeatures } from 'src/services/map';
-
 // types
 import { BaguetteFilter, Mode } from 'src/sb.d';
 import { State } from './types';
-
 // initialState
 import init from './initialState';
-
+import initialState from './initialState';
 // config
 import mapboxConfig from 'src/config/mapbox';
 
@@ -200,10 +198,34 @@ class App extends React.Component<any, State> {
 
   unfocusStore = () => {
     this.removePopUp();
-    this.setState({ activeStore: null });
+    this.setState({ activeStore: null, title: initialState.title });
   };
   clickStore = (store: Store) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    let title: string | JSX.Element;
+    title = initialState.title;
+
+    if (store.approvedLevel === ApprovedLevel.Approved) {
+      title = (
+        <>
+          Approved bakery!
+          <br />
+          Go for it.
+        </>
+      );
+    } else if (store.approvedLevel === ApprovedLevel.Decent) {
+      title = (
+        <>
+          Decent bakery!
+          <br />
+          Go for it.
+        </>
+      );
+    } else if (store.approvedLevel === ApprovedLevel.EmergencyOnly) {
+      title = 'For emergencies only.';
+    } else if (store.approvedLevel === ApprovedLevel.NotApproved) {
+      title = 'Disapproved bakery. :(';
+    }
 
     const activeStore = store.id;
     let filtered = [...this.state.filteredData];
@@ -224,7 +246,7 @@ class App extends React.Component<any, State> {
       filtered = [f, ...filtered];
     }
 
-    this.setState({ activeStore, filteredData: filtered });
+    this.setState({ activeStore, filteredData: filtered, title });
     this.flyToStore(store);
     /* Close all other popups and display popup for clicked store */
     this.createPopUp(store);
@@ -246,13 +268,6 @@ class App extends React.Component<any, State> {
   render() {
     const { filters, filteredData: data, loading, activeStore } = this.state;
 
-    const byRating = this.state.filters.byRating;
-    const notApprovedOnly =
-      (byRating.includes(2) || byRating.includes(1)) &&
-      !byRating.includes(3) &&
-      !byRating.includes(4) &&
-      !byRating.includes(5);
-
     return (
       <>
         <div className="logo" onClick={this.flyInitialState} />
@@ -268,7 +283,7 @@ class App extends React.Component<any, State> {
           </ul>
         </nav>
         <div className="sidebar">
-          <h1>French {notApprovedOnly ? 'disapproved' : 'approved'} baguettes.</h1>
+          <h1>{this.state.title}</h1>
           <div id="listings" className="listings">
             {loading && (
               <>
