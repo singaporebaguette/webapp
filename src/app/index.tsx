@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import mapboxgl, { GeoJSONSource } from 'mapbox-gl';
 import { Flipped, Flipper } from 'react-flip-toolkit';
+import { withRouter } from 'react-router';
+import qs from 'qs';
 
 import ListItem from 'src/components/ListItem';
 import ListItemLoading from 'src/components/ListItemLoading';
@@ -38,6 +40,7 @@ class App extends React.Component<any, State> {
   }
 
   componentDidMount(): void {
+    const { store } = qs.parse(this.props.location.search, { ignoreQueryPrefix: true });
     mapboxgl.accessToken = mapboxConfig.accessToken;
 
     const map = new mapboxgl.Map({
@@ -48,6 +51,12 @@ class App extends React.Component<any, State> {
 
     map.on('load', (e) => {
       this.setState({ loading: false }, this.setFilteredData);
+
+      const s = rawData.find((r) => r.id === store);
+      if (s) {
+        this.flyToStore(s);
+        this.clickStore(s);
+      }
     });
 
     this.mapgl = map;
@@ -205,6 +214,7 @@ class App extends React.Component<any, State> {
     this.setState({ activeStore: null, title: initialState.title });
   };
   clickStore = (store: Store) => {
+    this.props.history.push({ path: '/', search: `?store=${store.id}` });
     window.scrollTo({ top: 0, behavior: 'smooth' });
     let title: string | JSX.Element;
     title = initialState.title;
@@ -334,4 +344,4 @@ class App extends React.Component<any, State> {
   }
 }
 
-export default App;
+export default withRouter(App);
