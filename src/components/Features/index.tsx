@@ -2,16 +2,6 @@ import React from 'react';
 
 import './index.scss';
 
-const Features = ({ features }: { features: any[] }) => {
-  if (!(features instanceof Array)) return null;
-
-  return (
-    <div className="features">
-      {features.includes('delivery') && <div className="feature delivery" />}
-      {features.includes('croissant') && <div className="feature croissant" />}
-      {features.includes('eat-in') && <div className="feature eat-in" />}
-    </div>
-  );
-};
+const Features = ({ features }: { features: any[] }) => <div className="features" />;
 
 export default Features;
