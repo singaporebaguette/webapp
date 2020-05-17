@@ -6,38 +6,25 @@ import { Flipped, Flipper } from 'react-flip-toolkit';
 import ListItem from 'src/components/ListItem';
 import ListItemLoading from 'src/components/ListItemLoading';
 // filters
-import ByRating from './components/Filters/ByRating';
-import ByBaguette from './components/Filters/ByBaguette';
-import DarkModeSwitch from './components/DarkModeSwitch';
+import ByRating from 'src/components/Filters/ByRating';
+import ByBaguette from 'src/components/Filters/ByBaguette';
+import DarkModeSwitch from 'src/components/DarkModeSwitch';
 
-import rawData, { Store } from './data';
+import rawData, { Store } from 'src/data';
+import { storesToMapFeatures } from 'src/services/map';
 
-import { BaguetteFilter, Filters, Mode } from './sb.d';
+// types
+import { BaguetteFilter, Mode } from 'src/sb.d';
+import { State } from './types';
 
-type State = {
-  markers: any[];
-  filteredData: Store[];
-  filters: Filters;
-  mode: Mode;
-  loading: boolean;
-  activeStore: string | null;
-};
+// initialState
+import init from './initialState';
+
+// config
+import mapboxConfig from 'src/config/mapbox';
 
 const mapDarkStyle = 'mapbox://styles/aksels/cka71ytto0yd41iqugrqnzvb7';
 const mapLightStyle = 'mapbox://styles/aksels/cka3ngnee0kr21io7g77hocrr';
-
-const storesToMapFeatures = (stores: Store[]) => {
-  const features = stores.map((r) => ({
-    type: 'Feature' as const,
-    geometry: {
-      type: 'Point' as const,
-      coordinates: [r.coordinates?.lat, r?.coordinates?.lng] as [number, number],
-    },
-    properties: r as any,
-  }));
-
-  return features;
-};
 
 class App extends React.Component<any, State> {
   mapgl: mapboxgl.Map | null;
@@ -52,26 +39,16 @@ class App extends React.Component<any, State> {
       document.querySelector('html')?.setAttribute('data-theme', 'dark');
     }
 
-    this.state = {
-      markers: [],
-      filteredData: [],
-      filters: {
-        byRating: [],
-        byBaguette: BaguetteFilter.HasBaguette,
-      },
-      mode: mode === Mode.Light || mode === Mode.Dark ? mode : Mode.Light,
-      loading: true,
-      activeStore: null,
-    };
+    this.state = init.state(mode as Mode);
   }
 
   componentDidMount(): void {
-    mapboxgl.accessToken = 'pk.eyJ1IjoiYWtzZWxzIiwiYSI6ImNqZHZ5bnBkaTJ6aXAyeHFva3Y3OHFsa2kifQ.xixo5Hr8b1Xr8MxYmWkp2g';
+    mapboxgl.accessToken = mapboxConfig.accessToken;
+
     const map = new mapboxgl.Map({
       container: 'map',
       style: this.state.mode === Mode.Light ? mapLightStyle : mapDarkStyle,
-      center: [103.75, 1.4],
-      zoom: 10,
+      ...init.mapPosition,
     });
 
     map.on('load', (e) => {
@@ -80,6 +57,15 @@ class App extends React.Component<any, State> {
 
     this.mapgl = map;
   }
+
+  flyInitialState = () => {
+    if (!this.mapgl) return;
+
+    this.mapgl.flyTo({
+      center: [103.75, 1.4],
+      zoom: 10,
+    });
+  };
 
   setFilteredData = () => {
     const { filters } = this.state;
@@ -141,7 +127,7 @@ class App extends React.Component<any, State> {
     const markers = stores.map((store) => {
       if (!this.mapgl) return null;
       /* Create a div element for the marker. */
-      var el = document.createElement('div');
+      let el = document.createElement('div');
       /* Assign a unique `id` to the marker. */
       el.id = 'marker-' + store.id;
       /* Assign the `marker` class to each marker for styling. */
@@ -151,18 +137,8 @@ class App extends React.Component<any, State> {
         el.className = 'marker nobaguette';
       }
 
-      /**
-       * Create a marker using the div element
-       * defined above and add it to the map.
-       **/
       const m = new mapboxgl.Marker(el, { offset: [0, -32] }).setLngLat(store.coordinates).addTo(this.mapgl);
 
-      /**
-       * Listen to the element and when it is clicked, do three things:
-       * 1. Fly to the point
-       * 2. Close all other popups and display popup for clicked store
-       * 3. Highlight listing in sidebar (and remove highlight for all other listings)
-       **/
       el.addEventListener('click', (e) => {
         /* Fly to the point */
         this.flyToStore(store);
@@ -175,10 +151,6 @@ class App extends React.Component<any, State> {
     this.setState({ markers });
   };
 
-  /**
-   * Use Mapbox GL JS's `flyTo` to move the camera smoothly
-   * a given center point.
-   **/
   flyToStore = (store: Store) => {
     if (this.mapgl) {
       this.mapgl.flyTo({
@@ -187,14 +159,16 @@ class App extends React.Component<any, State> {
       });
     }
   };
-  /**
-   * Create a Mapbox GL JS `Popup`.
-   **/
+
+  removePopUp = () => {
+    const popUps = document.getElementsByClassName('mapboxgl-popup');
+    if (popUps[0]) popUps[0].remove();
+  };
   createPopUp = (store: Store) => {
     if (!this.mapgl) return;
 
-    var popUps = document.getElementsByClassName('mapboxgl-popup');
-    if (popUps[0]) popUps[0].remove();
+    this.removePopUp();
+
     new mapboxgl.Popup({ closeOnClick: false })
       .setLngLat(store.coordinates)
       .setHTML('<span></span><span></span><span></span><span></span>')
@@ -227,6 +201,11 @@ class App extends React.Component<any, State> {
     }
   };
 
+  unfocusStore = () => {
+    this.removePopUp();
+    this.setState({ activeStore: null });
+  };
+
   clickStore = (store: Store) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
@@ -256,6 +235,10 @@ class App extends React.Component<any, State> {
   };
 
   updateFilter = (key: string, value: any) => {
+    this.flyInitialState();
+    this.removePopUp();
+    this.unfocusStore();
+
     const filters = this.state.filters;
 
     // @ts-ignore
@@ -276,7 +259,7 @@ class App extends React.Component<any, State> {
 
     return (
       <>
-        <div className="logo" />
+        <div className="logo" onClick={this.flyInitialState} />
         <nav className="navbar">
           <ul>
             <ByRating filters={filters} updateFilter={this.updateFilter} />
