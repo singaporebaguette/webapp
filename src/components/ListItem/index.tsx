@@ -1,8 +1,9 @@
 import React from 'react';
 
+import Icon from 'src/components/Icons/GenericIcon';
+
 import Approvness from '../Approvness';
 import Rating from '../Rating';
-import Price from '../Price';
 import Features from '../Features';
 
 import './style.scss';
@@ -27,6 +28,13 @@ export default ({ onClick, store, active }: Props) => (
         {/*
         <Price price={store.properties.price} />
         */}
+      </div>
+      {store.description && <div className="item-description">{store.description}</div>}
+      {store.address && <div className="item-address">{store.address}</div>}
+      <div className="item-hasBaguette">
+        <Icon path="/marker.svg" size={42} gray={!store.hasBaguette} style={{ backgroundPosition: '-2px -4px' }} />
+        {store.hasBaguette && <div>sells baguettes</div>}
+        {!store.hasBaguette && <div>doesn't have baguette</div>}
       </div>
     </div>
     <Features features={store.features} />
