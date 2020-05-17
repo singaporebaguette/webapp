@@ -23,9 +23,6 @@ import init from './initialState';
 // config
 import mapboxConfig from 'src/config/mapbox';
 
-const mapDarkStyle = 'mapbox://styles/aksels/cka71ytto0yd41iqugrqnzvb7';
-const mapLightStyle = 'mapbox://styles/aksels/cka3ngnee0kr21io7g77hocrr';
-
 class App extends React.Component<any, State> {
   mapgl: mapboxgl.Map | null;
 
@@ -47,7 +44,7 @@ class App extends React.Component<any, State> {
 
     const map = new mapboxgl.Map({
       container: 'map',
-      style: this.state.mode === Mode.Light ? mapLightStyle : mapDarkStyle,
+      style: this.state.mode === Mode.Light ? mapboxConfig.lightStyle : mapboxConfig.darkStyle,
       ...init.mapPosition,
     });
 
@@ -181,7 +178,7 @@ class App extends React.Component<any, State> {
 
     if (this.state.mode === Mode.Light) {
       if (this.mapgl) {
-        this.mapgl.setStyle(mapDarkStyle);
+        this.mapgl.setStyle(mapboxConfig.darkStyle);
       }
       this.setState({ mode: Mode.Dark });
       localStorage.setItem('mode', Mode.Dark);
@@ -192,7 +189,7 @@ class App extends React.Component<any, State> {
 
     if (this.state.mode === Mode.Dark) {
       if (this.mapgl) {
-        this.mapgl.setStyle(mapLightStyle);
+        this.mapgl.setStyle(mapboxConfig.lightStyle);
       }
       this.setState({ mode: Mode.Light });
       localStorage.setItem('mode', Mode.Light);
@@ -205,7 +202,6 @@ class App extends React.Component<any, State> {
     this.removePopUp();
     this.setState({ activeStore: null });
   };
-
   clickStore = (store: Store) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 

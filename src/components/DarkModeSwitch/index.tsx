@@ -24,7 +24,7 @@ export default ({ mode, onClick }: { mode: Mode; onClick: Function }) => {
         onClick(e);
       }}
     >
-      <input type="checkbox" className="dn" id="dn" checked={mode === Mode.Dark} />
+      <input type="checkbox" className="dn" id="dn" checked={mode === Mode.Dark} readOnly />
       <label htmlFor="dn" className="toggle">
         <span className="toggle__handler">
           <span className="crater crater--1"></span>
