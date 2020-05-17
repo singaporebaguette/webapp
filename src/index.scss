@@ -304,6 +304,52 @@ a:hover {
   }
 }
 
+.bottom-right {
+  position: fixed;
+  bottom: 8px;
+  right: 16px;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media (max-width: 992px) {
+    right: 40px;
+  }
+
+  z-index: 9999;
+
+  .personal-branding {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+    color: #ff4081;
+    font-size: 0.7rem;
+    opacity: 0.8;
+
+    @media (max-width: 992px) {
+      font-size: 0.6rem;
+    }
+
+    .spacer {
+      margin-left: 8px;
+      margin-right: 8px;
+      font-weight: bold;
+    }
+    &:hover {
+      opacity: 1;
+      color: #448aff;
+      a {
+        color: #ff4081;
+      }
+    }
+    a {
+      color: #448aff;
+      text-decoration: none;
+    }
+  }
+}
 .logo {
   height: 128px;
   width: 256px;
@@ -312,12 +358,6 @@ a:hover {
   background-color: rgba(0, 0, 0, 0);
   background-size: contain;
   background-repeat: no-repeat;
-
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-
-  z-index: 9999;
 
   display: none;
   @media (min-width: 992px) {
