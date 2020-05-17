@@ -10,9 +10,7 @@
     "title": "Provence",
     "address": "118 Holland Ave, #01-04, Singapore 278997",
     "link": "http://www.provence.com.sg/",
-    "features": [
-      3
-    ],
+    "features": [3],
     "lastupdate": {
       "_seconds": 1589687473,
       "_nanoseconds": 797000000
@@ -27,9 +25,7 @@
   },
   {
     "id": "15EfUdkVuB8nFr3JZF9w",
-    "features": [
-      2
-    ],
+    "features": [2],
     "lastupdate": {
       "_seconds": 1589653989,
       "_nanoseconds": 697000000
@@ -67,12 +63,7 @@
     "internal-rating": null,
     "link": "https://artisanbakery.com.sg/",
     "hasBaguette": true,
-    "features": [
-      1,
-      3,
-      4,
-      2
-    ],
+    "features": [1, 3, 4, 2],
     "lastupdate": {
       "_seconds": 1589653222,
       "_nanoseconds": 265000000
@@ -89,9 +80,7 @@
     "id": "3k3syhquNDHtIWsQM21n",
     "internal-rating": 4,
     "link": "https://www.instagram.com/firebakesg/",
-    "features": [
-      2
-    ],
+    "features": [2],
     "lastupdate": {
       "_seconds": 1589657339,
       "_nanoseconds": 454000000
@@ -136,12 +125,7 @@
     "title": "Cedele",
     "address": "1 Vista Exchange Green, #01-19, Singapore 138617",
     "link": "http://www.cedelegroup.com/",
-    "features": [
-      2,
-      1,
-      4,
-      3
-    ]
+    "features": [2, 1, 4, 3]
   },
   {
     "id": "5DLKyHWQqadNpDd96PJp",
@@ -151,11 +135,7 @@
     "title": "Carpenter & Cook",
     "address": "19 Lor Kilat, #01-06, Singapore 598120",
     "internal-rating": 1,
-    "features": [
-      3,
-      1,
-      2
-    ],
+    "features": [3, 1, 2],
     "lastupdate": {
       "_seconds": 1589686106,
       "_nanoseconds": 491000000
@@ -191,12 +171,7 @@
     "title": "Bread & Hearth",
     "address": "18 Keong Saik Rd., Singapore 089125",
     "link": "https://www.breadhearth.com/",
-    "features": [
-      1,
-      3,
-      4,
-      2
-    ],
+    "features": [1, 3, 4, 2],
     "lastupdate": {
       "_seconds": 1589657733,
       "_nanoseconds": 919000000
@@ -207,9 +182,7 @@
     "internal-rating": 5,
     "link": "http://maison-kayser.com.sg/",
     "hasBaguette": true,
-    "features": [
-      2
-    ],
+    "features": [2],
     "lastupdate": {
       "_seconds": 1589650351,
       "_nanoseconds": 134000000
@@ -245,12 +218,7 @@
     "address": "21 Eng Kong Terrace, Singapore 598993",
     "link": "https://www.bakerandcook.biz/",
     "hasBaguette": true,
-    "features": [
-      1,
-      2,
-      3,
-      4
-    ],
+    "features": [1, 2, 3, 4],
     "lastupdate": {
       "_seconds": 1589687342,
       "_nanoseconds": 834000000
@@ -277,9 +245,7 @@
     "address": "1 Shenton Way, #01-02, Singapore 068803",
     "internal-rating": 1,
     "link": "https://www.parisbaguettesg.com/",
-    "features": [
-      2
-    ],
+    "features": [2],
     "lastupdate": {
       "_seconds": 1589653844,
       "_nanoseconds": 829000000
@@ -306,9 +272,7 @@
     "address": "50 Jurong Gateway Rd, #02-20/21 Jem, Singapore 608549",
     "internal-rating": 1,
     "link": "https://www.parisbaguettesg.com/404-page#bread",
-    "features": [
-      2
-    ],
+    "features": [2],
     "lastupdate": {
       "_seconds": 1589655511,
       "_nanoseconds": 143000000
@@ -345,11 +309,7 @@
     "address": "3 Temasek Blvd, #01-432A, Singapore 038983",
     "internal-rating": null,
     "link": "http://www.cedelegroup.com/",
-    "features": [
-      1,
-      2,
-      3
-    ]
+    "features": [1, 2, 3]
   },
   {
     "id": "9tiQUqsDbaXFiHu9xKbm",
@@ -367,11 +327,7 @@
     "address": "33 Bussorah St, Singapore 199451",
     "link": "https://www.konditori.sg/",
     "hasBaguette": true,
-    "features": [
-      1,
-      3,
-      2
-    ],
+    "features": [1, 3, 2],
     "lastupdate": {
       "_seconds": 1589687705,
       "_nanoseconds": 237000000
@@ -416,11 +372,7 @@
     "address": "#01-02 asia square tower 2, 12 Marina View, 018961",
     "link": "https://artisanbakery.com.sg/",
     "hasBaguette": true,
-    "features": [
-      1,
-      2,
-      3
-    ],
+    "features": [1, 2, 3],
     "lastupdate": {
       "_seconds": 1589653470,
       "_nanoseconds": 269000000
@@ -458,9 +410,7 @@
     "address": "14 Maju Ave, Maju Mall, Singapore 556691",
     "link": "http://maison-kayser.com.sg/",
     "hasBaguette": true,
-    "features": [
-      2
-    ]
+    "features": [2]
   },
   {
     "id": "CXWF5VGyyAkM9kEuw26H",
@@ -478,10 +428,7 @@
     },
     "google-rating": 3.1,
     "createdby": "aksels.ledins@gmail.com",
-    "features": [
-      1,
-      3
-    ],
+    "features": [1, 3],
     "updatedby": "aksels.ledins@gmail.com",
     "createdate": {
       "_seconds": 1589684729,
@@ -509,9 +456,7 @@
     "address": "Level 2 Transit Area, 10 Airport Blvd, Singapore Changi Airport, Terminal 4, 819665",
     "internal-rating": 1,
     "link": "https://www.parisbaguettesg.com/404-page#bread",
-    "features": [
-      2
-    ],
+    "features": [2],
     "lastupdate": {
       "_seconds": 1589655593,
       "_nanoseconds": 896000000
@@ -519,9 +464,7 @@
   },
   {
     "id": "DcepRn0iM8ASdcQcj22F",
-    "features": [
-      3
-    ],
+    "features": [3],
     "lastupdate": {
       "_seconds": 1589656386,
       "_nanoseconds": 17000000
@@ -569,11 +512,7 @@
     "address": "163 Tanglin Rd, #B1-07/08, Singapore 247933",
     "internal-rating": 2,
     "link": "http://www.cedelegroup.com/",
-    "features": [
-      2,
-      3,
-      1
-    ]
+    "features": [2, 3, 1]
   },
   {
     "id": "G1pKcGo7vk4ktoTC3FhU",
@@ -583,11 +522,7 @@
     "address": "4 Kensington Park Rd, Singapore 557256",
     "link": "https://petiteboutique-sg.com/",
     "hasBaguette": true,
-    "features": [
-      1,
-      2,
-      3
-    ],
+    "features": [1, 2, 3],
     "lastupdate": {
       "_seconds": 1589652157,
       "_nanoseconds": 11000000
@@ -628,12 +563,7 @@
     "title": "Cedele",
     "address": "#02-14 Greenwich V, 1 Seletar Rd, 807011",
     "link": "http://www.cedelegroup.com/",
-    "features": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "features": [1, 2, 3, 4]
   },
   {
     "id": "HPVhZRGr45F5UKgk8XTU",
@@ -649,9 +579,7 @@
     "address": "#016-006 Arrival Hall level 1 T2 Singapore, 819643",
     "internal-rating": 1,
     "link": "https://www.parisbaguettesg.com/404-page#bread",
-    "features": [
-      2
-    ],
+    "features": [2],
     "lastupdate": {
       "_seconds": 1589655673,
       "_nanoseconds": 388000000
@@ -680,11 +608,7 @@
     "description": "Ciabattas not french baguettes",
     "title": "Cedele",
     "address": "115 Frankel Ave, Singapore 458231",
-    "features": [
-      3,
-      1,
-      2
-    ],
+    "features": [3, 1, 2],
     "lastupdate": {
       "_seconds": 1589683769,
       "_nanoseconds": 155000000
@@ -692,12 +616,7 @@
   },
   {
     "id": "Hi1SxDdE5Urt9EGIRVzb",
-    "features": [
-      2,
-      3,
-      4,
-      1
-    ],
+    "features": [2, 3, 4, 1],
     "lastupdate": {
       "_seconds": 1589685017,
       "_nanoseconds": 504000000
@@ -722,11 +641,7 @@
   },
   {
     "id": "I323dnzN4V6AwrKVcoIo",
-    "features": [
-      4,
-      3,
-      2
-    ],
+    "features": [4, 3, 2],
     "lastupdate": {
       "_seconds": 1589686822,
       "_nanoseconds": 140000000
@@ -757,9 +672,7 @@
     "address": "78 Airport Blvd, #01 - 200, Singapore 819666",
     "internal-rating": 1,
     "link": "https://www.parisbaguettesg.com/404-page#bread",
-    "features": [
-      2
-    ],
+    "features": [2],
     "lastupdate": {
       "_seconds": 1589655759,
       "_nanoseconds": 293000000
@@ -794,12 +707,7 @@
     "address": "1 Kim Seng Promenade #B1-K115/116, Great World, 237994",
     "link": "http://www.cedelegroup.com/",
     "hasBaguette": true,
-    "features": [
-      2,
-      3,
-      4,
-      1
-    ],
+    "features": [2, 3, 4, 1],
     "lastupdate": {
       "_seconds": 1589685171,
       "_nanoseconds": 236000000
@@ -812,11 +720,7 @@
   {
     "id": "JGhH8PHYXV7ugfyu01rN",
     "hasBaguette": true,
-    "features": [
-      3,
-      4,
-      2
-    ],
+    "features": [3, 4, 2],
     "lastupdate": {
       "_seconds": 1589652819,
       "_nanoseconds": 57000000
@@ -841,12 +745,7 @@
   },
   {
     "id": "KvN1gWrzWMBS98xJDVxv",
-    "features": [
-      1,
-      2,
-      3,
-      4
-    ],
+    "features": [1, 2, 3, 4],
     "lastupdate": {
       "_seconds": 1589686714,
       "_nanoseconds": 938000000
@@ -890,11 +789,7 @@
     "address": "252 North Bridge Rd, #B1 - 44M, Singapore 179103",
     "link": "http://www.cedelegroup.com/",
     "hasBaguette": true,
-    "features": [
-      1,
-      3,
-      2
-    ],
+    "features": [1, 3, 2],
     "lastupdate": {
       "_seconds": 1589684488,
       "_nanoseconds": 241000000
@@ -914,9 +809,7 @@
     "address": "71 Robinson Rd, #01-01, Singapore 068895",
     "internal-rating": 1,
     "link": "http://www.cedelegroup.com/",
-    "features": [
-      2
-    ],
+    "features": [2],
     "lastupdate": {
       "_seconds": 1589684889,
       "_nanoseconds": 14000000
@@ -944,9 +837,7 @@
     "title": "Paris Baguette",
     "address": "200 Victoria Street #B1-24 Bugis Junction, 188021",
     "link": "https://www.parisbaguettesg.com/404-page#bread",
-    "features": [
-      2
-    ],
+    "features": [2],
     "lastupdate": {
       "_seconds": 1589654913,
       "_nanoseconds": 654000000
@@ -973,11 +864,7 @@
     "address": "118 Killiney Rd, #01-01, Singapore 239555",
     "link": "https://artisanbakery.com.sg/",
     "hasBaguette": true,
-    "features": [
-      1,
-      2,
-      3
-    ],
+    "features": [1, 2, 3],
     "lastupdate": {
       "_seconds": 1589653364,
       "_nanoseconds": 220000000
@@ -989,12 +876,7 @@
   },
   {
     "id": "N4entuXejysiAWBK7APx",
-    "features": [
-      2,
-      3,
-      4,
-      1
-    ],
+    "features": [2, 3, 4, 1],
     "lastupdate": {
       "_seconds": 1589687259,
       "_nanoseconds": 909000000
@@ -1025,10 +907,7 @@
     "title": "Simply Bread",
     "address": "501 Bukit Timah Road #02-07, Cluny Court",
     "link": "simplybread.com.sg",
-    "features": [
-      2,
-      1
-    ],
+    "features": [2, 1],
     "lastupdate": {
       "_seconds": 1589658049,
       "_nanoseconds": 684000000
@@ -1053,12 +932,7 @@
     "title": "Cedele",
     "address": "9 North Buona Vista Drive #01-10, 1 The Metropolis Tower, 138588",
     "link": "http://www.cedelegroup.com/",
-    "features": [
-      1,
-      2,
-      3,
-      4
-    ],
+    "features": [1, 2, 3, 4],
     "lastupdate": {
       "_seconds": 1589685576,
       "_nanoseconds": 632000000
@@ -1083,12 +957,7 @@
     "address": "64 Namly Pl, Singapore 267208",
     "link": "https://www.bakerandcook.biz/",
     "hasBaguette": true,
-    "features": [
-      2,
-      3,
-      4,
-      1
-    ],
+    "features": [2, 3, 4, 1],
     "lastupdate": {
       "_seconds": 1589687139,
       "_nanoseconds": 170000000
@@ -1118,11 +987,7 @@
     "title": "Cedele",
     "address": "238 Thomson Road #01-01/02/03/04 Novena Square, 307683",
     "link": "http://www.cedelegroup.com/",
-    "features": [
-      3,
-      2,
-      1
-    ],
+    "features": [3, 2, 1],
     "lastupdate": {
       "_seconds": 1589683865,
       "_nanoseconds": 86000000
@@ -1149,11 +1014,7 @@
     "address": "607 Bukit Timah Rd, Singapore 269708",
     "link": "https://www.facebook.com/ChoupinetteCafe/",
     "hasBaguette": true,
-    "features": [
-      2,
-      3,
-      4
-    ],
+    "features": [2, 3, 4],
     "lastupdate": {
       "_seconds": 1589652541,
       "_nanoseconds": 899000000
@@ -1190,12 +1051,7 @@
     "address": "290 Orchard Rd, #02-09/K1 Paragon Shopping Centre, Singapore 238859",
     "link": "https://www.paulsgcatering.com/",
     "hasBaguette": true,
-    "features": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "features": [1, 2, 3, 4]
   },
   {
     "id": "XRvfyEUoEKxaPWT2MnlS",
@@ -1210,9 +1066,7 @@
     "address": "16 Raffles Quay, Hong Leong Building, Singapore 048581",
     "internal-rating": 1,
     "link": "https://www.parisbaguettesg.com/",
-    "features": [
-      2
-    ],
+    "features": [2],
     "lastupdate": {
       "_seconds": 1589653929,
       "_nanoseconds": 511000000
@@ -1234,11 +1088,7 @@
     "internal-rating": 2,
     "link": "https://www.paulsgcatering.com/estore",
     "hasBaguette": false,
-    "features": [
-      2,
-      3,
-      4
-    ],
+    "features": [2, 3, 4],
     "lastupdate": {
       "_seconds": 1589651652,
       "_nanoseconds": 204000000
@@ -1264,12 +1114,7 @@
     "title": "Cedele",
     "address": "4 Hillview Rise, #01-12/13, HillV2, Singapore 667979",
     "link": "http://www.cedelegroup.com/",
-    "features": [
-      2,
-      1,
-      3,
-      4
-    ],
+    "features": [2, 1, 3, 4],
     "lastupdate": {
       "_seconds": 1589685789,
       "_nanoseconds": 615000000
@@ -1304,12 +1149,7 @@
     "address": "30 E Coast Rd, #02-27, Singapore 428751",
     "internal-rating": null,
     "link": "https://www.breadhearth.com/",
-    "features": [
-      2,
-      3,
-      4,
-      1
-    ],
+    "features": [2, 3, 4, 1],
     "lastupdate": {
       "_seconds": 1589657889,
       "_nanoseconds": 255000000
@@ -1344,17 +1184,13 @@
     "internal-rating": 4,
     "link": "http://maison-kayser.com.sg/",
     "hasBaguette": true,
-    "features": [
-      2
-    ]
+    "features": [2]
   },
   {
     "id": "axkaSRC3nf4gzO9sSuln",
     "internal-rating": 1,
     "link": "http://www.asanoya.asia/",
-    "features": [
-      3
-    ],
+    "features": [3],
     "lastupdate": {
       "_seconds": 1589656267,
       "_nanoseconds": 100000000
@@ -1384,9 +1220,7 @@
     "address": "8A Marina Boulevard #B2-07 Marina Bay Link Mall, 018984",
     "link": "https://www.paulsgcatering.com/",
     "hasBaguette": true,
-    "features": [
-      2
-    ],
+    "features": [2],
     "lastupdate": {
       "_seconds": 1589650991,
       "_nanoseconds": 314000000
@@ -1429,12 +1263,7 @@
     "internal-rating": null,
     "link": "https://www.bakerandcook.biz",
     "hasBaguette": true,
-    "features": [
-      2,
-      1,
-      3,
-      4
-    ]
+    "features": [2, 1, 3, 4]
   },
   {
     "id": "dzo6sljoFAo17kYeJpbU",
@@ -1453,12 +1282,7 @@
     "address": "163 Tanglin Rd, #01-16/17 Tanglin Mall, Singapore 247933",
     "link": "https://www.paulsgcatering.com/",
     "hasBaguette": true,
-    "features": [
-      1,
-      3,
-      4,
-      2
-    ],
+    "features": [1, 3, 4, 2],
     "lastupdate": {
       "_seconds": 1589651369,
       "_nanoseconds": 495000000
@@ -1489,11 +1313,7 @@
     "address": "9 North Buona Vista Drive #01-12 Metropolis, Singapore 138588",
     "link": "https://artisanbakery.com.sg/",
     "hasBaguette": true,
-    "features": [
-      1,
-      3,
-      2
-    ],
+    "features": [1, 3, 2],
     "lastupdate": {
       "_seconds": 1589653534,
       "_nanoseconds": 734000000
@@ -1524,16 +1344,12 @@
     "address": "65, #01-22 Airport Blvd, Singapore Changi Airport, 819663",
     "internal-rating": 1,
     "link": "https://www.parisbaguettesg.com/404-page#bread",
-    "features": [
-      2
-    ]
+    "features": [2]
   },
   {
     "id": "iWbm9yw1VJlsEajmIyXH",
     "hasBaguette": true,
-    "features": [
-      2
-    ],
+    "features": [2],
     "lastupdate": {
       "_seconds": 1589649976,
       "_nanoseconds": 760000000
@@ -1561,9 +1377,7 @@
   {
     "id": "iXkFgsPKOtokV4opcH5A",
     "hasBaguette": true,
-    "features": [
-      2
-    ],
+    "features": [2],
     "lastupdate": {
       "_seconds": 1589650175,
       "_nanoseconds": 292000000
@@ -1596,10 +1410,7 @@
     "address": "749 North Bridge Rd, Singapore #01-01, 198717",
     "internal-rating": 4.5,
     "link": "https://www.motherdough.com.sg/",
-    "features": [
-      1,
-      3
-    ],
+    "features": [1, 3],
     "lastupdate": {
       "_seconds": 1589656790,
       "_nanoseconds": 845000000
@@ -1619,11 +1430,7 @@
   {
     "id": "mQkS8inPL4xP6gItRF7H",
     "link": "http://www.cedelegroup.com/",
-    "features": [
-      1,
-      2,
-      3
-    ],
+    "features": [1, 2, 3],
     "lastupdate": {
       "_seconds": 1589684031,
       "_nanoseconds": 877000000
@@ -1670,19 +1477,12 @@
     "address": "77 Hillcrest Rd, Singapore 288951",
     "link": "https://www.bakerandcook.biz",
     "hasBaguette": true,
-    "features": [
-      3,
-      4,
-      1,
-      2
-    ]
+    "features": [3, 4, 1, 2]
   },
   {
     "id": "nuCgNkPhkBUvkAWjXSzp",
     "hasBaguette": true,
-    "features": [
-      2
-    ],
+    "features": [2],
     "lastupdate": {
       "_seconds": 1589654772,
       "_nanoseconds": 608000000
@@ -1725,10 +1525,7 @@
     "title": "Cedele",
     "address": "9, #01-08 Raffles Place, Republic Plaza, 048619",
     "link": "http://www.cedelegroup.com/",
-    "features": [
-      1,
-      2
-    ],
+    "features": [1, 2],
     "lastupdate": {
       "_seconds": 1589684582,
       "_nanoseconds": 391000000
@@ -1742,9 +1539,7 @@
     "address": "Temasek Blvd",
     "internal-rating": 1,
     "link": "https://www.parisbaguettesg.com/404-page#bread",
-    "features": [
-      2
-    ],
+    "features": [2],
     "lastupdate": {
       "_seconds": 1589654557,
       "_nanoseconds": 96000000
@@ -1764,12 +1559,7 @@
   },
   {
     "id": "pUuQPotoaKHVHv2wnIEd",
-    "features": [
-      1,
-      2,
-      3,
-      4
-    ],
+    "features": [1, 2, 3, 4],
     "lastupdate": {
       "_seconds": 1589686562,
       "_nanoseconds": 380000000
@@ -1804,12 +1594,7 @@
     "description": "Bread but no baguette",
     "address": "Chip Bee Gardens 44, 01-56 Jln Merah Saga, 278116",
     "link": "https://www.bakerandcook.biz",
-    "features": [
-      4,
-      3,
-      2,
-      1
-    ],
+    "features": [4, 3, 2, 1],
     "lastupdate": {
       "_seconds": 1589686946,
       "_nanoseconds": 702000000
@@ -1826,9 +1611,7 @@
     "id": "qTHuGIpksuhLlN5CYk2w",
     "internal-rating": 1,
     "link": "https://www.parisbaguettesg.com/",
-    "features": [
-      2
-    ],
+    "features": [2],
     "lastupdate": {
       "_seconds": 1589653709,
       "_nanoseconds": 363000000
@@ -1864,12 +1647,7 @@
     "address": "391B Orchard Rd, #03-16/17 Takashimaya Shopping Center, Singapore 238872",
     "link": "https://www.paulsgcatering.com/",
     "hasBaguette": true,
-    "features": [
-      1,
-      2,
-      3,
-      4
-    ],
+    "features": [1, 2, 3, 4],
     "lastupdate": {
       "_seconds": 1589651291,
       "_nanoseconds": 4000000
@@ -1907,12 +1685,7 @@
     "address": "10 Collyer Quay, #01-01 Ocean Financial Centre, Singapore 049315",
     "link": "https://www.paulsgcatering.com/",
     "hasBaguette": true,
-    "features": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "features": [1, 2, 3, 4]
   },
   {
     "id": "vFoWa15X6upGAN4rfzWR",
@@ -1936,10 +1709,7 @@
     "internal-rating": 5,
     "link": "https://www.petitpain.com.sg/",
     "hasBaguette": true,
-    "features": [
-      3,
-      4
-    ],
+    "features": [3, 4],
     "lastupdate": {
       "_seconds": 1589650701,
       "_nanoseconds": 709000000
@@ -1970,17 +1740,11 @@
     "address": "913 Bukit Timah Rd, Singapore 589623",
     "internal-rating": 1,
     "link": "http://www.asanoya.asia/",
-    "features": [
-      3
-    ]
+    "features": [3]
   },
   {
     "id": "wC9YFTfWPVlAJ65EYEAW",
-    "features": [
-      3,
-      2,
-      1
-    ],
+    "features": [3, 2, 1],
     "lastupdate": {
       "_seconds": 1589683930,
       "_nanoseconds": 569000000
@@ -2017,12 +1781,7 @@
     "title": "Cedele",
     "address": "20 Pasir Panjang Rd, #02-12 Mapletree Business City, Singapore 117439",
     "link": "http://www.cedelegroup.com/",
-    "features": [
-      3,
-      4,
-      1,
-      2
-    ],
+    "features": [3, 4, 1, 2],
     "lastupdate": {
       "_seconds": 1589685439,
       "_nanoseconds": 585000000
@@ -2054,9 +1813,7 @@
     "address": "721 Havelock Rd, Singapore 169645",
     "internal-rating": 2,
     "link": "https://www.instagram.com/starterlab.sg/",
-    "features": [
-      1
-    ],
+    "features": [1],
     "lastupdate": {
       "_seconds": 1589657089,
       "_nanoseconds": 249000000
@@ -2080,9 +1837,7 @@
     "internal-rating": 5,
     "link": "http://maison-kayser.com.sg",
     "hasBaguette": true,
-    "features": [
-      2
-    ],
+    "features": [2],
     "lastupdate": {
       "_seconds": 1589649829,
       "_nanoseconds": 719000000
@@ -2107,9 +1862,7 @@
     "address": "435 Orchard Rd, #02 - 02.03, #02 - 48, Singapore 238877",
     "internal-rating": 1,
     "link": "https://www.parisbaguettesg.com/404-page#bread",
-    "features": [
-      2
-    ],
+    "features": [2],
     "lastupdate": {
       "_seconds": 1589655371,
       "_nanoseconds": 597000000
