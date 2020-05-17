@@ -1,421 +1,2124 @@
 [
   {
-    "id": "0R86nK05iwBGvVPcrFNu",
+    "id": "0XwDz86drxHDBFKhO2Ki",
     "createdate": {
-      "_seconds": 1589378711,
-      "_nanoseconds": 592000000
+      "_seconds": 1589687473,
+      "_nanoseconds": 797000000
     },
+    "pluscode": "8Q6W+5C Singapore",
+    "approvedLevel": 4,
+    "title": "Provence",
+    "address": "118 Holland Ave, #01-04, Singapore 278997",
+    "link": "http://www.provence.com.sg/",
+    "features": [
+      3
+    ],
     "lastupdate": {
-      "_seconds": 1589378711,
-      "_nanoseconds": 592000000
+      "_seconds": 1589687473,
+      "_nanoseconds": 797000000
     },
-    "description": "Changi T2 Arrival",
-    "title": "Paris Baguette",
     "coordinates": {
-      "lat": 103.988813,
-      "lng": 1.356187
+      "lng": 1.310438,
+      "lat": 103.796063
     },
-    "mark": 0,
-    "approved": 5,
+    "google-rating": 4,
     "createdby": "aksels.ledins@gmail.com",
-    "features": ["eat-in", "delivery"],
-    "price": 4,
     "updatedby": "aksels.ledins@gmail.com"
   },
   {
-    "id": "42XXlIVNtIWNoHFOkBzq",
+    "id": "15EfUdkVuB8nFr3JZF9w",
+    "features": [
+      2
+    ],
     "lastupdate": {
-      "_seconds": 1589378645,
-      "_nanoseconds": 285000000
+      "_seconds": 1589653989,
+      "_nanoseconds": 697000000
     },
-    "description": "Changi T4 Arrival",
-    "title": "Paris Baguette",
-    "coordinates": {
-      "lng": 1.338437,
-      "lat": 103.983063
-    },
-    "mark": 4,
-    "approved": 2,
-    "createdby": "aksels.ledins@gmail.com",
-    "features": ["eat-in"],
-    "price": 4,
-    "updatedby": "aksels.ledins@gmail.com",
-    "createdate": {
-      "_seconds": 1589378590,
-      "_nanoseconds": 159000000
-    }
-  },
-  {
-    "id": "5RbMcxfYCTAyCWKkZHd5",
-    "features": ["delivery"],
-    "price": 3,
-    "updatedby": "aksels.ledins@gmail.com",
-    "createdate": {
-      "_seconds": 1589379126,
-      "_nanoseconds": 865000000
-    },
-    "lastupdate": {
-      "_seconds": 1589379126,
-      "_nanoseconds": 865000000
-    },
-    "baguettePrice": 4.5,
-    "title": "Simply Bread",
-    "coordinates": {
-      "lat": 103.795813,
-      "lng": 1.330687
-    },
-    "mark": 3,
-    "approved": 2,
-    "createdby": "aksels.ledins@gmail.com"
-  },
-  {
-    "id": "7bSwxL155Rh8bYsMLvho",
-    "price": 4,
-    "updatedby": "aksels.ledins@gmail.com",
-    "createdate": {
-      "_seconds": 1589378518,
-      "_nanoseconds": 157000000
-    },
-    "lastupdate": {
-      "_seconds": 1589378548,
-      "_nanoseconds": 76000000
-    },
-    "description": "UOB Plaza",
-    "title": "Paris Baguette",
     "coordinates": {
       "lat": 103.850688,
       "lng": 1.285438
     },
-    "mark": 0,
-    "approved": 5,
+    "google-rating": 3.8,
     "createdby": "aksels.ledins@gmail.com",
-    "features": ["eat-in", "delivery"]
-  },
-  {
-    "id": "AExSR2lZ5kwp6NhmmXxE",
-    "lastupdate": {
-      "_seconds": 1589378451,
-      "_nanoseconds": 514000000
-    },
-    "description": "Suntec City",
-    "title": "Paris Baguette",
-    "coordinates": {
-      "lat": 103.858688,
-      "lng": 1.295687
-    },
-    "mark": 0,
-    "approved": 5,
-    "createdby": "aksels.ledins@gmail.com",
-    "features": ["delivery", "eat-in"],
-    "price": 4,
     "updatedby": "aksels.ledins@gmail.com",
     "createdate": {
-      "_seconds": 1589378451,
-      "_nanoseconds": 514000000
+      "_seconds": 1589653989,
+      "_nanoseconds": 696000000
+    },
+    "pluscode": "7VP2+57 Singapore",
+    "approvedLevel": 4,
+    "description": "No no no baguettes here",
+    "title": "Paris Baguette",
+    "address": "UOB Plaza 1, 80 Raffles Place, 048624",
+    "internal-rating": 1,
+    "link": "https://www.parisbaguettesg.com/"
+  },
+  {
+    "id": "1lZuhS80EHiEgQuiBl56",
+    "createdate": {
+      "_seconds": 1589653222,
+      "_nanoseconds": 265000000
+    },
+    "baguettePrice": 4,
+    "pluscode": "8VF2+9W Singapore",
+    "approvedLevel": 1,
+    "title": "Artisan Boulangerie Co",
+    "address": "312 Balestier Rd, #01-01, Singapore 329743",
+    "internal-rating": null,
+    "link": "https://artisanbakery.com.sg/",
+    "hasBaguette": true,
+    "features": [
+      1,
+      3,
+      4,
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589653222,
+      "_nanoseconds": 265000000
+    },
+    "coordinates": {
+      "lat": 103.852313,
+      "lng": 1.323437
+    },
+    "google-rating": 4,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com"
+  },
+  {
+    "id": "3k3syhquNDHtIWsQM21n",
+    "internal-rating": 4,
+    "link": "https://www.instagram.com/firebakesg/",
+    "features": [
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589657339,
+      "_nanoseconds": 454000000
+    },
+    "coordinates": {
+      "lat": 103.907562,
+      "lng": 1.307687
+    },
+    "google-rating": 3.5,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589657339,
+      "_nanoseconds": 454000000
+    },
+    "pluscode": "8W55+32 Singapore",
+    "approvedLevel": 2,
+    "description": "No baguettes but you can buy bread (wood fired!)",
+    "title": "Firebake",
+    "address": "237 E Coast Rd, Singapore 428930"
+  },
+  {
+    "id": "42BG4VlzTY3wtMqTpA3I",
+    "lastupdate": {
+      "_seconds": 1589685694,
+      "_nanoseconds": 753000000
+    },
+    "coordinates": {
+      "lat": 103.788563,
+      "lng": 1.306687
+    },
+    "google-rating": 3.8,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589685694,
+      "_nanoseconds": 753000000
+    },
+    "pluscode": "8Q4Q+MC Singapore",
+    "approvedLevel": 4,
+    "description": "More a kitchen than a bakery",
+    "title": "Cedele",
+    "address": "1 Vista Exchange Green, #01-19, Singapore 138617",
+    "link": "http://www.cedelegroup.com/",
+    "features": [
+      2,
+      1,
+      4,
+      3
+    ]
+  },
+  {
+    "id": "5DLKyHWQqadNpDd96PJp",
+    "pluscode": "8QRF+9C Singapore",
+    "approvedLevel": 4,
+    "description": "Some croissants but there is mostly cakes here",
+    "title": "Carpenter & Cook",
+    "address": "19 Lor Kilat, #01-06, Singapore 598120",
+    "internal-rating": 1,
+    "features": [
+      3,
+      1,
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589686106,
+      "_nanoseconds": 491000000
+    },
+    "coordinates": {
+      "lat": 103.773562,
+      "lng": 1.340937
+    },
+    "google-rating": 4.2,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589686106,
+      "_nanoseconds": 490000000
     }
   },
   {
-    "id": "GEO3kWeo5l2V6lfsDzLR",
-    "lastupdate": {
-      "_seconds": 1589378066,
-      "_nanoseconds": 217000000
-    },
+    "id": "5dwJlMwQodUuvfip0px0",
     "coordinates": {
-      "lng": 1.278937,
-      "lat": 103.848813
+      "lat": 103.841688,
+      "lng": 1.279938
     },
-    "mark": 0,
+    "google-rating": 4.1,
     "createdby": "aksels.ledins@gmail.com",
     "updatedby": "aksels.ledins@gmail.com",
-    "price": 4,
     "createdate": {
-      "_seconds": 1589378041,
-      "_nanoseconds": 352000000
+      "_seconds": 1589657733,
+      "_nanoseconds": 919000000
     },
-    "baguettePrice": -1,
-    "title": "Paris Baguette",
-    "description": "Robinson Rd",
-    "approved": 5,
-    "features": ["delivery", "eat-in"]
+    "pluscode": "7RHR+XM Singapore",
+    "approvedLevel": 3,
+    "description": "Croissant craving? ok then. Baguette? no",
+    "title": "Bread & Hearth",
+    "address": "18 Keong Saik Rd., Singapore 089125",
+    "link": "https://www.breadhearth.com/",
+    "features": [
+      1,
+      3,
+      4,
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589657733,
+      "_nanoseconds": 919000000
+    }
   },
   {
-    "id": "KjsHWrMnR1Qc0DQVZUN0",
-    "price": 4,
-    "updatedby": "aksels.ledins@gmail.com",
-    "createdate": {
-      "_seconds": 1589378866,
-      "_nanoseconds": 46000000
-    },
+    "id": "7mWWx19Nq9i3CSa3K73u",
+    "internal-rating": 5,
+    "link": "http://maison-kayser.com.sg/",
+    "hasBaguette": true,
+    "features": [
+      2
+    ],
     "lastupdate": {
-      "_seconds": 1589378866,
-      "_nanoseconds": 46000000
+      "_seconds": 1589650351,
+      "_nanoseconds": 134000000
     },
-    "description": "Terminal 3, Arrival Hall, Level 1",
-    "title": "Paris Baguette",
     "coordinates": {
-      "lat": 103.986188,
-      "lng": 1.355562
+      "lng": 1.306062,
+      "lat": 103.832688
     },
-    "mark": 4,
-    "approved": 2,
+    "google-rating": 5,
     "createdby": "aksels.ledins@gmail.com",
-    "features": ["eat-in"]
-  },
-  {
-    "id": "KsymSRLnRIhU9XauM8Lr",
-    "price": 4,
     "updatedby": "aksels.ledins@gmail.com",
     "createdate": {
-      "_seconds": 1589378118,
-      "_nanoseconds": 315000000
+      "_seconds": 1589650351,
+      "_nanoseconds": 134000000
     },
+    "baguettePrice": 4.5,
+    "pluscode": "8R4M+C3 Singapore",
+    "title": "Maison Kayser",
+    "approvedLevel": 1,
+    "description": "Scotts Square",
+    "address": "6 Scotts Rd, #B1 - 25, Singapore 228209"
+  },
+  {
+    "id": "91SXkZ2LFGwQh4lstG0a",
+    "createdate": {
+      "_seconds": 1589687342,
+      "_nanoseconds": 833000000
+    },
+    "pluscode": "8QP9+H6 Singapore",
+    "approvedLevel": 1,
+    "description": "Sells baguettes",
+    "title": "Baker & Cook",
+    "address": "21 Eng Kong Terrace, Singapore 598993",
+    "link": "https://www.bakerandcook.biz/",
+    "hasBaguette": true,
+    "features": [
+      1,
+      2,
+      3,
+      4
+    ],
     "lastupdate": {
-      "_seconds": 1589378124,
-      "_nanoseconds": 827000000
+      "_seconds": 1589687342,
+      "_nanoseconds": 834000000
     },
+    "coordinates": {
+      "lat": 103.768062,
+      "lng": 1.336437
+    },
+    "google-rating": 4.3,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com"
+  },
+  {
+    "id": "9FmCe6RqrARlexfKLacT",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589653844,
+      "_nanoseconds": 829000000
+    },
+    "pluscode": "7VH2+V8 Singapore",
+    "approvedLevel": 4,
     "description": "Shenton Way",
     "title": "Paris Baguette",
-    "coordinates": {
-      "lat": 103.850813,
-      "lng": 1.279688
+    "address": "1 Shenton Way, #01-02, Singapore 068803",
+    "internal-rating": 1,
+    "link": "https://www.parisbaguettesg.com/",
+    "features": [
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589653844,
+      "_nanoseconds": 829000000
     },
-    "mark": 0,
-    "approved": 5,
-    "createdby": "aksels.ledins@gmail.com",
-    "features": ["delivery", "eat-in"]
+    "coordinates": {
+      "lng": 1.279688,
+      "lat": 103.850813
+    },
+    "google-rating": 4.1,
+    "createdby": "aksels.ledins@gmail.com"
   },
   {
-    "id": "MTr1mlX7NmRRax4atoG7",
-    "mark": 4.5,
-    "createdby": "aksels.ledins@gmail.com",
+    "id": "9JEhSRai96Ep2pUoROSY",
     "updatedby": "aksels.ledins@gmail.com",
-    "price": 4,
     "createdate": {
-      "_seconds": 1589377902,
-      "_nanoseconds": 825000000
+      "_seconds": 1589655511,
+      "_nanoseconds": 143000000
     },
-    "baguettePrice": 4,
-    "description": "Serangoon",
-    "title": "Maison Kayser",
-    "approved": 1,
-    "features": ["delivery", "croissant", "eat-in"],
-    "lastupdate": {
-      "_seconds": 1589377902,
-      "_nanoseconds": 826000000
-    },
-    "coordinates": {
-      "lng": 1.364937,
-      "lat": 103.865438
-    }
-  },
-  {
-    "id": "MwEammvf3STZNvn1zpo0",
-    "lastupdate": {
-      "_seconds": 1589377849,
-      "_nanoseconds": 92000000
-    },
-    "coordinates": {
-      "lat": 103.837313,
-      "lng": 1.300187
-    },
-    "mark": 4.5,
-    "createdby": "aksels.ledins@gmail.com",
-    "updatedby": "aksels.ledins@gmail.com",
-    "price": 4,
-    "createdate": {
-      "_seconds": 1589377849,
-      "_nanoseconds": 92000000
-    },
-    "baguettePrice": 4,
-    "description": "Somerset",
-    "title": "Maison Kayser",
-    "approved": 1,
-    "features": ["delivery", "croissant", "eat-in"]
-  },
-  {
-    "id": "Om6HtZn2v5MjVAvu2Myx",
-    "lastupdate": {
-      "_seconds": 1589378216,
-      "_nanoseconds": 693000000
-    },
-    "description": "Raffles Quay",
+    "baguettePrice": 9,
+    "pluscode": "8PMV+69 Singapore",
     "title": "Paris Baguette",
-    "coordinates": {
-      "lng": 1.281437,
-      "lat": 103.851063
+    "approvedLevel": 3,
+    "description": "Sandwiches, but no baguettes",
+    "address": "50 Jurong Gateway Rd, #02-20/21 Jem, Singapore 608549",
+    "internal-rating": 1,
+    "link": "https://www.parisbaguettesg.com/404-page#bread",
+    "features": [
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589655511,
+      "_nanoseconds": 143000000
     },
-    "mark": 0,
-    "approved": 5,
-    "createdby": "aksels.ledins@gmail.com",
-    "features": ["delivery", "eat-in"],
-    "price": 4,
-    "updatedby": "aksels.ledins@gmail.com",
-    "createdate": {
-      "_seconds": 1589378216,
-      "_nanoseconds": 693000000
-    }
-  },
-  {
-    "id": "WTJlGdQl34em1saBfGJk",
     "coordinates": {
       "lat": 103.743438,
       "lng": 1.333062
     },
-    "mark": 0,
-    "approved": 5,
-    "createdby": "aksels.ledins@gmail.com",
-    "features": ["delivery", "eat-in"],
-    "price": 4,
-    "updatedby": "aksels.ledins@gmail.com",
-    "createdate": {
-      "_seconds": 1589378334,
-      "_nanoseconds": 770000000
-    },
-    "lastupdate": {
-      "_seconds": 1589378334,
-      "_nanoseconds": 770000000
-    },
-    "description": "Jurong",
-    "title": "Paris Baguette"
+    "google-rating": 3.6,
+    "createdby": "aksels.ledins@gmail.com"
   },
   {
-    "id": "gelvmb39k9ygFasKmsOo",
-    "approved": 1,
-    "features": ["delivery", "eat-in", "croissant"],
+    "id": "9ceCvIneUdAeBTB1P0ql",
     "lastupdate": {
-      "_seconds": 1589377787,
-      "_nanoseconds": 953000000
+      "_seconds": 1589684204,
+      "_nanoseconds": 796000000
     },
     "coordinates": {
-      "lng": 1.293563,
-      "lat": 103.858188
+      "lat": 103.857813,
+      "lng": 1.294938
     },
-    "mark": 4.5,
+    "google-rating": 3.6,
     "createdby": "aksels.ledins@gmail.com",
     "updatedby": "aksels.ledins@gmail.com",
-    "price": 4,
     "createdate": {
-      "_seconds": 1589377787,
-      "_nanoseconds": 953000000
+      "_seconds": 1589684204,
+      "_nanoseconds": 795000000
     },
-    "baguettePrice": 4,
-    "description": "Suntec City",
-    "title": "Maison Kayser"
+    "baguettePrice": 4.9,
+    "pluscode": "7VV5+X4 Singapore",
+    "title": "Cedele",
+    "approvedLevel": 3,
+    "description": "Ciabattas not french baguettes",
+    "address": "3 Temasek Blvd, #01-432A, Singapore 038983",
+    "internal-rating": null,
+    "link": "http://www.cedelegroup.com/",
+    "features": [
+      1,
+      2,
+      3
+    ]
   },
   {
-    "id": "mj1IaRBbWxW2u2dUGjdP",
-    "mark": 0,
-    "approved": 5,
+    "id": "9tiQUqsDbaXFiHu9xKbm",
+    "google-rating": 4.5,
     "createdby": "aksels.ledins@gmail.com",
-    "features": ["delivery"],
-    "price": 4,
     "updatedby": "aksels.ledins@gmail.com",
     "createdate": {
-      "_seconds": 1589378404,
-      "_nanoseconds": 915000000
+      "_seconds": 1589687705,
+      "_nanoseconds": 237000000
     },
+    "pluscode": "8V25+MR Singapore",
+    "approvedLevel": 1,
+    "description": "Loaves but you might find a baguette as well",
+    "title": "Konditori",
+    "address": "33 Bussorah St, Singapore 199451",
+    "link": "https://www.konditori.sg/",
+    "hasBaguette": true,
+    "features": [
+      1,
+      3,
+      2
+    ],
     "lastupdate": {
-      "_seconds": 1589378411,
-      "_nanoseconds": 493000000
+      "_seconds": 1589687705,
+      "_nanoseconds": 237000000
     },
-    "description": "Bugis",
-    "title": "Paris Baguette",
     "coordinates": {
-      "lat": 103.855563,
-      "lng": 1.299312
+      "lng": 1.301687,
+      "lat": 103.859563
     }
   },
   {
-    "id": "nJrpdSIja61zJHgntgkZ",
-    "description": "Cross ST",
-    "title": "Maison Kayser",
-    "approved": 1,
-    "features": ["delivery", "eat-in", "croissant"],
+    "id": "AxGKCkDMq4kBaYh1l1pR",
     "lastupdate": {
-      "_seconds": 1589377710,
-      "_nanoseconds": 305000000
+      "_seconds": 1589657480,
+      "_nanoseconds": 759000000
     },
     "coordinates": {
-      "lat": 103.847063,
-      "lng": 1.283563
+      "lng": 1.275312,
+      "lat": 103.844563
     },
-    "mark": 4.5,
+    "google-rating": 4.8,
     "createdby": "aksels.ledins@gmail.com",
     "updatedby": "aksels.ledins@gmail.com",
-    "price": 4,
     "createdate": {
-      "_seconds": 1589377710,
-      "_nanoseconds": 305000000
+      "_seconds": 1589657480,
+      "_nanoseconds": 759000000
     },
-    "baguettePrice": 4
+    "pluscode": "7RGV+4R Singapore",
+    "approvedLevel": 1,
+    "title": "Nick Vina",
+    "address": "12 Gopeng St, #01-54/55 Icon Village, Singapore 078877",
+    "link": "http://www.nickvina.com/",
+    "hasBaguette": true
   },
   {
-    "id": "qcleZ8yrLJzTUaHa1N0n",
+    "id": "BWdELBs0gjNMz36BVxDP",
+    "createdate": null,
+    "baguettePrice": 4,
+    "pluscode": "7VH2+7F Singapore",
+    "approvedLevel": 1,
+    "description": "Asia Square Tower 2",
+    "title": "Artisan Boulangerie Co",
+    "address": "#01-02 asia square tower 2, 12 Marina View, 018961",
+    "link": "https://artisanbakery.com.sg/",
+    "hasBaguette": true,
+    "features": [
+      1,
+      2,
+      3
+    ],
+    "lastupdate": {
+      "_seconds": 1589653470,
+      "_nanoseconds": 269000000
+    },
+    "coordinates": {
+      "lng": 1.278188,
+      "lat": 103.851188
+    },
+    "google-rating": 4,
+    "createdby": null,
+    "updatedby": "aksels.ledins@gmail.com"
+  },
+  {
+    "id": "BsnHEbmBTRnqMlUp2k8D",
+    "lastupdate": {
+      "_seconds": 1589650542,
+      "_nanoseconds": 710000000
+    },
+    "coordinates": {
+      "lat": 103.865438,
+      "lng": 1.364937
+    },
+    "google-rating": 4,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589650542,
+      "_nanoseconds": 709000000
+    },
+    "baguettePrice": 4.5,
+    "pluscode": "9V78+X5 Singapore",
+    "title": "Maison Kayser",
+    "approvedLevel": 1,
+    "description": "Serangoon",
+    "address": "14 Maju Ave, Maju Mall, Singapore 556691",
+    "link": "http://maison-kayser.com.sg/",
+    "hasBaguette": true,
+    "features": [
+      2
+    ]
+  },
+  {
+    "id": "CXWF5VGyyAkM9kEuw26H",
+    "lastupdate": {
+      "_seconds": 1589684729,
+      "_nanoseconds": 370000000
+    },
+    "pluscode": "7VJ2+CQ Singapore",
+    "title": "Cedele",
+    "address": "1 Raffles Quay, #B2-02/03, Singapore 048583",
+    "link": "http://www.cedelegroup.com/",
+    "coordinates": {
+      "lat": 103.851938,
+      "lng": 1.281063
+    },
+    "google-rating": 3.1,
+    "createdby": "aksels.ledins@gmail.com",
+    "features": [
+      1,
+      3
+    ],
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589684729,
+      "_nanoseconds": 370000000
+    }
+  },
+  {
+    "id": "DA56vRu5HH4LW17muQCO",
+    "coordinates": {
+      "lng": 1.338437,
+      "lat": 103.983063
+    },
+    "google-rating": 3.6,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589655593,
+      "_nanoseconds": 895000000
+    },
+    "baguettePrice": 10,
+    "pluscode": "8XQM+96 Singapore",
+    "title": "Paris Baguette",
+    "approvedLevel": 3,
+    "description": "Changi",
+    "address": "Level 2 Transit Area, 10 Airport Blvd, Singapore Changi Airport, Terminal 4, 819665",
+    "internal-rating": 1,
+    "link": "https://www.parisbaguettesg.com/404-page#bread",
+    "features": [
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589655593,
+      "_nanoseconds": 896000000
+    }
+  },
+  {
+    "id": "DcepRn0iM8ASdcQcj22F",
+    "features": [
+      3
+    ],
+    "lastupdate": {
+      "_seconds": 1589656386,
+      "_nanoseconds": 17000000
+    },
+    "coordinates": {
+      "lat": 103.835688,
+      "lng": 1.303812
+    },
+    "google-rating": 4,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589656386,
+      "_nanoseconds": 17000000
+    },
+    "pluscode": "8R3P+G7 Singapore",
+    "approvedLevel": 4,
+    "description": "Boulangerie without baguettes?",
+    "title": "Asanoya Boulangerie",
+    "address": "290 Orchard Rd, #B1-K27, Singapore 238859",
+    "internal-rating": 1,
+    "link": "http://www.asanoya.asia/"
+  },
+  {
+    "id": "Eh9EIwrbuvQoyu6XlySC",
+    "lastupdate": {
+      "_seconds": 1589685310,
+      "_nanoseconds": 453000000
+    },
+    "coordinates": {
+      "lat": 103.823937,
+      "lng": 1.305187
+    },
+    "google-rating": 3,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589685310,
+      "_nanoseconds": 452000000
+    },
+    "pluscode": "8R4F+3H Singapore",
+    "approvedLevel": 3,
+    "description": "Na baguettes but sells bread",
+    "title": "Cedele",
+    "address": "163 Tanglin Rd, #B1-07/08, Singapore 247933",
+    "internal-rating": 2,
+    "link": "http://www.cedelegroup.com/",
+    "features": [
+      2,
+      3,
+      1
+    ]
+  },
+  {
+    "id": "G1pKcGo7vk4ktoTC3FhU",
+    "approvedLevel": 1,
+    "description": "Great because you can buy cheese and wine here also",
+    "title": "La Petite Boutique",
+    "address": "4 Kensington Park Rd, Singapore 557256",
+    "link": "https://petiteboutique-sg.com/",
+    "hasBaguette": true,
+    "features": [
+      1,
+      2,
+      3
+    ],
+    "lastupdate": {
+      "_seconds": 1589652157,
+      "_nanoseconds": 11000000
+    },
+    "coordinates": {
+      "lat": 103.866062,
+      "lng": 1.364688
+    },
+    "google-rating": 4.7,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589652157,
+      "_nanoseconds": 11000000
+    },
+    "pluscode": "9V78+VC Singapore"
+  },
+  {
+    "id": "Gag0dOqocmPbkOp7iUvh",
+    "lastupdate": {
+      "_seconds": 1589685937,
+      "_nanoseconds": 239000000
+    },
+    "coordinates": {
+      "lat": 103.869063,
+      "lng": 1.387437
+    },
+    "google-rating": 3.8,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589685937,
+      "_nanoseconds": 239000000
+    },
+    "pluscode": "9VP9+XJ Singapore",
+    "approvedLevel": 4,
+    "description": "You can eat there but it's not really a bakery",
+    "title": "Cedele",
+    "address": "#02-14 Greenwich V, 1 Seletar Rd, 807011",
+    "link": "http://www.cedelegroup.com/",
+    "features": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "HPVhZRGr45F5UKgk8XTU",
+    "createdate": {
+      "_seconds": 1589655673,
+      "_nanoseconds": 388000000
+    },
+    "baguettePrice": 9,
+    "pluscode": "9X4Q+FG Singapore",
+    "title": "Paris Baguette",
+    "approvedLevel": 3,
+    "description": "Sandwiches only",
+    "address": "#016-006 Arrival Hall level 1 T2 Singapore, 819643",
+    "internal-rating": 1,
+    "link": "https://www.parisbaguettesg.com/404-page#bread",
+    "features": [
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589655673,
+      "_nanoseconds": 388000000
+    },
+    "coordinates": {
+      "lng": 1.356187,
+      "lat": 103.988813
+    },
+    "google-rating": 3.3,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com"
+  },
+  {
+    "id": "HTca39LWJQKaFRYphWhf",
+    "coordinates": {
+      "lng": 1.314188,
+      "lat": 103.919562
+    },
+    "google-rating": 4.1,
+    "createdby": null,
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": null,
+    "baguettePrice": 4.9,
+    "pluscode": "6PH58W79+MRPlus ",
+    "approvedLevel": 3,
+    "description": "Ciabattas not french baguettes",
+    "title": "Cedele",
+    "address": "115 Frankel Ave, Singapore 458231",
+    "features": [
+      3,
+      1,
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589683769,
+      "_nanoseconds": 155000000
+    }
+  },
+  {
+    "id": "Hi1SxDdE5Urt9EGIRVzb",
+    "features": [
+      2,
+      3,
+      4,
+      1
+    ],
+    "lastupdate": {
+      "_seconds": 1589685017,
+      "_nanoseconds": 504000000
+    },
+    "coordinates": {
+      "lat": 103.845688,
+      "lng": 1.276813
+    },
+    "google-rating": 3.6,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589685017,
+      "_nanoseconds": 503000000
+    },
+    "pluscode": "7RGW+P7 Singapore",
+    "approvedLevel": 4,
+    "description": "No baguettes here",
+    "title": "Cedele",
+    "address": "7 Wallich St, #B2 - 05, Singapore 078884",
+    "link": "http://www.cedelegroup.com/"
+  },
+  {
+    "id": "I323dnzN4V6AwrKVcoIo",
+    "features": [
+      4,
+      3,
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589686822,
+      "_nanoseconds": 140000000
+    },
+    "coordinates": {
+      "lat": 103.841938,
+      "lng": 1.288937
+    },
+    "google-rating": 4.2,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589686822,
+      "_nanoseconds": 139000000
+    },
+    "pluscode": "7RQR+HQ Singapore",
+    "approvedLevel": 4,
+    "description": "Emergency pain au chocolat / chocolatine & croissant",
+    "title": "Baker & Cook",
+    "address": "2 Magazine Rd, Singapore 059573",
+    "link": "https://www.bakerandcook.biz"
+  },
+  {
+    "id": "IdsRp490Pj4zYthnfu2q",
+    "title": "Paris Baguette",
+    "approvedLevel": 3,
+    "description": "Can\"t walk away with only a baguette",
+    "address": "78 Airport Blvd, #01 - 200, Singapore 819666",
+    "internal-rating": 1,
+    "link": "https://www.parisbaguettesg.com/404-page#bread",
+    "features": [
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589655759,
+      "_nanoseconds": 293000000
+    },
     "coordinates": {
       "lat": 103.990188,
       "lng": 1.360312
     },
-    "mark": 4,
-    "approved": 2,
+    "google-rating": 3.4,
     "createdby": "aksels.ledins@gmail.com",
-    "features": ["eat-in"],
     "updatedby": "aksels.ledins@gmail.com",
     "createdate": {
-      "_seconds": 1589378786,
-      "_nanoseconds": 296000000
+      "_seconds": 1589655759,
+      "_nanoseconds": 293000000
     },
-    "lastupdate": {
-      "_seconds": 1589378786,
-      "_nanoseconds": 297000000
-    },
-    "description": "Jewel",
-    "title": "Paris Baguette"
+    "baguettePrice": 9,
+    "pluscode": "9X6R+43 Singapore"
   },
   {
-    "id": "s3ZI6nh99BrHPTMP8Lah",
-    "lastupdate": {
-      "_seconds": 1589378294,
-      "_nanoseconds": 269000000
-    },
-    "description": "Orchard rd",
-    "title": "Paris Baguette",
-    "coordinates": {
-      "lat": 103.833313,
-      "lng": 1.303562
-    },
-    "mark": 0,
-    "approved": 5,
+    "id": "JF26Y5P6viXrEMNSNzPo",
+    "google-rating": 3.2,
     "createdby": "aksels.ledins@gmail.com",
-    "features": ["delivery", "eat-in"],
-    "price": 4,
     "updatedby": "aksels.ledins@gmail.com",
     "createdate": {
-      "_seconds": 1589378294,
-      "_nanoseconds": 269000000
+      "_seconds": 1589685171,
+      "_nanoseconds": 236000000
+    },
+    "pluscode": "7RVJ+MR Singapore",
+    "approvedLevel": 2,
+    "description": "Might sell baguettes here",
+    "title": "Cedele",
+    "address": "1 Kim Seng Promenade #B1-K115/116, Great World, 237994",
+    "link": "http://www.cedelegroup.com/",
+    "hasBaguette": true,
+    "features": [
+      2,
+      3,
+      4,
+      1
+    ],
+    "lastupdate": {
+      "_seconds": 1589685171,
+      "_nanoseconds": 236000000
+    },
+    "coordinates": {
+      "lng": 1.294188,
+      "lat": 103.832063
     }
   },
   {
-    "id": "wB1sKPbU7Czd1JNAmnJs",
+    "id": "JGhH8PHYXV7ugfyu01rN",
+    "hasBaguette": true,
+    "features": [
+      3,
+      4,
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589652819,
+      "_nanoseconds": 57000000
+    },
+    "coordinates": {
+      "lat": 103.746188,
+      "lng": 1.327062
+    },
+    "google-rating": 4.3,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589652819,
+      "_nanoseconds": 56000000
+    },
+    "baguettePrice": 4.28,
+    "pluscode": "8PGW+RF Singapore",
+    "approvedLevel": 1,
+    "title": "enjoué bakery",
+    "address": "29 International Business Park Road #01-2a&2b, ACER Building, 609923",
+    "link": "https://www.enjouebakery.com/"
+  },
+  {
+    "id": "KvN1gWrzWMBS98xJDVxv",
+    "features": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "lastupdate": {
+      "_seconds": 1589686714,
+      "_nanoseconds": 938000000
+    },
+    "coordinates": {
+      "lng": 1.298187,
+      "lat": 103.855188
+    },
+    "google-rating": 4,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589686714,
+      "_nanoseconds": 938000000
+    },
+    "pluscode": "7VX4+73 Singapore",
+    "approvedLevel": 2,
+    "title": "Baker & Cook",
+    "address": "80 Middle Rd, InterContinental 188966",
+    "link": "https://www.bakerandcook.biz",
+    "hasBaguette": true
+  },
+  {
+    "id": "Lsgfw4Ig03O0lFEBNXqa",
+    "coordinates": {
+      "lng": 1.293813,
+      "lat": 103.853813
+    },
+    "google-rating": 3,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589684412,
+      "_nanoseconds": 348000000
+    },
+    "baguettePrice": null,
+    "pluscode": "7VV3+GG Singapore",
+    "approvedLevel": 2,
+    "description": "Might sell baguettes here. Need to check post COVID19!",
+    "title": "Cedele",
+    "address": "252 North Bridge Rd, #B1 - 44M, Singapore 179103",
+    "link": "http://www.cedelegroup.com/",
+    "hasBaguette": true,
+    "features": [
+      1,
+      3,
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589684488,
+      "_nanoseconds": 241000000
+    }
+  },
+  {
+    "id": "M10gZbbby4Z8Tx1Oyd9U",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589684889,
+      "_nanoseconds": 14000000
+    },
+    "pluscode": "7RHX+CH Singapore",
+    "approvedLevel": 4,
+    "description": "A cafe not a bakery",
+    "title": "Cedele",
+    "address": "71 Robinson Rd, #01-01, Singapore 068895",
+    "internal-rating": 1,
+    "link": "http://www.cedelegroup.com/",
+    "features": [
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589684889,
+      "_nanoseconds": 14000000
+    },
+    "coordinates": {
+      "lat": 103.848938,
+      "lng": 1.278563
+    },
+    "google-rating": 4.1,
+    "createdby": "aksels.ledins@gmail.com"
+  },
+  {
+    "id": "Min5Xwn1DNFdiFAaQoqU",
+    "google-rating": 3.9,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589654913,
+      "_nanoseconds": 654000000
+    },
+    "baguettePrice": 9,
+    "pluscode": "7VX4+P6 Singapore",
+    "approvedLevel": 3,
+    "description": "No baguettes, sandwiches only",
+    "title": "Paris Baguette",
+    "address": "200 Victoria Street #B1-24 Bugis Junction, 188021",
+    "link": "https://www.parisbaguettesg.com/404-page#bread",
+    "features": [
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589654913,
+      "_nanoseconds": 654000000
+    },
+    "coordinates": {
+      "lng": 1.299312,
+      "lat": 103.855563
+    }
+  },
+  {
+    "id": "Mvfsv4Bd5MYq82KgTjTL",
+    "google-rating": 4.2,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589653364,
+      "_nanoseconds": 220000000
+    },
+    "baguettePrice": 4,
+    "pluscode": "7RXQ+6C Singapore",
+    "title": "Artisan Boulangerie Co",
+    "approvedLevel": 1,
+    "description": "Killiney",
+    "address": "118 Killiney Rd, #01-01, Singapore 239555",
+    "link": "https://artisanbakery.com.sg/",
+    "hasBaguette": true,
+    "features": [
+      1,
+      2,
+      3
+    ],
+    "lastupdate": {
+      "_seconds": 1589653364,
+      "_nanoseconds": 220000000
+    },
+    "coordinates": {
+      "lng": 1.298063,
+      "lat": 103.838563
+    }
+  },
+  {
+    "id": "N4entuXejysiAWBK7APx",
+    "features": [
+      2,
+      3,
+      4,
+      1
+    ],
+    "lastupdate": {
+      "_seconds": 1589687259,
+      "_nanoseconds": 909000000
+    },
+    "coordinates": {
+      "lat": 103.767562,
+      "lng": 1.323562
+    },
+    "google-rating": 4.3,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589687259,
+      "_nanoseconds": 909000000
+    },
+    "pluscode": "8QF9+C2 Singapore",
+    "approvedLevel": 1,
+    "title": "Baker & Cook",
+    "address": "Arcade #01-023, 41 Sunset Way, 597071",
+    "link": "https://www.bakerandcook.biz/",
+    "hasBaguette": true
+  },
+  {
+    "id": "QDzMj0yjdPfIsbpcRUTY",
+    "pluscode": "8RF7+3P Singapore",
+    "approvedLevel": 3,
+    "description": "Can't walk out with a baguette but there is good sandwiches",
+    "title": "Simply Bread",
+    "address": "501 Bukit Timah Road #02-07, Cluny Court",
+    "link": "simplybread.com.sg",
+    "features": [
+      2,
+      1
+    ],
+    "lastupdate": {
+      "_seconds": 1589658049,
+      "_nanoseconds": 684000000
+    },
+    "coordinates": {
+      "lat": 103.814313,
+      "lng": 1.322687
+    },
+    "google-rating": 3.7,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589658049,
+      "_nanoseconds": 684000000
+    }
+  },
+  {
+    "id": "RfHni2dO50eJOgPH4okv",
+    "pluscode": "8Q4R+CG Singapore",
+    "approvedLevel": 4,
+    "description": "It's more a cafe for breakfast",
+    "title": "Cedele",
+    "address": "9 North Buona Vista Drive #01-10, 1 The Metropolis Tower, 138588",
+    "link": "http://www.cedelegroup.com/",
+    "features": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "lastupdate": {
+      "_seconds": 1589685576,
+      "_nanoseconds": 632000000
+    },
+    "coordinates": {
+      "lat": 103.791313,
+      "lng": 1.306062
+    },
+    "google-rating": 3,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589685576,
+      "_nanoseconds": 632000000
+    }
+  },
+  {
+    "id": "SdetzyhO4aPgtKwhX67H",
+    "pluscode": "8QFW+HP Singapore",
+    "approvedLevel": 2,
+    "title": "Baker & Cook",
+    "address": "64 Namly Pl, Singapore 267208",
+    "link": "https://www.bakerandcook.biz/",
+    "hasBaguette": true,
+    "features": [
+      2,
+      3,
+      4,
+      1
+    ],
+    "lastupdate": {
+      "_seconds": 1589687139,
+      "_nanoseconds": 170000000
+    },
+    "coordinates": {
+      "lat": 103.796813,
+      "lng": 1.323937
+    },
+    "google-rating": 4.1,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589687139,
+      "_nanoseconds": 170000000
+    }
+  },
+  {
+    "id": "U2SdI2L4slWomTuVrO7s",
+    "createdate": {
+      "_seconds": 1589683865,
+      "_nanoseconds": 86000000
+    },
+    "baguettePrice": 4.9,
+    "pluscode": "8RCV+2C Singapore",
+    "approvedLevel": 3,
+    "description": "Ciabattas not french baguettes",
+    "title": "Cedele",
+    "address": "238 Thomson Road #01-01/02/03/04 Novena Square, 307683",
+    "link": "http://www.cedelegroup.com/",
+    "features": [
+      3,
+      2,
+      1
+    ],
+    "lastupdate": {
+      "_seconds": 1589683865,
+      "_nanoseconds": 86000000
+    },
+    "coordinates": {
+      "lat": 103.843563,
+      "lng": 1.320062
+    },
+    "google-rating": 3.8,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com"
+  },
+  {
+    "id": "UwCOzIZP09Wc880TbA1D",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589652541,
+      "_nanoseconds": 899000000
+    },
+    "pluscode": "8RF5+PR Singapore",
+    "approvedLevel": 2,
+    "description": "More a restaurant/cafe than anything else. A bit pricey!",
+    "title": "Choupinette",
+    "address": "607 Bukit Timah Rd, Singapore 269708",
+    "link": "https://www.facebook.com/ChoupinetteCafe/",
+    "hasBaguette": true,
+    "features": [
+      2,
+      3,
+      4
+    ],
+    "lastupdate": {
+      "_seconds": 1589652541,
+      "_nanoseconds": 899000000
+    },
+    "coordinates": {
+      "lng": 1.324312,
+      "lat": 103.809563
+    },
+    "google-rating": 4.1,
+    "createdby": "aksels.ledins@gmail.com"
+  },
+  {
+    "id": "X6OowwH0PgdPm2WwRz6h",
+    "lastupdate": {
+      "_seconds": 1589651209,
+      "_nanoseconds": 69000000
+    },
+    "coordinates": {
+      "lat": 103.835313,
+      "lng": 1.303937
+    },
+    "google-rating": 3.2,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589651209,
+      "_nanoseconds": 69000000
+    },
+    "baguettePrice": 3.5,
+    "pluscode": "8R3P+H4 Singapore",
+    "title": "PAUL",
+    "approvedLevel": 1,
+    "description": "Paragon",
+    "address": "290 Orchard Rd, #02-09/K1 Paragon Shopping Centre, Singapore 238859",
+    "link": "https://www.paulsgcatering.com/",
+    "hasBaguette": true,
+    "features": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "XRvfyEUoEKxaPWT2MnlS",
+    "createdate": {
+      "_seconds": 1589653929,
+      "_nanoseconds": 511000000
+    },
+    "pluscode": "7VJ2+HC Singapore",
+    "approvedLevel": 4,
+    "description": "Raffles Quay",
+    "title": "Paris Baguette",
+    "address": "16 Raffles Quay, Hong Leong Building, Singapore 048581",
+    "internal-rating": 1,
+    "link": "https://www.parisbaguettesg.com/",
+    "features": [
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589653929,
+      "_nanoseconds": 511000000
+    },
+    "coordinates": {
+      "lat": 103.851063,
+      "lng": 1.281437
+    },
+    "google-rating": 3.8,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com"
+  },
+  {
+    "id": "YMaxzTIsEWyOjFCGkogy",
+    "title": "PAUL",
+    "approvedLevel": 3,
+    "description": "It's written Bakery but no baguettes here. Sandwiches are here, so trash the filling and go away with your baguette.",
+    "address": "Changi Airport Terminal 1 Departure/ Transit lounge West Level 2, #02-26, 819642",
+    "internal-rating": 2,
+    "link": "https://www.paulsgcatering.com/estore",
+    "hasBaguette": false,
+    "features": [
+      2,
+      3,
+      4
+    ],
+    "lastupdate": {
+      "_seconds": 1589651652,
+      "_nanoseconds": 204000000
+    },
+    "coordinates": {
+      "lat": 103.990188,
+      "lng": 1.362062
+    },
+    "google-rating": 2.8,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589651652,
+      "_nanoseconds": 204000000
+    },
+    "baguettePrice": 10,
+    "pluscode": "9X6R+R3 Singapore"
+  },
+  {
+    "id": "ZDDHw9Q9RayuFPX1SgJc",
+    "approvedLevel": 4,
+    "description": "Feels more like a restaurant than a bakery",
+    "title": "Cedele",
+    "address": "4 Hillview Rise, #01-12/13, HillV2, Singapore 667979",
+    "link": "http://www.cedelegroup.com/",
+    "features": [
+      2,
+      1,
+      3,
+      4
+    ],
+    "lastupdate": {
+      "_seconds": 1589685789,
+      "_nanoseconds": 615000000
+    },
+    "coordinates": {
+      "lat": 103.764687,
+      "lng": 1.363687
+    },
+    "google-rating": 3.7,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589685789,
+      "_nanoseconds": 615000000
+    },
+    "pluscode": "9Q77+FV Singapore"
+  },
+  {
+    "id": "ZDUFdSyCc9tS7yyvTZJs",
+    "google-rating": 3.5,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589657889,
+      "_nanoseconds": 255000000
+    },
+    "baguettePrice": null,
+    "pluscode": "8W33+F5 Singapore",
+    "approvedLevel": 3,
+    "description": " Emergency croissant but no baguettes",
+    "title": "Bread & Hearth",
+    "address": "30 E Coast Rd, #02-27, Singapore 428751",
+    "internal-rating": null,
+    "link": "https://www.breadhearth.com/",
+    "features": [
+      2,
+      3,
+      4,
+      1
+    ],
+    "lastupdate": {
+      "_seconds": 1589657889,
+      "_nanoseconds": 255000000
+    },
+    "coordinates": {
+      "lat": 103.902938,
+      "lng": 1.303687
+    }
+  },
+  {
+    "id": "Zqb7FTXYBkSNP8X69HeW",
+    "lastupdate": {
+      "_seconds": 1589650070,
+      "_nanoseconds": 322000000
+    },
+    "coordinates": {
+      "lat": 103.859313,
+      "lng": 1.295812
+    },
+    "google-rating": 3.8,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589650070,
+      "_nanoseconds": 322000000
+    },
+    "pluscode": "7VW5+8P Singapore",
+    "approvedLevel": 1,
+    "description": "Suntec City",
+    "title": "Maison Kayser",
+    "address": "3 Temasek Blvd, #02-601, Singapore 038983",
+    "internal-rating": 4,
+    "link": "http://maison-kayser.com.sg/",
+    "hasBaguette": true,
+    "features": [
+      2
+    ]
+  },
+  {
+    "id": "axkaSRC3nf4gzO9sSuln",
+    "internal-rating": 1,
+    "link": "http://www.asanoya.asia/",
+    "features": [
+      3
+    ],
+    "lastupdate": {
+      "_seconds": 1589656267,
+      "_nanoseconds": 100000000
+    },
+    "coordinates": {
+      "lat": 103.852563,
+      "lng": 1.298063
+    },
+    "google-rating": 4.2,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589656267,
+      "_nanoseconds": 100000000
+    },
+    "pluscode": "7VX3+62 Singapore",
+    "approvedLevel": 4,
+    "description": "Boulangerie but where is the baguette?",
+    "title": "Asanoya Boulangerie",
+    "address": "15 Queen St, #01-03, Singapore 188537"
+  },
+  {
+    "id": "bXzifehXGawQh8klIvWC",
+    "title": "PAUL",
+    "approvedLevel": 1,
+    "description": "Marina Bay Link Mall",
+    "address": "8A Marina Boulevard #B2-07 Marina Bay Link Mall, 018984",
+    "link": "https://www.paulsgcatering.com/",
+    "hasBaguette": true,
+    "features": [
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589650991,
+      "_nanoseconds": 314000000
+    },
+    "coordinates": {
+      "lat": 103.853688,
+      "lng": 1.280438
+    },
+    "google-rating": 3.4,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589650991,
+      "_nanoseconds": 312000000
+    },
+    "baguettePrice": 3.5,
+    "pluscode": "7VJ3+5F Singapore"
+  },
+  {
+    "id": "bkiBCXMOBZkVoSG5QTXA",
+    "lastupdate": {
+      "_seconds": 1589686463,
+      "_nanoseconds": 278000000
+    },
+    "coordinates": {
+      "lng": 1.320937,
+      "lat": 103.924312
+    },
+    "google-rating": 4.3,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589686463,
+      "_nanoseconds": 278000000
+    },
+    "pluscode": "8WCF+9P Singapore",
+    "approvedLevel": 1,
+    "title": "Baker & Cook",
+    "address": "1 Swan Lake Ave, Opera Estate, Singapore 455700",
+    "internal-rating": null,
+    "link": "https://www.bakerandcook.biz",
+    "hasBaguette": true,
+    "features": [
+      2,
+      1,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "dzo6sljoFAo17kYeJpbU",
+    "google-rating": 3.4,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589651369,
+      "_nanoseconds": 494000000
+    },
+    "baguettePrice": 3.5,
+    "pluscode": "8R4F+3J Singapore",
+    "title": "PAUL",
+    "approvedLevel": 1,
+    "description": "Tanglin Road",
+    "address": "163 Tanglin Rd, #01-16/17 Tanglin Mall, Singapore 247933",
+    "link": "https://www.paulsgcatering.com/",
+    "hasBaguette": true,
+    "features": [
+      1,
+      3,
+      4,
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589651369,
+      "_nanoseconds": 495000000
+    },
+    "coordinates": {
+      "lng": 1.305187,
+      "lat": 103.824063
+    }
+  },
+  {
+    "id": "elMWsTS8goefUnK9g1bP",
+    "coordinates": {
+      "lat": 103.791188,
+      "lng": 1.305812
+    },
+    "google-rating": 4,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589653534,
+      "_nanoseconds": 734000000
+    },
+    "baguettePrice": 4,
+    "pluscode": "8Q4R+8F Singapore",
+    "title": "Artisan Boulangerie Co",
+    "approvedLevel": 1,
+    "description": "The Metropolis",
+    "address": "9 North Buona Vista Drive #01-12 Metropolis, Singapore 138588",
+    "link": "https://artisanbakery.com.sg/",
+    "hasBaguette": true,
+    "features": [
+      1,
+      3,
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589653534,
+      "_nanoseconds": 734000000
+    }
+  },
+  {
+    "id": "gKf5VCFljGeux0TeyEE3",
+    "lastupdate": {
+      "_seconds": 1589655864,
+      "_nanoseconds": 208000000
+    },
+    "coordinates": {
+      "lat": 103.986188,
+      "lng": 1.355562
+    },
+    "google-rating": 4.5,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589655864,
+      "_nanoseconds": 208000000
+    },
+    "baguettePrice": 9,
+    "pluscode": "9X4P+6F Singapore",
+    "title": "Paris Baguette",
+    "approvedLevel": 3,
+    "description": "Sandwiches, but it's an airport so you can't really walk out with a baguette anyway",
+    "address": "65, #01-22 Airport Blvd, Singapore Changi Airport, 819663",
+    "internal-rating": 1,
+    "link": "https://www.parisbaguettesg.com/404-page#bread",
+    "features": [
+      2
+    ]
+  },
+  {
+    "id": "iWbm9yw1VJlsEajmIyXH",
+    "hasBaguette": true,
+    "features": [
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589649976,
+      "_nanoseconds": 760000000
+    },
     "coordinates": {
       "lat": 103.849688,
       "lng": 1.285187
     },
-    "mark": 4.5,
+    "google-rating": 4.1,
     "createdby": "aksels.ledins@gmail.com",
     "updatedby": "aksels.ledins@gmail.com",
-    "price": 3,
     "createdate": {
-      "_seconds": 1589294609,
-      "_nanoseconds": 598000000
+      "_seconds": 1589649976,
+      "_nanoseconds": 760000000
     },
-    "baguettePrice": 4,
+    "baguettePrice": 4.5,
+    "pluscode": "7RPX+3V Singapore",
     "title": "Maison Kayser",
-    "description": "Ok",
-    "approved": 1,
-    "features": ["delivery", "eat-in", "croissant"],
+    "approvedLevel": 1,
+    "description": "OCBC Centre East",
+    "address": "63, #01-01 Chulia St, OCBC Centre, 049514",
+    "internal-rating": 5,
+    "link": "http://maison-kayser.com.sg/"
+  },
+  {
+    "id": "iXkFgsPKOtokV4opcH5A",
+    "hasBaguette": true,
+    "features": [
+      2
+    ],
     "lastupdate": {
-      "_seconds": 1589377734,
-      "_nanoseconds": 405000000
+      "_seconds": 1589650175,
+      "_nanoseconds": 292000000
+    },
+    "coordinates": {
+      "lng": 103.837313,
+      "lat": 1.300187
+    },
+    "google-rating": 5,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589650175,
+      "_nanoseconds": 292000000
+    },
+    "baguettePrice": 4.5,
+    "pluscode": "8R2P+3W Singapore",
+    "title": "Maison Kayser",
+    "approvedLevel": 1,
+    "description": "Somerset",
+    "address": "111 Somerset Rd, #01-08 TripleOne Somerset, Singapore 238164",
+    "link": "http://maison-kayser.com.sg/"
+  },
+  {
+    "id": "k54iKLwhV9UkYLFQZRsI",
+    "pluscode": "8V35+8M Singapore",
+    "approvedLevel": 1,
+    "description": "Small quantities but good quality. Baguettes can be overcooked.",
+    "title": "Mother Dough",
+    "address": "749 North Bridge Rd, Singapore #01-01, 198717",
+    "internal-rating": 4.5,
+    "link": "https://www.motherdough.com.sg/",
+    "features": [
+      1,
+      3
+    ],
+    "lastupdate": {
+      "_seconds": 1589656790,
+      "_nanoseconds": 845000000
+    },
+    "coordinates": {
+      "lat": 103.859188,
+      "lng": 1.303312
+    },
+    "google-rating": 4.7,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589656790,
+      "_nanoseconds": 844000000
     }
+  },
+  {
+    "id": "mQkS8inPL4xP6gItRF7H",
+    "link": "http://www.cedelegroup.com/",
+    "features": [
+      1,
+      2,
+      3
+    ],
+    "lastupdate": {
+      "_seconds": 1589684031,
+      "_nanoseconds": 877000000
+    },
+    "coordinates": {
+      "lat": 103.856813,
+      "lng": 1.311188
+    },
+    "google-rating": 3.6,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589684031,
+      "_nanoseconds": 877000000
+    },
+    "baguettePrice": 4.9,
+    "pluscode": "8V64+FP Singapore",
+    "approvedLevel": 3,
+    "description": "Ciabattas not french baguettes",
+    "title": "Cedele",
+    "address": "180 Kitchener Rd, #01 - 24 / 25, Singapore 208539"
+  },
+  {
+    "id": "nDPyQV4727xVmoxTBmD8",
+    "lastupdate": {
+      "_seconds": 1589687027,
+      "_nanoseconds": 636000000
+    },
+    "coordinates": {
+      "lng": 1.331562,
+      "lat": 103.807563
+    },
+    "google-rating": 4.2,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589687027,
+      "_nanoseconds": 636000000
+    },
+    "pluscode": "8RJ5+J2 Singapore",
+    "approvedLevel": 1,
+    "description": "Sells baguettes",
+    "title": "Baker & Cook",
+    "address": "77 Hillcrest Rd, Singapore 288951",
+    "link": "https://www.bakerandcook.biz",
+    "hasBaguette": true,
+    "features": [
+      3,
+      4,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "nuCgNkPhkBUvkAWjXSzp",
+    "hasBaguette": true,
+    "features": [
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589654772,
+      "_nanoseconds": 608000000
+    },
+    "coordinates": {
+      "lat": 103.858688,
+      "lng": 1.295687
+    },
+    "google-rating": 3.5,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589654772,
+      "_nanoseconds": 608000000
+    },
+    "baguettePrice": 9,
+    "pluscode": "7VW5+7F Singapore",
+    "title": "Paris Baguette",
+    "approvedLevel": 3,
+    "description": "No baguette here, but a ham & cheese sandwich though",
+    "address": "3 Temasek Blvd, Suntec Tower 5, #B1-165, Singapore 038983",
+    "internal-rating": 1,
+    "link": "https://www.parisbaguettesg.com/404-page#bread"
+  },
+  {
+    "id": "onucp2rIaZsOPmsYiOXv",
+    "coordinates": {
+      "lng": 1.284062,
+      "lat": 103.851313
+    },
+    "google-rating": 2.8,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589684582,
+      "_nanoseconds": 390000000
+    },
+    "pluscode": "7VM2+JG Singapore",
+    "description": "Opened just before lockdock ;(",
+    "title": "Cedele",
+    "address": "9, #01-08 Raffles Place, Republic Plaza, 048619",
+    "link": "http://www.cedelegroup.com/",
+    "features": [
+      1,
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589684582,
+      "_nanoseconds": 391000000
+    }
+  },
+  {
+    "id": "p2yNP1NnHnq23P6aEQWX",
+    "approvedLevel": 4,
+    "description": "It's a trap!",
+    "title": "Paris Baguette",
+    "address": "Temasek Blvd",
+    "internal-rating": 1,
+    "link": "https://www.parisbaguettesg.com/404-page#bread",
+    "features": [
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589654557,
+      "_nanoseconds": 96000000
+    },
+    "coordinates": {
+      "lng": 1.294562,
+      "lat": 103.858938
+    },
+    "google-rating": 4,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589654557,
+      "_nanoseconds": 95000000
+    },
+    "pluscode": "7VV5+RH Singapore"
+  },
+  {
+    "id": "pUuQPotoaKHVHv2wnIEd",
+    "features": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "lastupdate": {
+      "_seconds": 1589686562,
+      "_nanoseconds": 380000000
+    },
+    "coordinates": {
+      "lat": 103.864813,
+      "lng": 1.363937
+    },
+    "google-rating": 4.4,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589686562,
+      "_nanoseconds": 379000000
+    },
+    "pluscode": "9V77+HW Singapore",
+    "approvedLevel": 1,
+    "title": "Baker & Cook",
+    "address": "87 Serangoon Garden Way, Singapore 555983",
+    "link": "https://www.bakerandcook.biz",
+    "hasBaguette": true
+  },
+  {
+    "id": "qOF55PBWzo1HWpMGlCJm",
+    "createdate": {
+      "_seconds": 1589686931,
+      "_nanoseconds": 310000000
+    },
+    "pluscode": "8Q6W+MM Singapore",
+    "title": "Baker & Cook",
+    "approvedLevel": 3,
+    "description": "Bread but no baguette",
+    "address": "Chip Bee Gardens 44, 01-56 Jln Merah Saga, 278116",
+    "link": "https://www.bakerandcook.biz",
+    "features": [
+      4,
+      3,
+      2,
+      1
+    ],
+    "lastupdate": {
+      "_seconds": 1589686946,
+      "_nanoseconds": 702000000
+    },
+    "coordinates": {
+      "lat": 103.796688,
+      "lng": 1.311688
+    },
+    "google-rating": 4.2,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com"
+  },
+  {
+    "id": "qTHuGIpksuhLlN5CYk2w",
+    "internal-rating": 1,
+    "link": "https://www.parisbaguettesg.com/",
+    "features": [
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589653709,
+      "_nanoseconds": 363000000
+    },
+    "coordinates": {
+      "lat": 103.848813,
+      "lng": 1.278937
+    },
+    "google-rating": 4.3,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589653709,
+      "_nanoseconds": 362000000
+    },
+    "pluscode": "7RHX+HG Singapore",
+    "approvedLevel": 4,
+    "description": "NO baguettes here, it's a trap",
+    "title": "Paris Baguette",
+    "address": "120 Robinson Rd, Singapore 068913"
+  },
+  {
+    "id": "t249RhFv7XZogBpzsyDX",
+    "createdate": {
+      "_seconds": 1589651291,
+      "_nanoseconds": 4000000
+    },
+    "baguettePrice": 3.5,
+    "pluscode": "8R3J+WW Singapore",
+    "title": "PAUL",
+    "approvedLevel": 1,
+    "description": "Orchard Road",
+    "address": "391B Orchard Rd, #03-16/17 Takashimaya Shopping Center, Singapore 238872",
+    "link": "https://www.paulsgcatering.com/",
+    "hasBaguette": true,
+    "features": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "lastupdate": {
+      "_seconds": 1589651291,
+      "_nanoseconds": 4000000
+    },
+    "coordinates": {
+      "lng": 1.304812,
+      "lat": 103.832313
+    },
+    "google-rating": 3.1,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com"
+  },
+  {
+    "id": "vAqHKzAuzj3sY2vyxX4b",
+    "lastupdate": {
+      "_seconds": 1589651103,
+      "_nanoseconds": 217000000
+    },
+    "coordinates": {
+      "lng": 1.283437,
+      "lat": 103.851813
+    },
+    "google-rating": 3.7,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589651103,
+      "_nanoseconds": 216000000
+    },
+    "baguettePrice": 3.5,
+    "pluscode": "7VM2+9P Singapore",
+    "title": "PAUL",
+    "approvedLevel": 1,
+    "description": "Ocean Financial Center",
+    "address": "10 Collyer Quay, #01-01 Ocean Financial Centre, Singapore 049315",
+    "link": "https://www.paulsgcatering.com/",
+    "hasBaguette": true,
+    "features": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "vFoWa15X6upGAN4rfzWR",
+    "coordinates": {
+      "lat": 103.902437,
+      "lng": 1.309312
+    },
+    "google-rating": 4.7,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589650701,
+      "_nanoseconds": 709000000
+    },
+    "baguettePrice": 3.6,
+    "pluscode": "8W52+PX Singapore",
+    "title": "Petit Pain",
+    "approvedLevel": 1,
+    "description": "Very good but low quantities and expect queue.",
+    "address": "315 Joo Chiat Rd, Singapore 427566",
+    "internal-rating": 5,
+    "link": "https://www.petitpain.com.sg/",
+    "hasBaguette": true,
+    "features": [
+      3,
+      4
+    ],
+    "lastupdate": {
+      "_seconds": 1589650701,
+      "_nanoseconds": 709000000
+    }
+  },
+  {
+    "id": "w9j5fWFR1eXbehCIJ1hQ",
+    "lastupdate": {
+      "_seconds": 1589656513,
+      "_nanoseconds": 570000000
+    },
+    "coordinates": {
+      "lat": 103.788313,
+      "lng": 1.333687
+    },
+    "google-rating": 3.9,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589656513,
+      "_nanoseconds": 570000000
+    },
+    "baguettePrice": null,
+    "pluscode": "8QMQ+F8 Singapore",
+    "title": "Asanoya Boulangerie",
+    "approvedLevel": 4,
+    "description": "Where's the baguette?",
+    "address": "913 Bukit Timah Rd, Singapore 589623",
+    "internal-rating": 1,
+    "link": "http://www.asanoya.asia/",
+    "features": [
+      3
+    ]
+  },
+  {
+    "id": "wC9YFTfWPVlAJ65EYEAW",
+    "features": [
+      3,
+      2,
+      1
+    ],
+    "lastupdate": {
+      "_seconds": 1589683930,
+      "_nanoseconds": 569000000
+    },
+    "coordinates": {
+      "lng": 1.316812,
+      "lat": 103.843938
+    },
+    "google-rating": 3.6,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589683930,
+      "_nanoseconds": 569000000
+    },
+    "baguettePrice": 4.9,
+    "pluscode": "8R8V+PH Singapore",
+    "approvedLevel": 3,
+    "description": "Ciabattas not french baguettes",
+    "title": "Cedele",
+    "address": "101 Thomson Rd, #B1-35/36, Singapore 307591",
+    "link": "http://www.cedelegroup.com/"
+  },
+  {
+    "id": "we6rFEUerASsm53ArD8M",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589685439,
+      "_nanoseconds": 585000000
+    },
+    "pluscode": "7RF2+R3 Singapore",
+    "approvedLevel": 3,
+    "description": "Bread but no baguettes",
+    "title": "Cedele",
+    "address": "20 Pasir Panjang Rd, #02-12 Mapletree Business City, Singapore 117439",
+    "link": "http://www.cedelegroup.com/",
+    "features": [
+      3,
+      4,
+      1,
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589685439,
+      "_nanoseconds": 585000000
+    },
+    "coordinates": {
+      "lng": 1.274562,
+      "lat": 103.800188
+    },
+    "google-rating": 3.9,
+    "createdby": "aksels.ledins@gmail.com"
+  },
+  {
+    "id": "xHrEfc1jNUktdMBFO5BM",
+    "coordinates": {
+      "lng": 1.289312,
+      "lat": 103.827938
+    },
+    "google-rating": 4.2,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589657089,
+      "_nanoseconds": 249000000
+    },
+    "pluscode": "7RQH+P5 Singapore",
+    "approvedLevel": 2,
+    "description": "No baguette but you can buy bread",
+    "title": "Starter Lab",
+    "address": "721 Havelock Rd, Singapore 169645",
+    "internal-rating": 2,
+    "link": "https://www.instagram.com/starterlab.sg/",
+    "features": [
+      1
+    ],
+    "lastupdate": {
+      "_seconds": 1589657089,
+      "_nanoseconds": 249000000
+    }
+  },
+  {
+    "id": "yQQSshoghQ0gXCOwJpUY",
+    "google-rating": 3.7,
+    "createdby": "aksels.ledins@gmail.com",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589630047,
+      "_nanoseconds": 629000000
+    },
+    "baguettePrice": 4.5,
+    "pluscode": "7RMW+CR Singapore",
+    "title": "Maison Kayser",
+    "approvedLevel": 1,
+    "description": "Small baguettes quantities",
+    "address": "18 Cross St, #01-102, Singapore 048423",
+    "internal-rating": 5,
+    "link": "http://maison-kayser.com.sg",
+    "hasBaguette": true,
+    "features": [
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589649829,
+      "_nanoseconds": 719000000
+    },
+    "coordinates": {
+      "lat": 103.847063,
+      "lng": 1.283563
+    }
+  },
+  {
+    "id": "ydDLrwO5rVwAbpgRnmGP",
+    "updatedby": "aksels.ledins@gmail.com",
+    "createdate": {
+      "_seconds": 1589655371,
+      "_nanoseconds": 597000000
+    },
+    "baguettePrice": 10,
+    "pluscode": "8R3M+C8 Singapore",
+    "approvedLevel": 3,
+    "description": "You can't walk away with your baguette here",
+    "title": "Paris Baguette",
+    "address": "435 Orchard Rd, #02 - 02.03, #02 - 48, Singapore 238877",
+    "internal-rating": 1,
+    "link": "https://www.parisbaguettesg.com/404-page#bread",
+    "features": [
+      2
+    ],
+    "lastupdate": {
+      "_seconds": 1589655371,
+      "_nanoseconds": 597000000
+    },
+    "coordinates": {
+      "lat": 103.833313,
+      "lng": 1.303562
+    },
+    "google-rating": 4,
+    "createdby": "aksels.ledins@gmail.com"
   }
 ]
