@@ -15,7 +15,7 @@ html {
 
   --star-icon: url(/star-light.svg);
 
-  --filter-dropdown-background-color: #f1f1f1;
+  --filter-dropdown-background-color: #f1f1f1f5;
   --filter-dropdown-boxshadow-color: rgba(0, 0, 0, 0.2);
 
   --logo-background: url(/logo-light.svg);
@@ -421,7 +421,6 @@ a:hover {
 }
 
 .dropdown-content {
-  display: none;
   position: absolute;
   background-color: var(--filter-dropdown-background-color);
   min-width: 160px;
@@ -437,8 +436,11 @@ a:hover {
   }
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-content.open {
   display: block;
+}
+.dropdown-content.closed {
+  display: none;
 }
 
 .dropdown-content-item {
@@ -487,4 +489,23 @@ h1 {
   @media (max-width: 992px) {
     display: none;
   }
+}
+
+.filter-arrow {
+  height: 1rem;
+  width: 1rem;
+
+  background-image: url('/down-arrow.svg');
+  background-color: rgba(0, 0, 0, 0);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  margin-right: 0.5rem;
+
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+.filter-arrow.open {
+  transform: rotate(180deg);
 }

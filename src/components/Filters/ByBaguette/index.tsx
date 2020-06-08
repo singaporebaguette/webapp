@@ -14,8 +14,9 @@ const ByBaguette = ({ filters, updateFilter }: Props) => {
   };
 
   return (
-    <li>
+    <div>
       <div
+        className="dropdown-content-item"
         onClick={(e) => {
           e.stopPropagation();
           e.preventDefault();
@@ -23,9 +24,9 @@ const ByBaguette = ({ filters, updateFilter }: Props) => {
         }}
       >
         <Checkbox id="filter-hasBaguette" checked={filters.byBaguette === BaguetteFilter.HasBaguette} />
-      </div>{' '}
-      <div>Sells baguettes</div>
-    </li>
+        <div>Sells baguettes</div>
+      </div>
+    </div>
   );
 };
 

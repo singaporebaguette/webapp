@@ -22,12 +22,12 @@ const ByRating = ({ filters, updateFilter }: Props) => {
   const values = [1, 2, 3, 4, 5];
 
   return (
-    <li className="dropdown">
-      <span>
-        Rating{' '}
-        <span className={filters.byRating.length > 0 ? 'visible' : 'invisible'}>({filters.byRating.length})</span>
-      </span>
-      <div className="dropdown-content">
+    <div>
+      <div className="dropdown-content-item" style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <div>Rating</div>
+        <div className={filters.byRating.length > 0 ? 'visible' : 'invisible'}> ({filters.byRating.length})</div>
+      </div>
+      <div>
         {values.map((v) => (
           <div
             key={v}
@@ -51,7 +51,7 @@ const ByRating = ({ filters, updateFilter }: Props) => {
           </div>
         ))}
       </div>
-    </li>
+    </div>
   );
 };
 

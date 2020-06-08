@@ -8,8 +8,7 @@ import qs from 'qs';
 import ListItem from 'src/components/ListItem';
 import ListItemLoading from 'src/components/ListItemLoading';
 // filters
-import ByRating from 'src/components/Filters/ByRating';
-import ByBaguette from 'src/components/Filters/ByBaguette';
+import Filters from 'src/components/Filters';
 import DarkModeSwitch from 'src/components/DarkModeSwitch';
 
 import rawData, { ApprovedLevel, Store } from 'src/data';
@@ -318,10 +317,7 @@ class App extends React.Component<any, State> {
           </div>
         </div>
         <nav className="navbar">
-          <ul>
-            <ByRating filters={filters} updateFilter={this.updateFilter} />
-            <ByBaguette filters={filters} updateFilter={this.updateFilter} />
-          </ul>
+          <Filters filters={filters} updateFilter={this.updateFilter} />
           <DarkModeSwitch mode={this.state.mode} onClick={this.toggleDarkMode} />
         </nav>
         <div className="sidebar">
