@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import { BrowserRouter as Router } from 'react-router-dom';
 
+import 'src/services/firebase';
+
 import App from 'src/app';
 
 import * as serviceWorker from './serviceWorker';
